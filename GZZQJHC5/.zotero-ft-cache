@@ -1,0 +1,173 @@
+i CELL TELEPHONE LABORATORIES
+I N C O R P O R AT E D
+COVER SHEET FOR TECHNICAL MEMORANDUM
+TITLE- Patterns by 7090 m m - 6 2 - 1 2 3 4 - 1 4
+
+FILING CASE NO (8) - 3 8 7 9 4 - 2 3
+
+FILING SUBJECT ( S ) -
+( ASSIGNED BY AUTHOR(S) )
+
+Computer-Produced P a t t e r n s
+
+DATE A u g u s t 2 8 , 1 9 6 2 AuTHoR(s)-- A . M . N o i l
+
+ABSTRACT
+An I B M 7 0 9 0 d i g i t a l c o m p u t e r a n d S t r o m b e r g - C a r l s o n 4020 M i c r o f i l m P r i n t e r have b e e n used t o p r o d u c e a s e r i e s o f interesting and novel patterns. T h i s paper describes the mathematical and programming techniques used b u t neglects any discussion of the " a r t i s t i c " merits o f the results.
+
+E-1932-C ( 4 - 6 1 )
+
+SEE REVERSE SIDE FOR DISTRIBUTION LIST
+
+BELL TELEPHONE LABORATORIES
+I N C O R P O R AT E D
+
+stmgcn P a t t e r n s b y 7 0 9 0 - C a s e 3 8 7 9 4 - 2 3
+
+DATE A u g u s t 2 8 , 1 9 6 2 FROM: A . M . N o l l
+NM-62-1234-14
+
+MEMORANDUM FOR F I L E
+
+Introduction The d i g i t a l c o m p u t e r i s p r e s e n t l y b e i n g u s e d t o p r o d u c e
+new m u s i c a l s o u n d s a n d t e c h n i q u e s o f c o m p o s i n g . T h e a d v e n t o f microfilm p r i n t i n g used i n conjunction w i t h a d i g i t a l computer allows similar excursions into the f i e l d o f visual art. T h u s , i t would certainly be interesting to attempt the creation o f novel designs by using the IBM 7090 computer and t h e StrombergCarlson 4020 Microfilm P r i n t e r. T h i s paper describes the r e s u l t s of such an exploratory series o f design-producing experiments.
+Rather than r i s k an unintentional debate a t t h i s time on w h e t h e r t h e c o m p u t e r - p r o d u c e d d e s i g n s a r e t r u l y a r t o r n o t , the r e s u l t s o f t h e machine's endeavors w i l l s i m p l y be c a l l e d "Patterns." Programming Te c h n i q u e s
+The s u b r o u t i n e p a c k a g e f o r t h e S C - 4 0 2 0 M i c r o f i l m P r i n t e r includes a subroutine t h a t draws a series o f straight l i n e s connecting successive p o i n t s o f some p r e v i o u s l y - s p e c i f i e d a r r a y. Another subroutine simply p l o t s dots a t t h e p o i n t s specified. Since these two subroutines were used t o c r e a t e a l l t h e p a t t e r n s , the medium i s obviously l i m i t e d t o combinations o f s t r a i g h t lines and dots.
+
+To p r o d u c e a p a t t e r n , i t i s f i r s t n e c e s s a r y t o f o r m u late a means o f determining t h e a r r a y o f p o i n t s . T h e a r r a y actually consists o f pairs o f x-axis and y-axis coordinates listed i n the order i n which they are t o be plotted. E i t h e r of the two microfilm subroutines mentioned previously can then be u s e d t o p r o d u c e a p a t t e r n f r o m t h e a r r a y .
+A versatile tool i n producing the arrays o f courdinate p o i n t s i s a s u b r o u t i n e c a l l e d WNG ( W h i t e N o i s e G e n e r a t o r ) . This subroutine calculates an array o f random numbers o f any specified standard deviation. B y choosing a large standard deviation, i t i s possible t o obtain a point outside the range of the p l o t . W h e n t h i s occurs the p o i n t i s reduced modulo the maximum s i z e o f t h e p l o t u n t i l i t f a l l s w i t h i n t h e p r o p e r r a n g e . This technique seems t o add more randomness a n d i n t e r e s t t o the p a t t e r n s . Patterns by 7090
+• T h e f o l l o w i n g paragraphs e x p l a i n b r i e f l y t h e schemes used t o produce e a c h p a t t e r n .
+Pattern One. T h e s t r a i g h t l i n e s i n " P a t t e r n One" were created by connecting a series o f points. Random numbers (standard deviation o f 1200) were used f o r the x-axis coordinates while the y-axis coordinates were produced from a quadratic equation with consecutive integers as the variable. T h e scattering of faint dots on the lower l e f t portion of the pattern was p r o d u c e d b y r a n d o m x - a x i s a n d y - a x i s c o o r d i n a t e s ( s t a n d a r d deviation of 75) about the point (200, 300).
+
+Pattern Two. T h e s t r a i g h t l i n e s i n " P a t t e r n Two" a r e exactly t h e same as those i n " P a t t e r n One." H o w e v e r, more d o t s have been added, a n d t h e y have been made somewhat d a r k e r. T h e FOTRAN program used t o c r e a t e t h i s p a t t e r n i s e x p l a i n e d i n t h e Appendix.
+Pattern Three. " P a t t e r n Three" i s another variation on t h e b a s i c s t r a i g h t l i n e s o f " P a t t e r n One" a n d " P a t t e r n Tw o . " This t i m e t h e d o t s have been moved t o t h e e x a c t c e n t e r o f t h e drawing w i t h a smaller standard d e v i a t i o n o f 30.
+Pattern Four. A connected s e r i e s o f s t r a i g h t v e r t i c a l and h o r i z o n t a l l i n e s f o r m s t h e s t r u c t u r e o f " P a t t e r n F o u r . " The p o i n t s s p e c i f y i n g t h e l i n e s w e r e p r o d u c e d f r o m r a n d o m a r r a y s (standard deviations o f 3200 and 2000 f o r the x-axis and y-axis coordinates respectively). T h e valuesof x- and y-coordinates were a l t e r n a t e l y r e p e a t e d t o make t h e l i n e s v e r t i c a l a n d h o r i z o n t a l .
+Pattern Five. " P a t t e r n Five" i s a variation o f the preceding pattern except t h a t more l i n e s were p l o t t e d and t h e standard deviations were changed t o 2500 and 4000 f o r the x - a x i s and y - a x i s c o o r d i n a t e s r e s p e c t i v e l y .
+Pattern Six. Random numbers were used f o r both the x-axis and y - a x i s coordinates (standard deviations o f 3200 and 2000 respectively) o f the points connected by straight l i n e s i n "Pattern Six."
+Pattern Seven. " P a t t e r n Seven" was supposed t o have been a s e r i e s o f randomly-placed p r o l a t e c y c l o i d s b u t a p p a r e n t l y something went amiss.
+
+Pattern Eight. T h e straight lines i n "Pattern Eight" connect p o i n t s whose x - a x i s coordinates a r e random numbers (standard d e v i a t i o n o f 2000) and whose y - a x i s coordinates were computed b y a c u b i c e q u a t i o n . Discussion
+The s e r i e s o f v a r i a t i o n s o n " P a t t e r n O n e " w e r e p r o d u c e d by v a r y i n g o n l y t h e number, p o s i t i o n , a n d darkness o f t h e d o t s . The s t r a i g h t l i n e s i n t h e f i r s t t h r e e p a t t e r n s a r e e x a c t l y t h e same b u t m i n o r c h a n g e s i n t h e d o t s m a k e t h e m s e e m d i f f e r e n t . The p r o m i n e n c e o f c e r t a i n c o m b i n a t i o n s o f t h e l i n e s seems t o b e determined by the p o s i t i o n o f the dots which apparently focuses the observer's a t t e n t i o n .
+The p r o g r a m m i n g s c h e m e s u s e d t o p r o d u c e t h e p a t t e r n s shown i n t h i s p a p e r w e r e o b v i o u s l y c o n c e i v e d w i t h o u t f o r e t h o u g h t for t h e i r a r t i s t i c merit. A more i n t e r e s t i n g procedure would be f i r s t t o s t u d y t h e v a r i o u s p a t t e r n p r o d u c i n g c a p a b i l i t i e s o f the 7090 and associated m i c r o f i l m equipment. N e x t some subjective experiments might be attempted t o t r y to determine j u s t what q u a l i t i e s make a p i c t u r e p l e a s i n g o r even a r t i s t i c . W i t h this information a t hand, t h e programmer-artist might be better prepared t o produce not j u s t haphazard patterns, but " t r u e a r t . "
+
+MH-1234-AMN-bam
+
+A
+
+.
+
+Att. Appendix Patterns One t h r o u g h E i g h t
+
+M. NOLL
+
+APPENDIX
+D e s c r i p t i o n o f t h e FORTRAN P r o g r a m U s e d t o P r o d u c e P a t t e r n Tw o A l i s t i n g o f t h e FORTRAN p r o g r a m u s e d t o p r o d u c e
+" P a t t e r n Two" i s shown a t t h e end o f t h i s Appendix. W h e n u s i n g the microfilm subroutines, i t i s f i r s t necessary t o advance the f i l m w i t h t h e i n s t r u c t i o n CALL FioLL. C A L L REFPT a s s i g n s the coordinate (0,1023) t o upper l e f t hand corner o f the frame. The maximum l e n g t h s o f t h e t o p a n d s i d e a r e 1 0 2 4 a n d a r e s p e c i f i e d i n t h e CALL REFPT argument.
+After initializing the microfilm printer, the arrays o f p o i n t s t o b e p l o t t e d a r e d e t e r m i n e d . T h e Dig 100 l o o p calculates a table o f y-axis coordinates by a quadratic equation and s t o r e s t h e m i n t h e a r r a y I Y 1 . T h e f i r s t C A L L WNG c r e a t e s a t a b l e o f 200 random numbers w i t h standard d e v i a t i o n 1200 and stores t h e t a b l e i n t h e a r r a y FX1. T h e arrays FX2 and FY2 a r e s i m i l a r l y c r e a t e d b y t h e WNG s u b r o u t i n e . T h e p g 1 0 1 a n d IV 102 loops f i x these arrays.
+The n e x t s t e p i s t o p l o t l i n e s j o i n i n g t h e c o m p u t e d points o r to simply p l o t them as dots with the proper microfilm subroutines. T h e DVR2 s u b r o u t i n e d r a w s 9 8 l i n e s f r o m ( I X 1 ( 1 ) , IY1(1)) t o (IX1(2), IY1(2)), (IX1(2), IY1(2)) t o (IX1(3), IY1(3)), etc. T S P 1 puts the boolean character specified a t location B (here a d o t ) o n the 299 p o i n t s whose coordinates are given i n the arrays IX2 and IY2. T h e subroutine i s c a l l e d f o u r times to make t h e d o t s d a r k e r . C A L L CLEAN ends t h e p l o t t i n g , and CALL SYSTEM e n d s t h e p r o g r a m .
+
+PATTERN Tkft! DIYEN5I0NFX1(30).tIX1(00)0IY1(300)4IFX2(300)0FY2(300)tIX2(300)0IY2 1(300) B=52606060606fl CALLROLL CALLREFPT(001023,102401324) D01COI=10200 100 I Y 1 ( I ) = 1 * ( I + 5 ) C A L LW N G ( F X 1 0 2 0 6 , 1 2 0 0 . $ ) C A L LW N G ( F X 2 0 3 0 0 0 7 5 e ) C A L LW N G ( F Y 2 0 3 0 0 0 5 • ) D 0 1 0 11 = 1 0 f l 0 101 I X 1 ( I ) = F X 1 ( I ) 00102J=10300 IX2(J)=FX2(J)+200. 102 1 Y 2 ( J ) = F Y 2 ( J ) - 1 - 3 0 0 o CALLDVR2(IX1oIY1.99) C A L LT S P 1 ( I X 2 9 1 Y 2 o B 4 2 9 9 ) C A L LT S P 1 ( I X 2 0 1 Y 2 0 6 , 2 9 9 ) C A L LT S P 1 ( I X 2 11 I Y 2 0 ( 3 0 2 9 9 ) C A L LT S P 1 ( I X 2 f I Y 2 t B 1 2 9 9 ) CALLCLEAN CALLSYSTEM
+• F O T R A N program used t o produce " P a t t e r n Two."
+
+PATTERN ONE
+
+PATTERN TWO
+
+PATTERN THREE
+
+1
+-
+-
+
+.I..•••.•
+
+ilommommb
+
+1
+
+PATTERN FOUR
+
+PATTERN F I V E
+
+PATTERN S I X
+
+//401
+
+N
+
+l a g APA41 t h lkha,itigiairn4i_vl—iupmisommirm. ommikleo
+
+-0,411611 PrnAIRPAVapillIM1111111111111%*,
+
+a i r AMNON S E . FAL I E N
+
+Ar4101111161111111111.111,100wrin.
+
+1
+
+N
+
+TV
+
+\
+
+N
+
+1\
+
+_
+
+A
+
+1 1 1 A11/41
+
+\ —aINE nj N i b h nI \ I
+
+I
+
+A
+
+N
+
+t
+
+b
+
+.
+
+.
+
+""m111011111A ' w . T A T I K I C I I I I I I M I I I I I I
+
+,0Il„ i,r4,ker r 11 Fir
+
+N
+
+.
+
+7
+
+14i
+
+'..
+
+I
+
+M
+
+I
+
+l
+
+b
+
+I
+
+VW' 1 1 1 1 1 • 1 1 1 • 0 1 1 0 . 0 1 . 1 . 1 . 1 1 1 , . -
+
+f•NI N 4
+
+PATTERN SEVEN
+
+PATTERN E I G H T
+

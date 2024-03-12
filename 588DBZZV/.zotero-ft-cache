@@ -1,0 +1,253 @@
+The Psychological Record, 1966, 16, 1-10,
+HUMAN OR MACHINE: A SUBJECTIVE COMPARISON OF PIET MONDRIAN'S “COMPOSITION W ITH LINES’’
+(1917) AND A COMPUTER-GENERATED PICTURE
+A. MICHAEL NOLL
+Bell Telephone Laboratories, Incorporated Murray Hill, New Jersey
+A digital computer and microfilm plotter were used to pro­ duce a semirandom picture similar in composition to Piet Mon­ drian’s painting “Composition W ith Lines” (1917). Reproductions of both pictures were then presented to 100 subjects whose tasks were to identify the computer picture and to indicate which picture they preferred. Only 28% of the Ss were able to correctly identify the computer-generated picture, while 59% of the Ss pre­ ferred the computer-generated picture. Both percentages were statistically different (0.05 level) from selections based upon chance according to a binomial test.
+Piet Mondrian's “Composition W ith Lines”
+In 1914 the Dutch painter Piet Mondrian (1872-1944) introduced a horizontal-vertical theme into his paintings which later culminated in the black-and-white painting “Composition With Lines” (1917). This abstract painting has been described by a prominent French critic and writer as “the most accomplished” of Mondrians series of paintings based upon the horizontal-vertical theme (Seuphor, 1962). These paintings are said to incorporate masculinity and femininity by symbo­ lizing the masculine as vertical (the upright trees of a forest) and the feminine as horizontal (the sea) with each complementing the other (Seuphor). Mondrian sought to indicate the plastic function of the sea, sky, and stars through a multiplicity of crossing verticals and hori­ zontals (Mondrian, 1945). “Composition With Lines,” reproduced in Fig. 1, consists of a scattering of vertical and horizontal bars which, at first glance, seem to be randomly scattered throughout the painting. With further study, however, one realizes that Mondrian used con­ siderable planning in placing each ba; in proper relationship to all the others. Conceivably, Mondrian followed some scheme or program in producing the painting although the exact algorithm is unknown.
+If Mondrian’s “Composition With Lines” is studied carefully, some interesting observations about its overall composition can be made. The more evident of these are: (a) The outline of the painting is a circle that has been cropped at the sides, top, and bottom; (b) The vertical and horizontal bars falling within a region at the top of the painting have been shortened in length; and (c ) The length and width of the bars otherwise seem to be randomly distributed,
+
+2
+
+NOLL
+
+“Computer Composition W ith Lines”
+Many pictures can be thought of as consisting of series of con­ nected and disconnected line segments. Since two points determine a line, such pictures can be described numerically by the cartesian coordinates of the end points of the lines. Thus, a picture can be uniquely transformed into numerical data which are then inversely trans­ formable back into the original picture.
+
+Fig. 1 “Composition W ith Lines” (1917) by Piet Mondrian. (Reproduced with permission of Rijkmuseum Kroller-M idler, Otterlo, The Netherlands, © Rijkmuseum Kroller-Miiller.)
+Digital computers perform arithmetic operations with numerical data under the control of a set of instructions called a program. If this numerical data were the coordinates of end points of lines, then the computer could be programmed to numerically specify a picture. This numerical data could then be used to position and move the beam of a cathode ray tube to trace out the desired picture. In this manner, and as depicted in Fig. 2, an IBM 7094 digital computer has been programmed to generate pictures using a General Dynamics SC-4020 Microfilm Plotter. The picture drawn on the face of the cathode ray tube is photographed by a 35 mm camera which is also under the control of the microfilm plotter.
+
+HUMAN OR MACHINE
+
+3
+
+The microfilm plotter is presently limited to producing black and white pictures composed of connected and disconnected line segments. Mondrian’s “Composition With Lines,” a black and white painting com-
+
+GENERAL DYNAMICS S C - 4 0 2 0
+
+MICROFILM PLOTTER
+
+L
+
+J
+
+FIG. 2
+Fig. 2 Block diagram of method for producing computer pictures.
+posed of vertical and horizontal bars, was a type picture that the microfilm plotter was capable of reproducing with suitable programming of the computer. The computer picture thus generated, called “Com­ puter Composition With Lines,” is shown in Fig. 3.
+The vertical and horizontal bars in “Computer Composition With Lines” were produced as a series of parallel line segments that were closely enough spaced to slightly overlap each other. Although Mon­ drian apparently placed his bars in a very-orderly manner, the computer was programmed to place the bars randomly within a circle of radius 450 units so that all locations were equiprobable. The choice between vertical bar or horizontal bar was equally likely, and the widths of the bars were equiprobable between 7 and 10 lines; the lengths of the bars were equiprobable between 10 and 60 points.
+If a bar fell inside a parabolic region at the top of the picture, the length of the bar was reduced by a factor proportional to the distance of the bar from the edge of the parabola. A trial-and-error
+
+4
+
+NOLL
+
+approach was used to insure that the effect of the picture was reasonably similar to Mondrian’s “Composition With Lines.”
+
+Fig. 3 “Computer Composition W ith Lines” (1964) by the author in associa­ tion with an IBM 7094 digital computer and a General, Dynamics SC-4020 micro­ film plotter. ( © A . Michael Noll 1965).
+
+Human or Machine
+After the computer had produced its version of the Mondrian painting, two pictures similar in composition, but one painted by a human and the other generated by a machine, were available. Sub­ jective tests were then administered in which the Ss were shown reproductions of both pictures and indicated their preferences and also which picture they thought was produced by the machine. The remainder of this paper describes these subjective tests and their results.
+
+Procedure
+
+METHOD
+
+The photographic print of the computer-produced microfilm and the photograph of Mondrian’s painting had clues to their identity
+
+since the quality of the two photographs was somewhat different.
+
+HUMAN OR MACHINE
+
+5
+
+Since only differences in the designs or patterns of the two pictures were desired, the two photographs were copied xerographically to be identical in quality. These copies were arranged in two pairs so that the computer picture was alternately labeled “A” or “B”; the order of presentation was counter-balanced. An example of a picture pair as given to the Ss is shown in Fig. 4.
+
+Fig. 4 Picture pair as presented on separate sheets to subjects. The original microfilm and Mondrian photograph were copied xerographically and then re­ produced so that both pictures were identical in quality. (© A. Michael Noll 1965 and © Rijkmuseum Kroller-Miiller.)
+In addition to the two pictures, each S was also given three separate questionnaires: a background questionnaire, an identification questionnaire, and a preference questionnaire. The background ques­ tionnaire was given first to each S, and informed him that he was about to participate in “an exploratory experiment to determine what aesthetic factors are involved in abstract art.” The S then wrote his name and job classification on the questionnaire, and checked ap­ propriate boxes for his sex (male, female), age (under 30, 30-45, over 45), and overall feeling towards abstract art (strongly like, like, indifferent, dislike, strongly dislike). In those cases in which Ss stated that they liked some and disliked other abstract art, they were instructed to mark the indifferent category. The job classification infor­ mation was used to classify each S’s job as either technical or non­ technical.
+The identification questionnaire was worded: “One of the pictures is a photograph of a painting by Piet Mondrian while the other is a photograph of a drawing made by an IBM 7094 digital computer. Which of the two do you think was done by the computer.” The S then checked appropriate boxes on the questionnaire for picture “A”
+
+6
+
+NOLL
+
+or for picture “B” and also gave written reasons for his choice. The preference questionnaire asked the S to check appropriate boxes to indicate which picture he “most strongly liked or preferred” and also to give reasons for his choice.
+The order of presentation of the identification and preference questionnaires was counterbalanced. The Ss were not given the last questionnaire until the other two were completed.
+Subjects
+A total of 100 Ss participated in the tests. All of the Ss had educa­ tion beyond grade school, ranging from high school to post-doctoral, and all but two Ss were employees of Bell Telephone Laboratories. Of the 50 Ss who were given the preference sheet first, 14 were non­ technical (1 male and 13 females) and 36 were technical (28 males and 8 females). Of the 50 Ss who were given the identification sheet first, 17 were nontechnical (all females) and 33 were technical (27 males and 6 females). Note that the technical group consisted primarily of males, while only one male was considered nontechnical. This occurred because the nontechnical people at the Laboratories are clerks, typists, stenographers, and secretaries; females usually perform these types of jobs. However, the technical people include engineers, physicists, and chemists (all usually males) and a lesser number of technicians and computer programmers (usually male and female). The S grouping reasonably represents an approximation of the popula­ tion at Bell Telephone Laboratories.
+
+RESULTS
+Table 1 gives the percentages of Ss who preferred the computer picture and who correctly identified the computer picture. A chisquare test indicated that the questionnaire order did not statistically affect the preferences or identifications, and for this reason questionnaire order is not shown in the Table. A binomial test was performed with each cell entry, and an asterisk indicates those entries statistically different (0.05 level) from selections based upon chance. Of the 100 Ss in the experiment, 59% preferred the computer picture while only 28% were able to correctly identify the computer picture.
+Perhaps the Ss preferences would be affected by the knowledge that one of the pictures was generated by a computer. For this reason, the first fifty Ss were given the preference questionnaire first while the second fifty were given the identification questionnaire first. A chi-square test was then performed with the contingency table relating preference and questionnaire order. The test strongly indicated no association between preference and questionnaire order (x2=0, d f = l) .
+Since there was only one degree of freedom, Yates’ correction was used in computing x2 (Walker & Lev, 1953). Thus the Ss’ preferences were not affected by knowledge that one of the pictures was generated
+
+HUMAN OR MACHINE
+
+7
+
+by a computer. Chi-square was computed for the table relating identification and questionnaire order, and these two factors were also not associated (x2=0.24, d f = l) .
+
+TABLE I
+PERCENTAGE PREFERENCES AND PERCENTAGE CORRECT IDENTIFICATIONS
+
+Total Number of
+Subjects
+
+Preferred Computer
+Picture
+
+Correct Identification
+
+All Subjects
+
+100
+
+Job Classification:
+
+Technical
+
+69
+
+Non-Technical
+
+31
+
+Age:
+
+Under 30
+
+61
+
+30 to 45
+
+31
+
+Over 45
+
+8
+
+Sex:
+
+Males
+
+56
+
+Females
+
+44
+
+Abstract Art Assessment:
+
+Strongly Like & Like
+
+34
+
+Indifferent
+
+46
+
+Strongly Dislike & Dislike
+
+20
+
+59%°
+59% 58%
+69%° 48% 25%
+55% 64%*
+76%° 52% 45%
+
+28% *
+35% 13%
+18%* 42% 50%
+37% 16%*
+26% * 26% * 35%
+
+Note: 0Indicates statistical significance at the 0.05 level according to binomial test.
+
+A chi-square test was also performed for the contingency table relating preference and identification for all Ss, and, as might be expected from the preceding, preference and identification were inde­ pendent (x2= 0.213, df—1). The results of the chi-square tests are summarized in Table 2.
+TABLE 2
+SUMMARY OF CHI-SQUARE TESTS
+
+Questionnaire order
+
+0.000
+
+Abstract art assessment 5.452
+
+Job classification
+
+0.008
+
+Sex (technical subjects 1.768 only)
+
+Identification
+
+0.213
+
+Preference
+
+df
+
+result
+
+Identification
+
+df
+
+result
+
+1 not significant 0.240
+
+1 significant (p < 0.02)
+
+0.000
+
+1 not significant 149.798
+
+1 not significant 0.906
+
+1 not significant 1 not significant
+1 significant ( p < 0.001)
+1 not significant
+
+1 not significant
+
+8
+
+NOLL
+
+The effects of the Ss’ abstract art attitudes were determined by considering those Ss “strongly liking” and “liking” abstract art as one group, with all other Ss as another group. The results of chi-square tests showed that art attitude and preference were associated at the 0.02 level (x2=5.452, d f = l) while art rating and identification were independent (x2=0.000, d f = l) . The Ss “strongly liking” and “liking” abstract art preferred the computer picture better than 3 to 1 while the other Ss were evenly divided in their preferences. This possibly occurred because those Ss liking abstract art might have been more accustomed to the randomness found in many abstract paintings and would therefore prefer the more random of the two pictures, namely, the computer picture.
+It was expected that a larger proportion of the Ss with technical training would correctly identify the computer picture because of their possible knowledge and familiarity with computers. This indeed occurred as indicated by a chi-square test (x2= 149.798, d f = l) on the contingency data relating identification and job classification, and this association was significant at the 0.001 level. However, preference and job classification were independent (x2= 0.008, d f = l) . As shown in Table 1, 35% of the technical Ss and only 13% of the nontechnical Ss were able to identify the computer picture. Apparently, the non­ technical Ss very strongly thought that computers would produce mechanical, orderly pictures, and hence a large percentage of the nontechnical Ss were fooled into incorrectly identifying the Mondrian as being the computer picture. The technical Ss, however, were some­ what more sophisticated and as a group tended to disregard the differences in randomness between the two pictures with the result that their identifications were closer to pure guessing.
+Unfortunately, the nontechnical group contained only one male, and therefore the possibility arises that the association between prefer­ ence and job classification was a result of the preponderance of females in the nontechnical group. To determine if the sexual imbalance between the two groups was affecting the judgments, chi-square tests were made for the contingency tables relating sex with preference and sex with identification for only the technical Ss. The results indicated that these factors were independent (x2=l-768, d f = l, and X2~ 0.906, d f = l, respectively.) Since there was no reason to suspect that sex would matter for the nontechnical group if sex were insignificant for the technical group, it seemed reasonable to conclude that the sexual imbalance between the two groups did not affect the preferences or identifications. However, the two groups were unbalanced with respect to other factors, such as education, and hence further tests would be required to determine more definitely the causes of the differences in identification ability between the two groups.
+In general, the reasons given by the Ss for both their preferences and identifications supported most of the preceding conclusions. The computer picture was described as being “neater,” more “varied,”
+
+HUMAN OR MACHINE
+
+9
+
+“imaginative” “soothing,” and “abstract” than the Mondrian. One S even found some golden rectangles in the random designs within the computer picture. In general, the nontechnical Ss strongly associated randomness with human creativity and therefore incorrectly identified the Mondrian as the computer generated picture.
+The knowledge that one of the pictures was produced by a com­ puter did not bias the Ss for or against either picture, as mentioned previously. However, the Ss in this experiment had very little or no artistic training and also were quite accustomed to the impact of technology upon many different fields. These Ss therefore probably did not have any prejudices against computers as a new artistic medium. If artists and Ss from a nontechnological environment had been similarly tested, the results might have been different.
+
+DISCUSSION AND CONCLUSION
+Mondrian has been widely acclaimed as the “greatest Dutch painter of our time” (Bradley, 1944) and as one of the “ most influential masters of painting” (Lewis, 1957). However, a computer-generated random pattern was preferred over the pattern of one of Mondrians paintings. Furthermore, the majority of the Ss participating in the experiment were unable to correctly identify the computer-generated picture. Some questions now arise concerning the conclusions to be drawn from these results.
+Both patterns were conceived by humans, although certain features of the computer-generated picture were decided by a programmed random algorithm. The computer functioned only as a medium per­ forming its operations under the complete control of the computer program written by the programmer-artist. As stated before, the programmer-artist working with the computer produced a pattern that was preferred over the pattern of one of Mondrian’s paintings. This would seem to detract from Mondrian’s artist abilities. However, artistic merit is not generally accepted as something that can be determined by a jury. The experiment was designed solely to compare two patterns that differed in elements of order and randomness. It is only incidental that the more-orderly pattern was painted by Piet Mondrian while the preferred random pattern was produced with the assistance of a digital computer.
+The randomness introduced by the computer was in the form of a mathematical algorithm for computing sequences of uncorrelated num­ bers. Thus, the “randomness” is completely deterministic, and the resulting pattern is mathematically specified in every detail. The writing of the computer program was done in an objective manner incorporating appropriate mathematical formulas. All of this indicates that no attempt was made to communicate any emotions on the part of the programmer to the final computer pattern. Therefore, the experiment compared the results of an intellectual, non-emotional endeavor involving a
+
+10
+
+NOLL
+
+computer with the pattern produced by a painter whose work has been characterized as expressing the emotions and mysticism of its author. The results of this experiment would seem to raise some doubts about the importance of the artist’s milieu and emotional behavior in com­ municating through the art object. But then again, many present-day estheticians do not subscribe to such definitions of art, and some even question whether art can be attributed any defining properties (Weitz, 1956).
+Since xerographic copies of a photograph of the Mondrian painting were used as stimuli in the experiment, any artistic effects due to the size or painting techniques were eliminated. The subjective compari­ sons hence were only on the basis of differences between the two patterns. Also, only one particular painting by Mondrian and only one particular random realization by the computer were used.
+Clearly, the computer picture was more random than the Mondrian. Further programming of the computer, however, has indicated that more elaborate schemes can be used to produce a picture that even more closely resembles the Mondrian. Undoubtedly, an indistinguishable pair could finally be obtained, but performing experiments similar to those reported in this paper would not then be too revealing.
+The experiments and techniques reported in this paper should suggest many novel and interesting investigations of artistic perception and esthetics. For example, experiments are presently in progress to determine such things as the preferred range of randomness in the bar positions of Mondrian-like pictures and whether statistically identical pictures are equally preferred. Computer-generated pictures are mathe­ matically and statistically specified in an objective manner and should be quite useful as stimuli in such investigations.
+
+REFERENCES
+BRADLEY, J. 1944. “Greatest Dutch Painter of our Time.” Knickerbocker Weekly, Feb. 14, 3, (51), 16.
+LEWIS, D. 1957. Mondrian. New York: George W ittenbom, Inc.
+MONDRIAN, P. 1945. “Toward the True Vision of Reality.” In Plastic Art and Pure Plastic Art, New York: Wittenborn and Company.
+SEUPHOR, M. 1962. Abstract Painting. New York: Harry N. Abrams, Inc.
+SEUPHOR, M. 1957. Piet Mondrian. New York: Harry N. Abrams, Inc.
+WALKER, HELEN M. & LEV, J. 1953. Statistical Inference. New York: Holt, Rinehart and Winston.
+WEITZ, M. 1956. “The Role of Theory in Aesthetics.” Journal of Aesthetics and Art Criticism, 15, 27-35.
+

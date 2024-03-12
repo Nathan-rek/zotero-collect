@@ -1,0 +1,71 @@
+
+What is a feminist server?
+Because all online resources are hosted on servers, they constitute a base for the internet as we know it. All servers are ruled by different terms of service, governance models and national legislation in relation to privacy and access to data by third actor parties (or "trackers") and are dependent on a variety of business models. This somewhat technical definition can obscure the possibilities for understanding the political aspect behind the setting up and management of a server.
+
+We need feminist servers for the women, queer and trans* people and movements as safe spaces for nourishement, skills-sharing and radical expressions of art and activism.
+ref: giswatch feminist autonomous infrastructures
+Why we need FOSS+Feminism?
+
+Free and Open Source Software development happens with code contributions within communities. This code is most often technical, but sometimes is about code of conduct, meaning how members shall engage with the community, and code documentation, meaning how other developers and users can interact with the code.
+
+FOSS software is behind most of our daily communication technology (Android OS is built on Linux, Instagram is built with Django - a Python web application, etc). Most importantly FOSS allows the proliferation of autonomous decentralized platforms such as social media (mastodon, pixelfed), forums+discussions (discourse, mailman), video hosting (peertube) secure internet tunnels (openVPN, TOR). However FOSS projects are maintened and developped mostly by (white cis) men. While some communities around FOSS have adapted inclusive language, other are still behind, or worse they are very resistant, such as the GNU community.
+
+    Some examples of gender based bias, can be found in the RTFM zine I wrote:
+    Read The Feminist Manual
+    General trolling and toxicity in online channels, e.x zoombombing
+    Zoom and Jitsi rooms were invaded by men on the internet who crashed their meetings with sexually explicit content, racist and sexist language and more, known as “Zoombombing”(link is external), and the company is yet to ensure user’s safety. 
+
+Building feminist servers to support safe spaces as playgrounds:
+
+    to learn technical skills to run and maintain with a feminist pedagogy affective infrastructure
+    for activisits, artists and collectives to inhabit those spaces with a feminist and queer affinity and attitude
+    to imagine other relations of care and support of these safe spaces, Be a guardian, a fire extinguisher, a scriba, an interface
+
+Examples:
+
+    Systerserver
+    A list of feminist servers
+    Lever burns
+    vvvvvvaria
+
+What is so peculiar about the feminist lense regarding the internet
+
+From our experiences as feminist and queer server guardians:
+
+    extensive documentation
+    and be able to ask any question without fear of competition, antagonism, emancipation from sexist discourse
+    Imagine other ways of working together, with care, respect, and accountabilit
+
+This attitude and solidarity inspire engagement from a diversity of identities, that can challenge the dominant hegemony of the technological infrastructures and tools.
+
+How to navigate the challengies of FOSS monoculture?
+Aknowledge
+
+    Feminist ninja: upgrading intersectional feminism with the hacker class
+    Cyberwitches manifesto
+    VNS Matrix
+
+Manuals
+From technical documentation to community guidelines
+
+    Radio is my bomb
+    (technical how-to p.24, documenting radio program scripts p.9, pirate radio movement around the world p.12)
+    La Bekka zine
+    Sysadmin manual
+    libre hosting
+    SSO sync
+    Autistici Orange book
+    Wizard zines
+    VPN zines
+    Read The Feminist Manual - firefox plugin
+    howto make guides
+    community rules
+
+Festivals, workshops, physical spaces
+
+    /Eclectic Tech Carnival aka /ETC
+    TransHackFeminism convergence
+    Cyborgrrrls
+
+Although cyberfeminists have done a lot to put forward their priorities as a movement to funders, it can be argued that internet freedom funders remain unconvinced of the centrality of gender issues and only see it as an add-on or a subset of the sector.
+feminists-are-building-their-own-technology-organise-where-are-funders?

@@ -1,0 +1,202 @@
+SHAPE JANNIS GRAMMARS MAROSCHECK
+
+Ein Kreis wird um seine Mitte rotiert. A clrcle is rotated around its center.
+
+TSE
+
+14
+
+Eine Form wächst von Quadrat zu
+
+A shape grows from square to square
+
+FIR
+
+18
+
+Quadrat und verzweigt sich.
+
+and forms branches.
+
+Eine Llne setzt sich durch die
+
+A line connects corner polnts of the
+
+UFF
+
+54
+
+Schnittpunkte des Rasters fort und grld. As it reaches the flrst point agaln
+
+schließt sich in ihrem Beginn.
+
+the shape is closed.
+
+Dreiecke mit getrimmten Spitzen
+
+Triangles with trlmmed tips are
+
+MHI
+
+110
+
+werden aus einer rechteckigen
+
+punched out of a rectangular surface
+
+Fläche herausgestanzt oder seitlich or cut In laterally.
+
+eingeschnitten.
+
+Quadrate und Viertelkreise wachsen Squares and quarter clrcles grow
+
+JEU
+
+186
+
+zusammen und verzweigen sich.
+
+together and branch out.
+
+Eine Linie setzt sich durch die
+
+A line connects corner polnts of
+
+ZLO
+
+258
+
+Schnittpunkte des Rasters fort und the grld. As lt reaches the first point
+
+schließt sich In ihrem Beginn.
+
+agaln the shape is closed.
+
+Parallelen Kanten folgt sie gerade.
+
+lt foliows parallel edges straight.
+
+Ist die Verbindung diagonal, wölbt In case of a diagonal connection it
+
+sie sich zu einem Bogen.
+
+curves into an arc.
+
+Eckpunkte werden verbunden. Eine Corner points are connected to form a
+
+NQM
+
+342
+
+Linie entsteht. Von Jedem Punkt
+
+line. From each polnt of this Une
+
+der Linie spannt sich eine Bezierkurve a Bezler curve stretches to the next
+
+zum übernächsten. Die Kontroll-
+
+but one. The control polnts of the
+
+punkte der Kurve setzen sich auf den curve are placed on the skipped polnt
+
+ausgelassenen Punkt dazwischen.
+
+between the others.
+
+12
+
+SHAPE GRAM MARS
+
+Kreise werden von ihren inneren
+
+Circles are connected by their
+
+LKY
+
+438
+
+gemeinsamen Tangenten verbunden. common inner tangents.
+
+In ihren Schnittpunkten löst sich
+
+Where they meet the emerglng
+
+die enstehende Form auf.
+
+shape dissolves.
+
+Kreise werden durch Tangenten-
+
+Circles are connected by tangent
+
+HOJ
+
+510
+
+kurven verbunden.
+
+curves.
+
+Jeder Kreis bekommt eine zufälli-
+
+A random color is assigned to each
+
+AHO
+
+584
+
+ge Farbe - schwarz oder weiß.
+
+circle. Black or white. Between
+
+Zwischen Kreispaaren mit gleicher pairs of circles with the same color
+
+Farbe wird eine gemeinsame äußere a common outer tangent is drawn.
+
+Tangente gezeichnet, eine Innere
+
+lf they have different colors, an
+
+bei verschiedenen Farben. Die Form inner tangent is drawn. The shape
+
+schließt sich in ihrem Beginn.
+
+closes in its beginning.
+
+Gerundete Rechtecke wachsen
+
+Rounded rectangles grow together
+
+BYL
+
+682
+
+zu einer Fläche zusammen.
+
+and form a unified surface.
+
+Ein Rauschen aus schwarzen und
+
+A noise is generated from black
+
+NIL
+
+754
+
+weißen Pixeln wird generiert.
+
+and white pixels. Connected
+
+zusammenhängende Pixelwolken
+
+plxelclouds are surrounded by a
+
+werden von einer Kontur umwandert contour (Marching Square), which
+
+(Marching Square) und abgerundet. is smoothed afterwards.
+
+13
+
+SHAPE GRAMMARS
+

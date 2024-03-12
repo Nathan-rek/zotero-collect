@@ -1,0 +1,343 @@
+
+Griffonage-Dot-Com
+Patrick Feaster's Explorations in Historical Media
+Menu
+Skip to content
+
+    Home
+    About
+    Published Elsewhere
+
+How to “play back” a picture of a sound wave
+Patrick Feaster / November 27, 2014
+
+For many people, the reproduction of recorded sounds takes place in a conceptual black box: sound goes in, and sound comes out, and it’s stored up in things called “records” in between, but the process itself is all very mysterious.  Because of that, the claim that we can play back pictures of sound waves (which seem to be very different things from “records”) is often met with incredulity.  The technique I’ll be describing here “defies belief,” according to Gizmodo .
+
+But really there’s nothing magical or even particularly surprising about the fact that we can turn pictures of audio waveforms into sound.  After all, if you look closely at the groove of a 78 rpm record or a mono LP, you’ll see that it’s nothing more than an incised waveform coiled into a long spiral.  Because the waveform is incised in depth, it can physically guide a stylus back and forth through its undulations as the disc revolves, which gives us a convenient means of transducing them into an audible sound wave.  But the information is all there in the two-dimensional path of the waveform itself.  Barring issues of resolution, there’s no more information in a 78 rpm record or a mono LP than there would be in a picture of the same waveform printed on a piece of paper.  If we want to listen to a waveform inscribed two-dimensionally on a piece of paper, the challenge we face is the practical one of transferring that information into a playable form.  Of course, it’s not incised sufficiently in depth to guide a stylus on a turntable.  But we can scan the picture of the waveform, convert the digital image data into a digital sound file, and then play the sound file.  That’s what I’m going to describe how to do.
+
+One possible name for this practice would be paleokymophony (“old-wave-sounding”).  It’s one of two basic approaches I’ve been using to educe historical sonic inscriptions as sound—that is, to “play” them, to actualize them for sensory perception from a latent or potential state.  The other is paleospectrophony , which I’ve written about here .  The distinction between the two methods is that paleospectrophony interprets data as a graph of frequency as a function of time, whereas paleokymophony (or whatever else we choose to call it) interprets data as a graph of amplitude as a function of time .  These are the two methods I used to produce the audio for Pictures of Sound , published in 2012 by Dust-to-Digital.
+
+[ Update, November 20, 2016 : since publishing this blog post, I’ve written some code of my own that accomplishes the same thing as the method described below, but better and more simply— check it out .]
+
+1. Isolate the trace as a white line on a black background.
+
+If the trace starts out as a dark trace on a light background, invert it so that it’s a light trace on a dark background.  It’s also generally useful to increase the contrast—often multiple times at the maximum setting in Photoshop—and then to fill the background in with black using the paintbucket tool, always being careful not to lose any detail of the wave shape itself.
+
+waveform-processing 2. Adjust the waveform image so that its center or “zero point” coincides with a straight line running from left to right.
+
+If the waveform is coiled into a spiral, as in the case of a gramophone disc, then we need to “de-spiral” it.  In Photoshop use Filter > Distort > Polar Coordinates , with the “Polar to Rectangular” radio button selected.  This is a memory-intensive transform, and you’ll need a lot of RAM to carry it out on larger images; I splurged on an Asus G74S specifically for this purpose.  It’s also unavailable for images over 30,000 pixels in any direction.  Be careful to center the spiral as exactly as you can, bearing in mind that the outermost revolution of the spiral isn’t equidistant from the center (because its midpoint moves gradually outward).  An imperfectly centered spiral yields “wavy” rows after the transformation.  I never seem to be able to get the centering exactly right myself, but I try to get pretty close.  Getting it wrong is equivalent to playing a gramophone disc on a turntable slightly off center.
+
+polar-to-rectangular A waveform often creeps gradually up the page, as illustrated in exaggerated form below.  We want to isolate it into the narrowest rectangular strip of image we can.  In Photoshop, we can use Edit > Transform > Skew to reorient it; be sure to drag the handle at the midpoint of the side of the selection box rather than one of the corners.  You can do this with a single trace or with a large number of parallel traces all at once (such as the above example shown after de-spiraling).
+
+make-waveform-linear If the amplitude axis is itself skewed at an angle rather than oriented straight up and down relative to the time axis, we can also use the “skew” function to adjust its azimuth as shown here (top is “before,” bottom is “after”):
+
+azimuth-adjustment 3. If you’re working with a number of sequential segments of a trace, join as many of them together into a single very long image file as feasible.
+
+Starting with the de-spiraled version of the gramophone disc shown above, for example, we would need to cut out the individual rows or revolutions one by one and join them end to end.
+
+The main challenge here lies in lining up the splices correctly, both vertically and horizontally.  If you’re dealing with a trace with an irregular or compromised seam between rotations or revolutions, it’s useful to make one layer transparent so that you can slide the images over the top of one another to find the overlap that best preserves the cyclicality of the waveform.  Here’s an example of such a join from one of Édouard-Léon Scott de Martinville’ phonautograms (#47, “Et Incarnatus Est”), with vocal trace below and simultaneous tuning-fork trace above:
+
+waveform-processing2 Images in Photoshop are limited to 300,000 pixels in any direction, so longer recordings will need to be divided into multiple 300,000-pixel segments.  In that case, be sure to leave some overlap between segments so that when it comes time to splice together the resulting WAV files you can choose a conspicuous and convenient landmark they both share in common to serve as the transition point.
+
+4. If there are any breaks in the trace, repair them manually.
+
+This process can be more or less time-consuming and subjective depending on how much of the trace is missing.  Here’s a relatively straightforward example from a photographic record of the phrase “How do you do?” as captured in 1878 by Eli Whitney Blake, Jr., showing breaks in the trace drawn in by hand with a pencil tool:
+
+waveform-processing3a Now imagine what would be involved in doing the same thing for the vocal trace in the phonautogram of “Et Incarnatus Est” shown above, and you’ll get a sense for how labor-intensive this step can be.  If there’s any visual noise remaining in the background at this point, such as blotches or specks, that will need to be cleaned up as well.  Overall, the process closely resembles the retouching of historical photographs.
+
+5. Create two copies of the waveform image, one with the area above the trace filled in white (using the paintbucket tool), and the other with the area below the trace filled in white.
+
+waveform-processing4 The goal here is to convert amplitude values—that is, how far “up” or “down” the trace is at each successive point in time—into different amounts of whiteness or brightness.  This strategy pertains only to “wavy line” representations of sound waves; if you have the good fortune to be working with an oscillographic image that already varies in brightness, such as an optical film sound track, then you can skip steps 4, 5, and 7.  Here are a few other examples of cases where that observation applies: from top to bottom, manometric flames photographed by Edward L. Nichols and Ernest Merritt (1898), a vertically modulated phonograph cylinder as read by IRENE , and an illustrative plate from Leonhard Euler’s Tentamen novae theoriae musicae (1739):
+
+other-oscillographic-formats Some of the other processing steps may still be necessary in these instances, such as azimuth correction (in the top example), separation into rows (in the middle example), and inversion to black on white (in the bottom example).  By analogy with the traditional distinction between vertically and laterally modulated recordings, I refer to this alternative approach as vertical eduction, as opposed to the lateral eduction that takes place with wavy lines.
+
+6. Run the images through software designed to convert optical sound track images into WAV files.
+
+The software I’ve been using for this purpose is Andrew Jaremko’s ImageToSound , a piece of freeware designed to convert images into sound as though they were optical film sound tracks (where the modulation of the audio signal is tied to how much light passes through a translucent strip that varies either in width or opacity).   It’s getting increasingly difficult to find online, but it can still be downloaded here as of November 2014.  This program converts each successive pixel column in an image file into one audio sample, the value of which is calculated as the sum of the luminance of all pixels in the column—in the scenario I’m describing, this equals the amount of white in each successive pixel column, which corresponds in turn to the vertical displacement of the original trace.  In effect, we’re measuring distances from the edges of the image to the edges of the trace, like this:
+
+waveform-processing6 ImageToSound is limited to processing 24-bit BMPs , so it’s necessary to convert image files into that format if they aren’t already in it.  The program is also restricted to outputting an 8-bit WAV, although the user can choose the sample rate (I generally go with 44.1 kHz).  A few other quirks about it are worth noting:
+
+    It won’t run in Windows 7, except in Windows 98 compatibility mode, and in that mode I’ve found that it can’t handle some of the larger files that it was able to accommodate in earlier versions of Windows.  I maintain a desktop computer running Windows 98 to handle those cases.
+    It removes some DC offset, which might be advantageous from the standpoint of experimental sound art, but which isn’t desirable for my purposes because it compromises the accuracy of the eduction.  I sometimes mitigate the effect by running the images through both forwards and backwards (i.e., horizontally flipped) and combining the results (after reversing the backwards file); this works pretty well.  But in doing that, I run into another problem: for some reason, the output WAV files don’t start and stop exactly with the first and last pixels of the images, so the “forward” and “backward” versions don’t line up exactly.  My strategy for dealing with this other problem has been to insert a single column of white pixels at the far left of the “forward” image before flipping it to create the “backward” image; this creates a single-sample tick in both resulting WAV files that I can use as a common reference point for lining them up with sample-perfect precision.  In fact, it’s advantageous to insert several of these single-pixel columns, since I’ve occasionally found one of them inexplicably cropped out of one of the output WAVs.
+    Sometimes ImageToSound returns a WAV file that lacks the usual resolution: the single-sample tick vanishes and finer details go missing throughout.  I don’t know what causes the problem, but changing the width of the image to a rounder number (by expanding the canvas size) seems to fix it.
+
+I’m grateful that ImageToSound exists, but I’d like to see someone design a piece of software that doesn’t have these shortcomings.  AEO-Light seems to have promise as an alternative tool for accomplishing the same thing better and more flexibly, but I haven’t yet succeeded in getting it to work.
+
+Because the approach I’ve described doesn’t involve following or tracking the trace itself, it can accommodate distortions that technically violate the logic of the time-amplitude graph, such as “loopback,” where the trace seems to move backwards relative to the time axis.  It can’t actually correct  such distortions; that would require some kind of geometrical manipulation that has yet to be accomplished.  But it can at least educe them in a consistent way that also yields accurate results from undistorted traces.
+
+waveform-processing7 7. Now it’s just a matter of carrying out some basic audio editing processes.  Combine the two output WAV files into a stereo file, placing the top-filled version in the left channel and the bottom-filled version in the right channel.  Invert the left channel.  Then sum the two channels to mono.
+
+8. Adjust the playback speed.
+
+If you’ve converted the image into audio at a sample rate of 44,100 kHz, then each second of audio initially corresponds to a width of 44,100 pixels in the input image.  If you know the original recording speed, you can adjust the playback speed accordingly.  Let’s say that your original source image was a spiral recorded at a constant angular velocity of 50 revolutions per minute, and that—after de-spiraling—each revolution occupies 30,000 pixels.  30,000 pixels per revolution × 50 revolutions per minute = 1,500,000 pixels per minute; divided by 60, that comes out to 25,000 pixels per second.  Take the duration of the output file at 44,100 pixels per second, multiply it by 1.764 (44,100 / 25,000) to calculate the target duration, and then resample the file to that target duration.  On the other hand, if you don’t know the original recording speed, you can still try to adjust the playback speed by ear.
+
+That’s assuming the recording was made at a constant speed.  If you’re dealing with a recording that was made at an irregular speed, then you may want to try to correct the irregularity.  For recordings made with a tuning-fork reference trace, like this—
+
+weiss-fetal-heartbeat —combine the WAVs of the “main” trace and the tuning-fork trace into a stereo file.  Then select each group of five cycles in the tuning-fork trace and manually set it to a constant duration:
+
+waveform-processing5 If you know the frequency of the tuning fork in Hertz, then divide five by that number to get the target duration for each group of five cycles.  Alternatively, if you don’t know the frequency, find the longest duration occupied by five cycles, set everything to that duration, and adjust the speed by ear once the fluctuations have been factored out.  Be sure always to select the same point in the tuning-fork cycle for your starting and ending points.  You can choose to work with some number of cycles other than five, of course, but I’ve found that five-cycle groups tend to work pretty well.
+
+If a recording was made at an irregular speed without a reference trace, you can’t correct the speed fluctuations objectively, but you may still be able to restore something close to the original speed based on inferences about the source material (e.g., a scale played on a cornet) or manual cranking patterns (which tend to have some degree of regularity to them).  Not much has yet been done along these lines, but it’s a field ripe for exploration.
+
+9. Enjoy the results!  Here are a few choice examples.
+
+schalldruck A paper print of an experimental gramophone recording made by inventor Emile Berliner on November 11, 1889 , located by Stephan Puille in a scrapbook at the Library of Congress.  In the excerpt given here, Berliner counts from one to twenty in English, laughs heartily, and sings “Reiters Morgengesang”—to the best of my knowledge, this is the earliest known recording of singing in the German language.
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+scott-36 A phonautogram of “Au Clair de la Lune” as sung by inventor Édouard-Léon Scott de Martinville on April 9, 1860 , scanned and made audible by the First Sounds initiative.  This is the world’s oldest known recording of the human voice with audibly recognizable subject matter (i.e., if you know the song, you’ll recognize it from the playback).  I’ve presented three successive versions to illustrate the steps that went into processing it: (1) vocal trace and tuning-fork trace in stereo without speed correction; (2) vocal trace and tuning-fork trace in stereo with speed correction; (3) vocal trace in mono with speed correction.
+
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+I created the sound file of “Au Clair de la Lune” provided here back in 2011 using the image-to-sound processing technique outlined above.  However, the version originally we released to the public in 2008 had instead been converted into audio by “virtual stylus” software devised at Lawrence Berkeley National Laboratory as part of the IRENE project, which centers on using optical scanning technology to extract data from analog grooved media for playback.  For comparison, here’s a graphic that shows a snippet of the 2011 eduction (top), the original scanned trace (middle), and the 2008 eduction (bottom):
+
+scott-36-comparison-2008+2011 The 2011 eduction follows the trace more accurately, but that’s due mainly to intensive manual cleanup of the source image.  In the 2008 eduction, you can see points at which visual noise confused the Berkeley algorithm; detecting the pattern in such cases may require the intervention of a human being, something like a CAPTCHA .  I should mention that the image-to-sound processing techniques I’ve outlined in this blog post can also be applied successfully to the raw optical output of IRENE.  To illustrate the point, here’s a brief audio clip based on data extracted by IRENE at NEDCC from a phonograph cylinder of the “Anvil Chorus,” converted into sound using my methods rather than the IRENE team’s own PRISM software:
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+with-my-little-eye Waveform of the spoken phrase “With my little eye, I saw him die,” transferred by Edward Wheeler Scripture from a commercial gramophone disc onto paper and published in Researches in Experimental Phonetics: The Study of Speech Curves (Washington DC: Carnegie Institution of Washington, 1906).  This trace forms part of the cover art for Pictures of Sound .
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+how-do-you-do Two waveforms of the spoken phrase “How do you do?” as recorded photographically by Eli Whitney Blake, Jr.: an original print found in the Alexander Graham Bell papers at the Library of Congress.  An edited version of the bottom trace was published in the American Journal of Science for July 1878 and was mentioned as already published in the Boston Daily Advertiser of July 9, 1878.  Hence the recording itself must have been made long enough before July 9, 1878, for it to have been written up, reviewed, accepted, engraved, printed, and distributed by that date.  The big question is whether this process took more or less than seventeen days.  After all, if the recording predates June 22, 1878—the date of a St. Louis tinfoil recording that was played back optically in 2012, revealing a couple nursery rhymes—then that would make it the oldest specimen of recognizably recorded spoken English yet recovered.
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+agb-1875 And finally, here’s a phonautogram of the famous Alexander Graham Bell saying “ah” on January 28, 1875!
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+ 
+
+I threw that one in just to show that not every waveform ends up yielding compelling audio content—my First Sounds colleagues and I refer to results like these as “thwips and farts.”  They may not sound like much, but they’re still conceptually cool and can be harnessed for creative purposes, as with this little musical composition I threw together back in 2008 based on a phonautographic “thwip” from 1857:
+Audio Player
+00:00
+00:00
+Use Up/Down Arrow keys to increase or decrease volume.
+
+
+Now it’s your turn.  Go find a picture of a waveform and see what you can do!
+Share this:
+
+    Email
+    Tumblr
+    Print
+    Pinterest 5
+    Reddit
+    Twitter
+    Facebook
+
+Like this:
+Loading...
+November 27, 2014 in Techniques of Eduction , Waveforms . Tags: Audio Archeology , Paleokymography , Phonautograph , Phonography , Sonification , Techniques of Eduction , Waveforms
+Related posts
+Calculating Velocities: another step in “playing” waveform images
+My Fiftieth Griffonage-Dot-Com Blog Post
+What is Eduction?
+Post navigation
+← The House Where Uncle Jake Allen Was Murdered
+“Say Cheese!”: Using Face Averaging to Track the Rise of the Photo Smile →
+48 thoughts on “ How to “play back” a picture of a sound wave ”
+
+    Pingback: What is Eduction? | Griffonage-Dot-Com
+
+    Pingback: Need help converting a picture of a waveform back to audio. | Sociallei
+
+    Pingback: Are You Adventuresome Enough for Griffonage-Dot-Com? | CommPilings
+    Alex d'amour says:
+    November 20, 2015 at 9:15 pm
+
+    wow this is crazy! I’m going to try this.
+    Reply
+
+    Pingback: Time-Based Graphs as Moving Pictures (1786-1878) | Griffonage-Dot-Com
+
+    Pingback: Silence of Autumn Leaf_Final_CWS |
+    Mark says:
+    March 30, 2016 at 10:55 pm
+
+    Hey Patrick. I came across this post because I was looking for a way to convert sleep cycle graphs into audio. I really like how explicitly you outline your paleokymophony methodology, but I have a few questions about the process. Would you be willing to chat? Thanks.
+    Reply
+    Fabian says:
+    April 5, 2016 at 9:34 am
+
+    Thank you for sharing this! Great article.
+    Reply
+
+    Pingback: Listen to an Electric Fish from the 1870s! | Griffonage-Dot-Com
+
+    Pingback: Calculating Velocities: another step in “playing” waveform images | Griffonage-Dot-Com
+
+    Pingback: My Fiftieth Griffonage-Dot-Com Blog Post | Griffonage-Dot-Com
+    Debarjo Banerjee says:
+    August 30, 2016 at 2:28 pm
+
+    This is by far the most interesting article I’ve come across for my archaeoacoustics experiments. I’m grateful and awestruck at the detailed work here. Just like old days. Thank you.
+    Reply
+
+    Pingback: New Software for Playing Pictures of Sound Waves | Griffonage-Dot-Com
+    woodstock says:
+    April 11, 2017 at 10:17 am
+
+    I found this absolutely fascinating – no less so returning to it two and a half years on. I hope that somewhere there is (or may be in future) an equivalent of ImageToSound for Mac users.
+    Reply
+        Patrick Feaster says:
+        April 11, 2017 at 11:22 am
+
+        Thanks for your kind words! Picture Kymophone 1.0, an equivalent piece of software I wrote myself and described here , runs in GNU Octave, which can be installed on a Mac, according to instructions here . If you try this out, please let me know how it works!
+        Reply
+            Doig says:
+            July 28, 2023 at 12:17 am
+
+            Hello, I remember an article or news story where someone found a picture of a record album in an old book and was able to scan it an play the sound, but I can’t seem to find it anywhere now. My search led me here, any info?
+            Patrick Feaster says:
+            July 28, 2023 at 12:58 am
+
+            Is this what you’re remembering?
+
+            https://www.usatoday.com/story/news/nation/2013/07/22/professor-plays-photo-vintage-vinyl/2574615/
+
+            If so, that was done using the same technique described in this blog post.
+    Anthony Lombard says:
+    May 20, 2017 at 7:58 am
+
+    Hey patrick, do you know of any way to port this to cordova? Myself and my company are very interested in this concept – do you know of any libraries that do the same? i would love to replicate the Sound wave tattoo app as a test – there are large advertising implications to this, please get hold of me man.
+    Reply
+        Nate says:
+        June 21, 2017 at 9:59 pm
+
+        Anthony, we’re hiring if you’re interested in developing this kind of tech we’d love to talk more.
+        Reply
+
+    Pingback: In Search of the World’s Oldest Digital Graphics | Griffonage-Dot-Com
+
+    Pingback: Time-Based Averaging of Indiana University Yearbook Portraits | Griffonage-Dot-Com
+    Kimberly Sue says:
+    December 3, 2018 at 5:56 am
+
+    On 11/11/2018(11) there was a low hum that was picked up by seismographs. Can you look at it and see if you would be able to turn it into audio?
+    Reply
+    mark limbrick says:
+    June 2, 2019 at 3:57 pm
+
+    This is really interesting. The BFI did some experiments years ago using the ‘distance to edge’ method to try and improve the S/N for archiving movie films. Can you please put a link in to my website, because I’ve been doing this for over 30 years. I use a light scan method as well on the original images, see my website examples which has Youtube links. My software takes the average of a column of pixels, the same as an optical reading head in a projector would do. I use a bitmap image and convert to an audio WAV while I’m editing the original creative images, more as a preview process than a final result although it is fun to compose with the sounds using Audacity. Nice work. Thanks marklimbrick.co.uk
+    Reply
+    Stephen Poppitt says:
+    September 10, 2019 at 3:42 pm
+
+    In Windows 7 it is fairly easy to run a Virtual Machine inside which Windows 98 can run, using free software called VMware Player from https://www.vmware.com (in fact I do, if I can manage it anyone can!), so you do not need a dedicated Windows 98 computer in order to try out this article’s suggestions.
+
+    The big drawback to this method seems to be simply that it requires a scan at 3200 dpi, which is far beyond the capacity of your average 1200 dpi computer scanner.
+    Reply
+    John Bell says:
+    December 29, 2019 at 9:22 pm
+
+    can i do this on mac is someone willing to doit for me? i have a lost song that has waveform I need help to get it
+    Reply
+    AMBER R KOSHNEY says:
+    January 20, 2020 at 2:16 am
+
+    Can anyone PLEASE HELP ME. I have a very serious (to me) thing I need done. I’ll even pay! I lost my daughter 5 yrs ago on 1/22/15 at birth. She was diagnosed at 20 weeks gestation with polycystic kidney dysplasia and would not survive outside my womb. I carried full term, delivered, spent my time with her and had to let go. Sure I have photos but I have one precious thing I lost. Her heartbeat. It remained in a stuffed animal for 4 years until (somehow) the switch moved from play to record and was lost forever. I don’t have many tangible things from my daughter’s short time on Earth. I desperately need someone to turn a photo of her heartbeat sound wave back into audio. Please. Sincerely. Amber
+    Reply
+        hlbyrne says:
+        February 13, 2020 at 10:41 am
+
+        Very sorry to hear of your loss.
+        I came across this post: https://www.eevblog.com/forum/chat/how-to-convert-image-of-sound-wave-to-real-sound/
+        I’ve downloaded the photo sounder app recommended and just opened the demo heartbeat .png trace given in that thread and pressed play, and it does render a hear-beat sound, albeit a bit noisy and distorted. Might be worth a try.
+        Reply
+    Dan Reynolds says:
+    May 25, 2020 at 6:37 pm
+
+    Such a nice write-up of techniques to bring the visual images to sound. YouTube brought me here from your presentation in 2012…
+    Reply
+
+    Pingback: How to store data on the moon - Any Time News
+
+    Pingback: How to store data on the moon - News Oasis
+
+    Pingback: How to store data on the moon – News Assets
+
+    Pingback: How to store data on the moon - Your News
+
+    Pingback: How to store data on the moon – The Insight Post
+
+    Pingback: An art-filled time capsule is headed for the moon - DigitalHubToday
+
+    Pingback: Comment stocker des données sur la lune - Les Actualites
+
+    Pingback: An art-filled time capsule is headed for the moon - Khaber Patra
+
+    Pingback: How to store data on the moon | Popular Science
+
+    Pingback: Как хранить данные о Луне - Nachedeu
+
+    Pingback: How to store data on the moon - Clip Community
+
+    Pingback: Cómo almacenar datos en la luna - Espanol News
+
+    Pingback: How to store data on the moon – Xisuma.net
+
+    Pingback: How to store data on the moon - Hill News
+
+    Pingback: An art-filled time capsule is headed for the moon – News Tabe
+
+    Pingback: An art-filled time capsule is headed for the moon – Over View – Your Daily News Source
+
+    Pingback: How to store data on the moon - News Plex
+
+    Pingback: An art-filled time capsule is headed for the moon
+
+    Pingback: An art-filled time capsule is headed for the moon – modern-science
+
+    Pingback: How to store data on the moon - Juans News
+
+Leave a Reply Cancel reply
+Log in or provide your name and email to leave a reply.
+
+Email me new posts
+Instantly Daily Weekly
+
+Email me new comments
+Reply
+
+This site uses Akismet to reduce spam. Learn how your comment data is processed .
+Latest Posts
+
+    A Deeper Dive into Numerical Prompting in Stable Diffusion October 14, 2023
+    A Phonographic Record of a Speech by Charles Dickens (1858) September 4, 2023
+    Learn Ten of Stable Diffusion’s Internal Image Descriptors (135-144) August 22, 2023
+    Adventures in Stable Diffusion #4: One Step at a Time July 12, 2023
+    “Wan Dawo Jo”: The First Ethnomusicological Spectrogram July 10, 2023
+
+Follow Griffonage-Dot-Com via Email
+
+Want some griffonage in your inbox? Enter your email address to follow this blog and receive notifications of new posts by email.
+
+Email Address:
+
+Follow
+Search this blog
+Search
+Categories
+Categories
+Archives
+Archives
+Blog at WordPress.com.
+
+    Comment
+    Follow
+

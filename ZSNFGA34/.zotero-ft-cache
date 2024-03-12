@@ -1,0 +1,3321 @@
+Eclectic Tech Carnival 2018 @ XM24 Bologna, Italy
+
+The Eclectic Tech Carnival (/ETC) is a gathering of people who critically use/study/share/ improve everyday information technologies in the context of the free speech and open hardware movements. We are a collective body of feminists with a particular history, who chew on the roots of control and domination. Events are organised locally and autonomously where there is a desire to host an /ETC. Everyone participates in skill sharing to expand our knowledges.
+
+summary
+
+8
+
+Hardware crash course Donna
+
+11
+
+Tunnel up, tunnel down Mara Elenis Daughter
+
+15
+
+You are okay. Ulrike
+
+16
+
+Open source sustainability Helen
+
+19
+
+A brief history of Linux Aileen
+
+26
+
+Workshop on Immigration Milena
+
+27
+
+Ricette dal caos * assorbenti DIY Lara e Kate
+
+28
+
+Workshop on Consent Mujeres Libres Bologna
+
+29
+
+Imaginary friends Obaz
+
+34
+
+Introducing the Soleus VPS collective Donna
+
+36
+
+Build and reach the Internet with an antenna from the roof
+
+Ignifugo
+
+40
+
+From data to dating Frocetaria
+
+46
+
+Create a website that cannot be hacked but looks awesome!
+
+Obaz
+
+50
+
+Dock, dock, docker Ivana
+
+52
+
+Inter/de-pend-ence: the game Sarrita
+
+54 Presentazione rivista Aspirina
+
+61
+
+F12 how to use a web inspector Ignifugo
+
+64
+
+React workshop Andrea
+
+65
+
+Elements for a feminist video game Godot Engine
+
+Natacha
+
+67
+
+A Brief History of feminism and technology
+
+Zeyev
+
+72
+
+Sex work online Tiz
+
+73
+
+Animata: an uncommon free software approach to mapped anti-visuals
+
+75
+
+Git explained with toys Ignifugo + Obaz
+
+80 Index of terms
+
+85 Index of names
+
+The content of the workshops could be transcripted thanks to audio records, pads and personal notes.
+The 2018 edition of the Eclectic Tech Carnival in Bologna gathered workshops and talks about 8 main themes: arts, DIY, feminism, games, hardware, open source, programming and security. Through the book, when something is about one of these themes, it is marked in the margins of the page with the following graphic signs (one per theme) and pages references for the previous and the next occurrence of the theme. The idea of this system was to show the richness of the event and how themes crossed eachother all along the workshops.
+
+Arts DIY Feminism Games Hardware Open source Programming Security
+
+Hardware crash course
+Donna
+
+I was in a hacklab at the beginning of the 2000, with women who found boxes full of computer components. 10} µA gender changer is a panel of interface. Sometimes devices don’t connect and you have to use an adapter. And some of the panels have pins, it is called male, some have holes, it is called feminine. For the people
+
+developing this technology it was obvious. That’s why we called our group the gender changers, making workshops with hardware, unconstructing it. It’s a nice way to understand how machines work. µThe mouse is called a clit. The gender changer is separated in a master and slave cable inside. Slave branch
+
+9
+
+Hardware
+
+doesn't depend on the master.
+
+{9 32}
+
+µSo it makes no sense to call it
+
+this way. Master and slave are
+
+written on drives. It's the
+
+reflection of a culture in IT.
+
+Picture of the workshop
+
+10 Hardware
+
+Hardware crash course
+
+Tunnel up, tunnel down
+Mara Elenis Daughter
+
+This is about different types of VPN, why to use it, vulnera12} bilities of VPN... ~We all know about VPN, it is Virtual Private Network, allows the user to connect securely and privately on the Internet. VPN can happen between users (remote access VPN). The VPN encrypts the first request. There can be VPN between
+
+two companies if they want to have secure connections between ressources. And there is VPN when you’re home, this is a remote access VPN. Connection between your computer and the server is encrypted and the VPN forwards your request to the browser. You can be a user, but you can also use it in your company. You set
+
+11 Security/Encryption
+
+it up and then get a connection.
+
+{11 13}
+
+~SSH is a secure way to connect
+
+to a server. For two private
+
+networks of companies, it
+
+enables the two to connect to
+
+eachother.
+
+Q|The connection, is it physical? A||No, you init getaway, configures one server with a secret key, it’s wireless.
+
+Some companies use IPSec, which is a protocol for VPNs. IPSec is easier to setup when you have a static IP, like companies do. As users, we use OpenVPN. IPs are behind a firewall, some configurations of IPSec allow you to go through it. As a user you don’t have a fix IP, and OpenVPN is easier with moving IPs. IPSec uses pre-shared key for configuration, it must be on the two servers, OpenVPN uses certificates. IPSec cannot scale up, there can’t be several
+
+servers using the same preshared key. You use certificate when you want to scale up. IPSec is easier because you don’t have to generate a certificate. The certificate enables to connect through different IPs, it is the identification of the connection. You have a public key and a private one with OpenVPN, you share the public one. The receiver can only decrypt your data with your public key.
+Q|Is it like an Intranet for companies? A||Yes, exactly
+~VPN offers integrity and security. It ensures the data was not altered between the two nodes: sent data is the same length as the one that 13} arrived. #The hash algorithm makes it, SH3 is the last version, very recent. For the history, it was developed by the NSA, so it asks questions about
+
+12 Security/Encryption Programming
+
+Tunnel up, tunnel down
+
+{12 14}
+
+the monopoly. ~This algorithm
+
+makes sure you are who you
+
+say you are, it’s a signature.
+
+Then you have authentication
+
+to access the server. Pre-shared
+
+keys enables to have the same
+
+keys at the beginning and the
+
+end and check it is the same.
+
+Shared keys are about authen-
+
+tication. Then there is the
+
+encryption part. Data becomes
+
+unreadable unless you decrypt
+
+it. The server will have your
+
+public key or pre-shared key
+
+and use it to decrypt the data.
+
+Assymetric encryption is used
+
+most of the time. When you
+
+receive data, it is decrypted
+
+with your private key. Symetric
+
+encryption is made with a
+
+single key.
+
+{12 17}
+
+#Those algorithms are behind
+
+most encryption we use: SSH,
+
+FTP, PGP (email ecryption)
+
+and in general for password
+
+keys. Hellman key is quite
+
+known too. The result of the
+
+connection is the same, but we
+
+never know the private key. IPSec VPN are mostly used, latest use Internet key protocol: Layer 2 is used a lot on mobile VPN, but it’s not so secured. By default in Android, IPSec and Layer 2 are combined. Layer 2 is mostly about creating a tunnel, and IPSec is used for encryption. So Internet key exchange is a kind of wrap-up. You can install IPSec with different tools. It’s a software you use to process the install, it’s more complicated to configure. It’s good to have a tunnel between companies or organizations servers. It allows any access to the servers normally. VPN prevents man in the middle attack, because we know who connects and we are sure of the identity. OpenVPN use Diffie-Hellman by default, but you can change the length of the key for more security. But anyway there are still vulnerabilities. Edward Snowden revealed the NSA can
+
+Mara Elenis Daughter
+
+13 Security/Encryption Programming
+
+intercept many VPN exchanges and decrypt it, like 2 /3.
+
+Q|Why don’t simple users use pre-shared key as you showed? A||Because as a user you are behind a router, your IP changes sometimes, so with a pre-shared key you would have to reconfigure your server with your new IP address. It’s about integrity indeed. It assumes you sign what you send, this is your signature. Companies use preshared keys for configuring the connection in the network, then to make more connections they use certificates.
+
+To come a bit to the context of
+
+/ETC, I could cite Systerserver,
+
+which is a feminist server, and
+
+also Anarchia in Calafou, in
+
+{13 29}
+
+Spain. ~And to say why you
+
+should get a VPN: if you down-
+
+load torrent, it’s more secure
+
+through VPN, and if you’re in a
+
+country that controls the
+
+Internet, your computer goes to the Internet through another country and you can access sites you may not usually see.
+How key exhange between two users works
+
+14 Security/Encryption
+
+Tunnel up, tunnel down
+
+You are okay.
+Ulrike
+
+We often suppress our feelings and many of us have not learned that its okay to have needs, let alone to express them. In this talk-workshop, I want to share some tools to understand feelings, starting with anger, and from there to assess our needs.
+
+15
+
+Open source sustainability
+Helen
+
+This isn’t really a workshop, it's 17} a discussion: >I would like to
+talk about how we sustain open source projects over the years specifically arts, feminist & queer open source software 17} projects. `I will use the example of UpStage, an open source platform for cyberformance (online performance) that I've been involved in nurturing &
+
+sustaining since 2003. I'll talk about how we have managed to sustain it despite receiving very little funding, & what that has cost us in non-monetary terms. I’m interested to hear the experiences of others who are involved in similar projects, & in looking at various alternative models for achieving sustainability for unfunded or very
+
+16 Free & Open source Creativity/Arts
+
+low-funded projects; how we
+
+might be able to support each
+
+other’s endeavours and what
+
+we can learn from each others’
+
+experiences.
+
+How can we keep open source
+
+{16 41}
+
+going ? `UpStage is a project for
+
+web performances in a brow-
+
+ser, developed especially with a
+
+programmer. We gave work-
+
+shops in schools and /ETC.
+
+Students in New Zealand work
+
+on the project. Second version
+
+in 2007, 12 hours of continuous
+
+live performance.
+
+{13 20}
+
+#The original software is built
+
+with Python and uses Flash to
+
+communicate with the server.
+
+Now trying to rebuild it as not
+
+readable of mobile. The ori-
+
+ginal code has been maintained
+
+for 15 years.
+
+Live manipulation of digital
+
+elements. Live drawing, play
+
+pre-recorded sounds, images
+
+and animations, pre-upload
+
+media and manipulate it.
+
+Performance combines diffe-
+
+rent elements.
+
+{16 18}
+
+>Open source sustainability is
+
+not about money, it's also
+
+community, what we've done
+
+with the money. The environ-
+
+ment keeps evolving. New
+
+platform is on Github. A new
+
+code has been restarted. There
+
+is a big lack of streaming plat-
+
+forms. Maybe we can exchange
+
+development processes, the
+
+code, documentation of re-
+
+deployment. It can't rest on one
+
+person. It's not sustainable if
+
+resting only on one person.
+
+UpStage has a backlog, compa-
+
+rativeness not to lose the
+
+features. It's a lot about the
+
+recognition for the contribu-
+
+tors. It implies sometimes
+
+working for a long time without
+
+money. Missing link between
+
+projects and volunteers is
+
+money, so some fundings are
+
+given. Fundings given must
+
+have some kind of sustainabi-
+
+lity behind. Fundings can be
+
+cut if the administrations
+
+decide it. Foundations like
+
+Fourth Foundation give
+
+Helen
+
+17
+
+Creativity/Arts Programming Free & Open source
+
+fundings. No one wants to
+
+make the documentation while
+
+it's super important, it's not the
+
+{17 19}
+
+funny part of the job. >Tails is a
+
+free software project. Each new
+
+feature is written in the docu-
+
+mentation. A part of the code
+
+became sustainable as it was
+
+given to Gnome and is now
+
+used by Ubuntu users. To find
+
+fundings you have to go
+
+through many steps. How to
+
+create a balance between
+
+responsibility and envolvment
+
+in the projects? Someone who's
+
+been there long time to keep it
+
+going. It's important to have a
+
+leader. If there is not you can
+
+cultivate it and get persons
+
+emerging for it.
+
+Screenshots of projects made with UpStage
+
+18 Free & Open source
+
+A brief history of Linux
+Aileen
+
+{18 20}
+
+>This is a very subjective Linux
+
+story. It’s a huge history, but
+
+I’ll give it to you from from my
+
+prospective. I have been a
+
+translator for 25 years, I started
+
+with computer books. So my
+
+own history with Linux started
+
+in 1995, with a book on Linux
+
+published in 1994. I knew what
+
+an operating system was and
+
+working with emails, I was
+
+excited about it. At the very end of this book there is a chapter on network application, a few pages about World Wide Web saying: "this is new, it could be interesting". A book on Linux in 2018 is 2000 pages. That’s a lot of history, we will look at segments. In this history is Richard Stallman, Linus Torvald... they made great
+
+19 Free & Open source
+
+contribution to the code.
+
+Erika Reman is remembered as
+
+{19 21}
+
+making copies. >Those men are
+
+heroes of open source, admi-
+
+red, everybody wants to be
+
+22} Linus Torvald. ^In comparison,
+
+women in the history of tech-
+
+nology, they don’t have the
+
+same place. About Ada
+
+Lovelace it is said: "maybe she
+
+didn’t contribute that much, we
+
+don’t know. It’s not quite clear
+
+what was hers or what she
+
+did". Grace Hopper: "you know
+
+the history of the bug is not
+
+what we think". Margaret
+
+Hamilton: "no, she did not in-
+
+vent the term ’software engi-
+
+neering’, it was popular before
+
+that". Hedy Lamarr: "you know
+
+she didn’t really invent any-
+
+thing, she just had ideas, she’s
+
+{17 32}
+
+not a real inventor". #Lets’ not
+
+talk about them, let’s not talk
+
+about Grace Hopper writing
+
+the first compiler, let’s not talk
+
+about Margaret Hamilton, who
+
+wrote the code that brought
+
+humanity on the moon. Let’s
+
+not talk about Hedy Lamarr, who brought technologies we used today like Bluetooth. Lets’ get stuck on talking about men. This is 100 years old. Women’s names are associated with something trivial, it is not that important. This is how women are written in history. Human people are differently talked about, depending on if they are men or women. For Linux, in the beginning there was Unix. >AT&T was a public infrastructure, so Unix was a public resource. That changed in the 70s’. AT&T started changing licences. So the University of Berkeley developed their own version of Unix, called BSD, that was a free software. BSD Linux was the distribution. While this process was running, Unix was growing, more and more institutionalized, comercialized, becoming really expensive. Richard Stallman, who was working at the Free Software
+
+Free & Open source
+20 Feminism Programming
+
+A brief history of Linux
+
+Foundation, insisted on the
+
+information to be free, speci-
+
+fically free as in speech, not as
+
+a beer. So it has to be a public
+
+resource and utility. He was
+
+working on another system as
+
+Unix, but something was
+
+{20 22}
+
+missing. >1971: release of Unix.
+
+1979: BSD. 1985: Free Software
+
+Foundation is created to
+
+support the free software
+
+movement, with possibility to
+
+use, study and modify. 1991, a
+
+student in Finland, Linus
+
+Torvald, was working on his
+
+own project through mailing
+
+lists. When he started releasing
+
+it other developers were inte-
+
+rested. >In 1994, first version of
+
+Linux kernel was released.
+
+This kernel was the exact
+
+missing piece for Richard
+
+Stallman’s project. Mailings
+
+lists and groups that started in
+
+the 1990s’ made it possible by
+
+exchange, to work on develo-
+
+ping it together. There was
+
+never a strict authority on the
+
+development of Linux. Often
+
+professional developers on their free time and by employees of big institutions. All the books I translated were written by men, especially by men who had really good jobs in universities and institutions. So about the idea that there is no hierarchy, that if you can code you can contribute, the idea of meritocracy (if it’s good enough, it doesn't matter where you come from). But indeed, it is made by men with good jobs on their free time. It means you need to have free time. I always got frustrated about that, because I wanted to get involved, but I had no free time. >Mailing lists are a very important aspect of Linux development. Kernel development, assembly... every aspect of Linux, single application. This is where all is discussed. The kernel development is the core. If you can acces this list, you come to the Pantheon, you’re a
+
+Aileen
+
+21 Free & Open source
+
+hero. 1996: second version of
+
+the kernel. Bigger companies
+
+are getting interested. Compe-
+
+tition with Microsoft in the end
+
+of the 1990s’. 2006: Red Hat
+
+Linux. Google’s Android is also
+
+based on Linux. Ubuntu has its
+
+own history.
+
+{21 23}
+
+>A Linux distribution is the
+
+kernel and a collection of soft-
+
+ware that make an operating
+
+system together. Your choice
+
+on your distribution shows
+
+what you are trying to accom-
+
+plish. Some are commercial:
+
+you don’t buy a license as it has
+
+to be free, but companies pay
+
+enormous amounts of money
+
+for the assitance to keep
+
+running. Linux is maintained
+
+by communities of volunteers.
+
+But who gets to be a volunteer?
+
+This is the most stable opera-
+
+ting system for servers, there
+
+are hundreds of Linux distri-
+
+butions. The kernel is the part
+
+that keeps everything together,
+
+file system that runs the soft-
+
+wares.
+
+Volunteering is appealing,
+
+distribution of everything, we
+
+want to be able to work
+
+{20 23}
+
+together. ^This is why Linux
+
+appealed to me as a feminist
+
+strategy, how to bring us all
+
+together. Idealism is still there,
+
+coming from FSF, and in the
+
+same time, many commercial
+
+interests are implied. But
+
+Linux has grown way too big
+
+and crucial to rely only on
+
+volunteers. The majority of
+
+electronic devices use Linux, it
+
+is in infrastructures, e-com-
+
+merce... Idealism is not dead,
+
+but big companies need Linux
+
+to keep going. The Linux Foun-
+
+dation is supposed to defend
+
+open source and collaborative
+
+development, it reports to be a
+
+neutral governing body, to
+
+make sure development is
+
+funded. In 2016, it paid 1,6
+
+million dollars to Linus Torvald
+
+to free him from responsibi-
+
+lities. Non-profit organizations,
+
+with support of institutions and
+
+big companies. Idealism yes,
+
+22 Free & Open source Feminism
+
+A brief history of Linux
+
+but also reality. There is a myth
+
+about the creation of Linux, a
+
+{22 24}
+
+myth of collaboration. ^Can it
+
+still be a feminist strategy, or
+
+has it gone too far?
+
+Heroic male are falling apart.
+
+After thousands of emails,
+
+Linus Torvald was accused of
+
+being abusive, insulting. There
+
+is a myth that he is a good guy
+
+{22 24}
+
+as he made Linux for free. >But
+
+is it a way to treat with people,
+
+especially by cooperation,
+
+insulting people if their code is
+
+not good enough? In mailing
+
+lists, is it a welcoming environ-
+
+ment? Some developers on the
+
+mailing list working on USB
+
+devices made Linus Torvald
+
+step down of this list for his
+
+behaviour. He refused, so they
+
+went away. ^Another kernel
+
+developer for years wrote on
+
+how to encourage women in
+
+Linux. >Mailing lists for women
+
+in Linux are not that much.
+
+Trying to find ways to
+
+communicate. Linus Torvald
+
+stepped down and decided to make code of conduct in Linux. linuxcodeconduct on Twitter if you want to follow the story. Some developers reacted bad to the fact that feminists brought Torvald to adopt it. He said he is now taking some time off. First Torvald’s answer on a code of conduct was making instead a code of conflict: how do we argue with eachother. Femke Snelting made a lot of research on code of conducts in Linux communities and the function it has in the community.
+Q|^What do you think distributions made for feminists, or for women would look like? A||^It would be a distro paying attention to what applications we use, tools for activism, respecting free software, not collecting data in everyday life. Maybe going back to some older tools. Instead of Facebook or to chat, IRC is so simple.
+
+Aileen
+
+23 Feminism Free & Open source
+
+It also has to go with education: what are we using, and why are we using it. It is important to see and think about what we are using.
+
+{23 25}
+
+Q|^There was a queer OS that
+
+was developed based on an old
+
+system, the interface was
+
+thought differently. I don’t
+
+know how far it went.
+
+A||It means we would
+
+have to think on another
+
+model. Not based on the 90s’
+
+meritocracy but from another
+
+point of view. We have
+
+experience in dealing with
+
+collaboration as feminists.
+
+{23 37}
+
+Q|>About volunteering, to me
+
+this is not really this, because
+
+indeed in free software, many
+
+contributors are paid by other
+
+companies.
+
+A||It is part of that
+
+mythology of meritocracy, and
+
+we don’t want to compete on
+
+that same level. Storytelling is a
+
+very powerful tool, we need to
+
+use it better. Who would you accept to be paid by?
+Q|^But building a feminist OS, it means also technical competences. We have to process, find how to actualize a distro, how do we do with technical skills. Q||^I think a technical project can be feminist from the beginning, there are many technical women. We feel alone at home if we don’t have a space to gather. As soon as you create the space, people come. The term technology is male, it appeals men and women are more afraid to get into it. If the space is not male coined, other people will come. We have a hackerspace in Berlin for non cis-men, queer, women. In some places gender like hackatons it repeats stereotypes, but is also a way to push men out of it. Q|||^Yes, but it’s not because you're a woman and
+
+24 Feminism Free & Open source
+
+A brief history of Linux
+
+Picture of the workshop
+
+you’re in technology that you
+
+are a feminist, you need a lot of
+
+women.
+
+A||||Google has a
+
+special program for girls, to
+
+empower.
+
+{24 26}
+
+Q|||||^As women,
+
+we wouldn’t have to be better
+
+than others to be recognized.
+
+Q|^Sometimes when I talk about feminist projects, I feel the people is lowing the conversation. I think it is important to support the topic. ^To summarize, a feminist distro should include technicals skills with our values. We know what we don’t want, so let’s think about how to do what we want.
+
+Aileen
+
+25 Feminism
+
+Workshop on Immigration
+Milena
+
+{25 40}
+
+^Volevo proporre un workshop
+
+sull’immigrazione al femminile,
+
+la quotianeitá (il quotidiano
+
+fastidio), razzismo e sessismo
+
+nel linguaggio e nel conversare.
+
+Approfondirei anche un punto
+
+sulla comprensione e diversità
+
+nellespressione. Come terzo
+
+punto parlerei della legge sull'
+
+immigrazione, europea e
+
+sopratutto quella italiana. Non
+
+farei un workshop strutturato, mi piacerebbe che esso sia costruito con le persone che verrebbero e le persone che magari sono direttamente coinvolte se al festival qualcuno cè ne sara.
+
+26 Feminism
+
+Ricette dal caos * assorbenti DIY
+Lara e Kate
+36} ¤Presentazione del progetto e dellarticolo sul ciclo mestuale, distribuzione del volantino in inglese e workshop sulla realizzazione di assorbenti lavabili, ecologici, autoprodotti!
+27 DIY
+
+Workshop on Consent
+Mujeres Libres Bologna
+
+55} £Durante il laboratorio verrà chiesto alle partecipanti di mettersi in gioco in prima persona, attraverso i propri vissuti e le proprie idee e sensazioni riguardo questo tema. Il tutto sarà basato su una condivisione in un luogo protetto e non giudicante, in cui il nostro obiettivo è quello di far emergere più domande e
+
+spunti di riflessione che risposte. Il laboratorio è misto e bisogna iscriversi mandando una mail a viazambonifemminista AT inventati DOT org (sará possibile farlo anche durante levento).
+
+28 Games
+
+Imaginary friends
+Obaz
+
+It is an interactive workshop in
+
+which all participants will
+
+reflect on why and how to
+
+manage their identities online
+
+so as to protect the most high-
+
+risk activities, while still having
+
+fun with kittens and social
+
+{14 30}
+
+media. ~If you’re doing sensitive
+
+stuff with your own domain, it
+
+would be better to control your
+
+identity. In many countries, the
+
+State knows your identity online, it is related to your official card. You should use separations for your actions. You do very delicate things with people you trust. From now on my name is not known. Identity is a tool online, it’s like a mask you wear and you can change it.
+
+29 Security/Encryption
+
+Q|Many people think security, identity are not that important, this is one of the problems for a forum I hold. Also, I have to separate online and administrative identities. Sometimes I am both, how do I separate? A||Everyone has a complicated life, one way would be to be an artist and use a nickname, but you must ask people not to publish your name online.
+
+Q|I’m not on Facebook and
+
+people uploaded photos of me
+
+even if I asked them not to.
+
+{29 31}
+
+A||~There should be sepa-
+
+ration at least in the accounts.
+
+You shouldn’t connect delicate
+
+accounts with people you don’t
+
+trust. We miss awareness about
+
+confidentiality.
+
+Q|There are also collective identity, people always try to talk to you personnally through it.
+
+A||Try to find a way to araise imagination. For political action you can create a different email address.
+~Malwares are threatening so people invest in security. Be careful with where you define your emails, is it online or on your computer? If you’re an artist, your nickname must be related to your art so that you are identified in it. It’s more a question of public image.
+Q|I just realized identity I keep the most is the one I trust. When I started teaching, I needed to change my identity, also for my reputation. I separated the school part, the working part.
+Q|Why did you start on identity online from harassment? I don’t think it’s only about that. A||Different identities also not to be exploited?
+
+30 Security/Encryption
+
+Imaginary friends
+
+Q|||Yes, it’s a good case. A||||I would like identity partitioning to work, I’m not sure algorithms are smart enough to connect all that comes from my computer.
+
+Now let’s get into the tools.
+
+{30 32}
+
+~One very important thing is for
+
+sensitive activities, don’t have it
+
+on a telephone because the
+
+tools I will show don’t run on
+
+this device. Or use a SIM card
+
+not connected to your identity.
+
+For PCs, there are two tools to
+
+separate our identities on our
+
+machines. First is Qubes OS.
+
+It is an operating system, it
+
+actually manages several diffe-
+
+rent machines in the machine.
+
+It manages as many virtual
+
+machines as I want. I created
+
+one to have a browser, the
+
+window self-destroys when I
+
+close it. And I have the other
+
+machine for my social net-
+
+works and workshops activi-
+
+ties. In Qubes you create a
+
+setup.
+
+There are some machines I don’t want to connect to the Internet (for instance where I store my passwords): this machine is not connected to the Internet at all. For the Internet, one is connected to Tor, so I decide what machines are connected to my activities and different networks. With the Tor connection, my connections are anonymized. When I shop on the Internet, another machine is the only one to have my bank details. So even if you get malware by misattention, you can delete the affected machine and keep your domain safe. My machines contain Debian or Fedora or Unix, and other machines don’t have their own OS, so they are faster. So you could also have a Windows machine. If you want, you can do stuff between machines anyway. They don’t communicate but you can move files, copy text to the underlying system, download
+
+Obaz
+
+31 Security/Encryption
+
+attachments from Thunderbird.
+
+{20 46}
+
+Q|#I am used to copy pasting
+
+from the command line, is it
+
+possible here?
+
+A||No it’s a graphical
+
+system. As machines don’t
+
+communicate with eachother it
+
+is not possible.
+
+Q|||Maybe you can do it
+
+from the root.
+
+{10 34}
+
+Q|µHow much RAM do you
+
+need for it?
+
+A||I was about to talk
+
+about that. Qubes runs even on
+
+old computers, but it needs lots
+
+of RAM, 8Go, better with 16Go,
+
+so it can’t fit with any machine.
+
+Requires some hardware. With
+
+a 64-bit system it will be better
+
+to use Tails. You love it or you
+
+hate it, that’s the main reac-
+
+tions with Qubes.
+
+Q|With your different machines, do you have several IP addresses?
+
+A||No because all your machines are linked to your network card, you cannot fake this.
+
+Tails is easier when you have a
+
+USB stick ready, then you have
+
+an almost normal Linux system
+
+with it. You start your compu-
+
+ter from the stick, you can have
+
+{31 33}
+
+one stick per identity. ~If you are
+
+doing very sensitive stuff, Tails
+
+never saves data on your hard
+
+disk, you use only the RAM of
+
+your PC. When you shut down
+
+the system the RAM is wiped.
+
+When you start the first time
+
+you have no encrypted system,
+
+so every time you start you use
+
+your operating system. By
+
+default Tails doesn’t give you
+
+root access and it gives you a
+
+new MAC address. You can
+
+directly access Tor or make a
+
+configuration through Bridge,
+
+for machines you wouldn’t like
+
+to connect to network at all. It
+
+has a set of tools for encryption,
+
+Thunderbird with Enigmail
+
+32
+
+Programming Hardware Security/Encryption
+
+Imaginary friends
+
+and GPG to use encrypted
+
+email or mailing lists. The
+
+environment is Gnome 3.
+
+{32 46}
+
+~It’s fast, there is a new release
+
+with security every two
+
+months. Inside you have gra-
+
+phic softwares, office soft-
+
+wares... If you take off the key
+
+because you are in a hurry, it
+
+won’t destroy your computer it
+
+just switches off, so it’s very
+
+convenient, in case the police is
+
+coming for instance. Every-
+
+time you run Tails, you have a
+
+clean operating system, so you
+
+can take malware, your system
+
+is still safe. You can also en-
+
+crypt, use anonymity and con-
+
+fidentiality in your exchanges,
+
+and still have your computer
+
+with the life you show to
+
+people.
+
+For instance for a journalist,
+
+who must exchange secretly it’s
+
+really useful. You can travel
+
+with your persistent system.
+
+You can decide what is in your
+
+persistence, how permissive it
+
+is. You decide of it. To make a
+
+persitence, you clone your system. The copies are all the same, you have to check that the keys are signed. A group in Tails is working on a possibility to check the correspondence of the operating system, and give the possibility to compile more often. Qubes is not for hiding, it’s a security system. Tails was invented for activism, Qubes didn’t.
+Screenshot of Qubes OS
+Screenshot of Tails OS
+
+Obaz
+
+33 Security/Encryption
+
+Introducing the Soleus VPS collective
+Donna
+
+{32 35}
+
+µI am a member of an asso-
+
+ciation that shares skills and
+
+finances to run our own VPS
+
+infrastructure. We all pay a
+
+membership fee and pay for
+
+the VPS services we want to
+
+use. A few of the members run
+
+the infrastructure. An example
+
+of non-commercial, self-
+
+managed, decentralised net-
+
+work technology. This talk will
+
+be very brief but nice to have. A server is just a computer as well. A server is normally a third-party value. VPS is a server that is imitating a machine. So there has to be relationship between virtual and real. Now we're back to connecting to servers run by big companies. How to make an economic server, in terms of
+
+34 Hardware
+
+low energy consumation?
+
+{34 38}
+
+µHaving a real machine requires
+
+to manage hardware. In the
+
+commercial models you don't
+
+know where are the machines,
+
+who manages it. Soleus is an
+
+association in the Netherlands,
+
+you pay a fee and can have a
+
+VPS. Low prices for fees and
+
+servers to keep saved mem-
+
+bers. Systerserver has low
+
+specs, runs the websites for
+
+Systerserver and /ETC. You
+
+can get your own server, but
+
+still need to run it. A good size
+
+for a sustainable system is like
+
+6. You don't spend too much
+
+time communicating. It's
+
+important that we make the
+
+steps of having our own data
+
+with us, not giving it to Google
+
+or else. If you host data for
+
+other people it represents more
+
+responsibility. See Tim
+
+Berners-Lee Solid software.
+
+If you want to use Facebook or
+
+Google, it should ask for a
+
+permission to access our data.
+
+µIs it our responsibility to make it more easy for other people to make their own server? Maybe we must be more friendly than big companies are. It's hard to get into self-managed servers if you don't have an interest in it. Do we want to create a world with many different Systerservers or making it all together?
+
+Donna
+
+35 Hardware
+
+Build and reach the Internet with an antenna from the roof
+Ignifugo
+
+I came to live to the countryside. This is the map of Bologna, and these are the potential nodes for the community wireless network. The orange nodes are the potential ones, the green are the effective ones. It is produced by Ninux, a group of people who deploy it. As you can see, there are two points in the countryside.
+
+This is the panorama of where I live. There the Internet connection is very bad as there is no economic interest to make it better, and the communication is very important as you are living apart from your commu{27 nity in the city. So we built a grassroot network ¤with our hands with Ninux. There are more or less 2000 potential
+
+36 DIY
+
+nodes in Italy, 150 really
+
+switched on. It’s configured like
+
+islands, as they are mainly not
+
+connected to one another.
+
+Why starting this experience?
+
+Because you can have really
+
+better connection with your
+
+friends, for activism as you can
+
+run your network with your
+
+rules, and also give more
+
+attention to your privacy. You
+
+can use the Net with more
+
+neutrality, you can have your
+
+application on your network,
+
+it’s also more resilient and
+
+resistent to catastrophs as it is
+
+{24 38}
+
+intern. >You can build and share
+
+with your community and
+
+assimilate things. This move-
+
+ment is not new, it started at
+
+the beginning of the 2000. It’s
+
+shared all over the world and
+
+there are different agreements
+
+with the network communities.
+
+There is an agreement on free
+
+transit of packages in the net-
+
+work and to open the commu-
+
+nication, the warranty that you
+
+can join the network (doesn’t
+
+mean you can access all of the applications), the agreement terms say you have to be into free transit and communication warranty, and you can decide what you want to work on from your network. For instance in Italy there are islands in Roma, Bologna, Milano, Calabria, Sicily, all of us accept the agreements, in Calabria they made a modification on communication and it’s open to everyone, and it must be apparent that you give connectivity to the others. >It means you can start as a leaf, but you agree to become a branch. You become a roaming of the network. The services you can find on Ninux depend on what you put on your network. The aim of the community is to build infrastructure and powerful tools. By default there is nothing on Ninux. You can have open source software for sharing your storage, run any kind of platform you want,
+
+Ignifugo
+
+37 Free & Open source
+
+share your Internet connection.
+
+You have to connect the com-
+
+puters as the Internet connec-
+
+tion is not installed by default.
+
+If one of the computers shares
+
+band with ADSL, you can
+
+divide connection.
+
+Two common questions are: is
+
+this stuff legal or dangerous. It
+
+is legal, but in Italy might not
+
+be for long again because of a
+
+law, prohibiting to change the
+
+softwares inside of routers.
+
+And about dangerosity, the
+
+antennas we use are really less
+
+powerful than cellphones
+
+antennas. To make it, you can
+
+meet the people of Ninux and
+
+assist to conferences. And you
+
+have to go on the roof.
+
+{35 39}
+
+µYou need a wireless bridge,
+
+5gHz frequency, between two
+
+houses. The antenna, the rou-
+
+ters, and your PC (on both
+
+parts). The two places need to
+
+see eachother from the roof.
+
+Check if there is no mountain
+
+between the two points you
+
+want to join, no obstacles. The
+
+choice of your antenna
+
+depends on the power you
+
+need. Trees are obstacles.
+
+The waves smash when they
+
+meet something. Fix the two
+
+antennas. Inside, you get the
+
+cable of the antenna, with one
+
+Internet port (LAN), another
+
+router for wifi connection. One
+
+ADSL connection goes to the
+
+power line, and this goes to the
+
+antenna. It’s an antenna with
+
+ethernet ports.
+
+For the software, routers are
+
+indeed little computers with an
+
+operative system inside, the
+
+firmware (the antenna also has
+
+a firmware). It’s really easy,
+
+you have a graphic interface
+
+where you can update the
+
+{37 39}
+
+software. >I use Libremesh, it’s
+
+all explained how to make it
+
+work with the model of an-
+
+tenna and router. It has a big
+
+community, it is preconfi-
+
+gurated for this use. If one node
+
+is unavailable, the router
+
+recalculates, reroutes to get the
+
+connection. To maintain the
+
+38 Hardware Free & Open source
+
+Build and reach the Internet with an antenna from the roof
+
+Map of Ninux nodes around Bologna
+
+software it is a hard work.
+
+{38 53}
+
+>With an open software you can
+
+manage the different needs of
+
+different communities. Several
+
+kind of configuration inside,
+
+depends on how you want to
+
+connect. You compile your
+
+software and then you just
+
+have to flash it. Freifunke in
+
+Berlin works similarly.
+
+Q|Do you have a schema of how it works? A||The waves go straight, the portance depends on the antenna. Like a pear shape. {38 µYou have to think of the way you place the antennas to make it optimal. I also give names to the routers, to separate those who repeat the signals and those with a special configuration. It helped a lot the community to fix problems.
+
+Ignifugo
+
+39 Free & Open source Hardware
+
+From data to dating
+Frocetaria
+
+This project started from
+
+collective Laboratori Masche-
+
+ramienti, who works on help
+
+{26 41}
+
+(social, software help). ^We are
+
+transfeminists, we don’t have a
+
+space anymore. We started
+
+thinking about data. A few
+
+months ago, Grindr became
+
+very popular for gay guys. But
+
+Grindr is collecting data from
+
+its users and selling it to
+
+companies, in order to target people for advertisement, publicity and others. Same thing about Facebook, it is similar. Grindr is selling status about HIV status of its users, this is a big reach to privacy. When we are using this app, we are producing value that is picked by this company. This system is really cynical. There
+
+40 Feminism
+
+is also data about body, weight,
+
+age that are sold. It specifies
+
+things we are keen on spending
+
+time and money for our appea-
+
+rance. The question of HIV is
+
+really problematic.
+
+So how to conceptualize our
+
+presence on this app? There is
+
+production of value, and at the
+
+same time reinforcement of
+
+mainstream gender stereo-
+
+types. Broadcasts this kind of
+
+culture. So how do we change
+
+this, and how to make visible
+
+that we are working online?
+
+Filling all the data is giving
+
+value, but there is the work we
+
+do outside also. We thought of
+
+striking on this app. Take the
+
+platform a few days off, and we
+
+considered this after Uber
+
+strike (the drivers made an
+
+appeal to people using the app,
+
+this was the only way it could
+
+{40 53}
+
+work). ^Our strategy would be
+
+different, based on feminist
+
+strikes, and ways we could use
+
+the app to create moments for a
+
+strike on March 8th.
+
+{17 42}
+
+`This is a way of making every-
+
+one aware that everything we
+
+do is put on work, our life is
+
+put to work in a way. We
+
+thought of a way to hack the
+
+app, not interacting with its
+
+structure but with the social
+
+structure promoted by it. We
+
+created an event in Bologna for
+
+Grindr men "share your big
+
+data". We all used the same
+
+picture, it was an offline
+
+treasure hunt in the city. Every
+
+challenge was trying to bring
+
+awareness on HIV data, how
+
+our activity works, the cons-
+
+truction of the ideal gay
+
+masculine body. Then there
+
+was another test, in the end it
+
+was a huge illegal party in the
+
+park. You have to know that
+
+when you create a Grindr
+
+profile, you have to declare
+
+many things about who you are
+
+and what you desire, and you
+
+can select profiles you want to
+
+see, can be based on races, so
+
+being very racist. The events
+
+happened in abandoned places,
+
+Frocetaria
+
+41 Feminism Creativity/Arts
+
+the area was places gentrified, where minorities are thrown out. Offline you get to meet different kind of people and bodies, the counter is completely different, you don’t decide the person you wil meet. The shift can change and become more creative.
+Q|I think the question is more transversal than just meeting people. For example Facebook, this is a place to show your self. It sounds strange to go on strike on this app. Some people go for only sex meeting, but this a personal will. It is exacerbing individualism. But to me this is more to meet someone else. It is something you want to do? Those apps eliminate the real contact between people. This is something very deep. A||We agreed on that, one of the issues was to choose the app for hacking. When you’re using the app, you’re choosing
+
+the body you want to meet, not
+
+like cruising the city. The out-
+
+comes of the apps is their own
+
+architectures, shapes, a culture.
+
+Dating apps are shifted on one-
+
+to-one interactions. Why do
+
+those platforms promote this
+
+kind of interaction? This acts
+
+on the construction of repre-
+
+{41 43}
+
+sentations. `Promoting a strike
+
+on Grindr was because people
+
+using it are implying them-
+
+selves, you don’t share only
+
+data but all the work it requires
+
+to be here and appear the way
+
+you want. The strike was about
+
+giving opacity on that work. We
+
+launched the idea of being paid
+
+for what we do on those apps,
+
+but that was a joke. There is a
+
+question about free work. You
+
+have the app on your phone, so
+
+you can answer, work for it all
+
+the time. You’re not paid but it
+
+costs to you.
+
+Q|I love the idea of criticizing activities on the Internet. I’m more doubted about the
+
+42 Creativity/Arts
+
+From data to dating
+
+approach. Protests in social
+
+media platform didn’t give
+
+much. What you are doing is
+
+going to MacDonald’s and get
+
+on strike against them. Which
+
+will not affect them at all, they
+
+will restart the next day.
+
+Grindr’s algorithms are much
+
+more powerful than what we
+
+can create. It would be more
+
+interesting to inform in the real
+
+world. We could multiply
+
+parties, and call it "protests
+
+against Grindr".
+
+{42 44}
+
+A||I completely agree. `But
+
+the strike is not against Grindr
+
+but gender normativity, free
+
+visible work. We call it "the
+
+strike from genders". The idea
+
+is not to make Grindr change
+
+their app. We want to create
+
+our value, which is social,
+
+through the app. The app is
+
+like a bus.
+
+Q|||So Grindr is just a
+
+channel to create awareness?
+
+A||||Yes, and if we
+
+use geolocalisation to declare
+
+we are somewhere, but actually
+
+we’re striking and displaying photos to go to the strike. `We chose the app because as trans activists we start from ourselves. I feel the potential for revolution is lost in those interactions, they become supporters of capitalism, racism, transphobia. It’s already nice that we are here today. This is not the kind of message you usually get on the app.
+Q|Just a specific question regarding the app: how technically did you think the strike on Grindr? You were talking about choice. On Grindr you can create a fake account and get insults for it. There is no real choice about how to use the app. Maybe education should be about that. Q|As I know, every single data is useful in economy of interaction, and my opinion is the diversity is richness for those datas. The production of value comes from our diversity.
+
+Frocetaria
+
+43 Creativity/Arts
+
+{43 45}
+
+A||`Mapping the city ena-
+
+bles different landscapes. It is
+
+also about matching what kind
+
+of users are in each place.
+
+We all used the same avatar to
+
+organize the parties, we were
+
+blocked by Grindr and had to
+
+adjust our strategy. It is being
+
+in the roots but breaking it.
+
+The way you are involved in
+
+the app, the event is important.
+
+When we are aware of that, we
+
+think better on how we can
+
+deal with it. We are trying to
+
+raise an awareness.
+
+Q|||But maybe if we
+
+just stopped specifying our
+
+actions on Facebook we would
+
+be stronger?
+
+A||||I think what we
+
+can do is outside the app.
+
+Q|About the context of fake user, in Berlin I know someone who made art project on Grindr, and he needed to have real conversations, how did you deal with it? A||`We were very clear
+
+that it was not about meeting from the beginning. We tried projects on Facebook too, it was about educating people we were talking with. A|||`I think it would be interesting creating scripts to meet people on the app. The idea of striking, can seem counter-productive as people want to suscribe to Grindr. But we had in idea examples where people responded to the strike. It would be about joining forces. We chose Grindr because we wanted to target queers, and it can be a way to make more feminists.
+Q|But it is difficult to strike on something you are identifying on, you don’t want to be out of the society. It is like having a child. You live your life, go to work, but the time you don’t look at him, what is he going to do? So how can you strike on something you desire to be part of? I want to reclaim
+
+44 Creativity/Arts
+
+From data to dating
+
+the fact that I create value on
+
+this app, so I have to fight
+
+against them but also besides
+
+them.
+
+A||When you are a sex
+
+worker, you can use the app for
+
+your work. But you’re not
+
+welcome on it.
+
+{44 52}
+
+A|||`The target of our
+
+action was not Grindr as a
+
+company, but the user and the
+
+interaction with him.
+
+Q|Why wouldn’t there be chess table image on the app to say "I want to occupy it"? A||We were also looking for tips and feedbacks on the short, on the long term this is to get collaboration. Our real lives are outside but anyway we are using those apps. Q|||You use the system to get its limits? A||||We analyze it because it is our desire. Desires are taken by capitalism to make it normal. We wanted to act where the desire is.
+
+Q|`Technology should be included in two dimensions of our lives, I would find interesting imagine how to associate this process with action. Invite people and give them documentation on how to act online. A||We want to bring back cruising spaces. Gentrified places used to be a place for gay people to meet, but it changed.
+Q|Indymedia was important because it was all in one place, action, instruction. It would be interesting before launching an action to have a whole history and third personas to interact with.
+Q|How did you use the app? What pictures? A||The problem is when you reach 3 times the same image you have to change. We used pants image with something on it. And it works. We tried with fake email and it works.
+
+Frocetaria
+
+45 Creativity/Arts
+
+Create a website that cannot be hacked but looks awesome!
+Obaz
+
+{33 48}
+
+~I started using it not to have
+
+spamming attacks, CMS
+
+problems, so I need something
+
+more solid. This is what Jekyll
+
+{32 47}
+
+is. #Your website is on your
+
+machine, and you deploy your
+
+code on the server. The server
+
+is not related to your computer,
+
+you just deploy HTML, CSS,
+
+Javascript. You can use gems
+
+to create other features of the
+
+website, you can write markdowns instead of HTML. It is also very useful when you work with several people, like the /ETC website. All the people could learn how to work on it.
+Q|#You can take any gems and install it? Do you have to take care of installing the proper line.
+
+46 Security/Encryption Programming
+
+A||No it is a package
+
+{46 48}
+
+#You have all the pages in one
+
+folder, layout for each page.
+
+The gemfile says what soft-
+
+wares must be installed to run
+
+the website. Jekyll language
+
+plugin. You can deploy the
+
+website in your local machine:
+
+install some gems before
+
+(bundler, that will install the
+
+other gems). We use a parti-
+
+cular theme, so this is heavier.
+
+"bundle install" in the folder
+
+compiles your website. "jekyll
+
+new -name of your site-" to
+
+create a new one. There are
+
+many files in the website:
+
+configuration, posts... So you
+
+can deploy locally. You can edit
+
+what you want, it’s all in the
+
+same folder. There is a new
+
+folder where your website has
+
+been deployed: markdown was
+
+converted into HTML. It inter-
+
+prets it and creates a website
+
+like you want it to look. To put
+
+something online, it has to be
+
+in the right folder. The script
+
+makes Jekyll create the folder, and add the content of this folder to the server. We use Git to version altogether. The index file only contains metadata: yaml. In the config file you have info on the website: title, your theme, description. You can of course install another theme. The /ETC one is very flexible.
+#Posts are cool with Jekyll: just create a file with markdown in the post folder. We can give a title, Jekyll knows its layout, we can decide what time it will be published, assign metadata (language). The markdown syntax for posts is very simple, for instance * for bold, - for ordered list, a link between [ ]. You can change a post just with intervention on it. You can then tweak your stylesheet Jekyll looks at what it has in each folder, in its own folder, you have to be in the folder where the gemfile is for it to work. Jekyll themes are very
+
+Obaz
+
+47 Programming
+
+well documented. You can
+
+choose the language you are
+
+more comfortable with for the
+
+theme deployment. Download
+
+the theme from Git repository,
+
+inside go to the test folder, you
+
+can call it however you want
+
+and use it as your website.
+
+{46 50}
+
+~When CMS or servers are not
+
+updated after years, anybody
+
+can hack it (Wordpress or
+
+Drupal), while Jekyll is
+
+updated and safe. It makes it
+
+easier for people that are not
+
+used to developing a website.
+
+Editors for Jekyll don’t really
+
+exist yet.
+
+A||You have to install Ruby to use Jekyll, and download the gems. When gem installs, it looks at what you need (is it older versions). Bundler takes care of the rest.
+On right page: screenshot of the /ETC website
+
+Q|How would Jekyll interact with a static website? That has been archived for instance. A||Jekyll creates a static site from a folder. A website that has already been archived is not the same.
+
+{47 51}
+
+Q|#Aren’t there versions
+
+problems, for instance with
+
+Ruby?
+
+48 Security/Encryption Programming
+
+Create a website that cannot be hacked but looks awesome!
+
+Dock, dock, docker
+Ivana
+
+In the last years there has been a lot of talks about virtualization, and how to run a computer inside of another one. There is a host computer with any operating system. It can be Linux and run Windows machine with it. There is a full operating system for the host computer, and another kernel for guest computers.
+
+Docker was built on Alexi. It’s a
+
+container engine that runs all
+
+{48 51}
+
+the containers. If I have an
+
+~application like a web server
+
+running, Docker launches only
+
+the small kernel for this com-
+
+ponent. It is separated and very
+
+secure. It creates separation of
+
+resources. When you have a lot
+
+of old stuff on your computer,
+
+Docker enables to use your
+
+50 Security/Encryption
+
+computer as a transition device.
+
+You can make container for an
+
+install, a component, and
+
+remove it when you don’t need
+
+it anymore.
+
+{48 61}
+
+#You can create your local
+
+development environments,
+
+separated from other things.
+
+When you start your container
+
+you have it. Every Docker
+
+image is built on another
+
+Docker image. You can version
+
+Docker images, combine it with
+
+softwares, even with files on
+
+distant repository. There are
+
+some tools to combine multiple
+
+images. Mostly oriented on
+
+micro-services: applications
+
+that do small things, you can
+
+make small processes talk with
+
+eachother. A database for
+
+instance will be another
+
+container. Micro-service is a
+
+concept, it is about try to split
+
+what you do in little parts.
+
+Image is something that we
+
+share and used to start the
+
+process. Docker is command-
+
+line software, you give it
+
+arguments. You can tell it to
+
+enter your container, remove
+
+container, start processes.
+
+{50 72}
+
+~There are small and safe Linux
+
+versions built for Docker. If
+
+someone enters your container,
+
+it’s very hard to change it.
+
+Schema of Docker interfaces
+
+Ivana
+
+51 Programming Security/Encryption
+
+Presentazione rivista Aspirina
+
+{45 53}
+
+`Aspirina è una rivista umoris-
+
+tica disegnata e scritta (fumetti,
+
+racconti, illustrazioni, video e
+
+musica) edita dalla Libreria
+
+delle donne di Milano. Nata su
+
+carta nel 1987 , è passata online
+
+nel 2013. Nel passaggio all
+
+online è stato importante il
+
+confronto in redazione, soprat-
+
+tutto perché siamo riuscite a
+
+svincolare il progetto dal
+
+normale utilizzo di sistemi già esistenti. Abbiamo scartato lapproccio più comune adottato da numerosi siti, quello del blog e della sequenza di news, dove ogni singolo contenuto vive isolato come unesca nel gioco dei continui rimbalzi degli utenti tra un contenuto e laltro. Abbiamo scelto unimpostazione che rende impossi-
+
+52 Creativity/Arts
+
+bile spezzettare la rivista e condividerne le singole pagine sui social network. Abbiamo cercato di costruire ununità poetico /politica nei termini di Haraway, attraverso una pratica di affidamento reciproco.
+
+{41 56}
+
+^Feminist review, born in Italy
+
+in 1997. Published for 5 years.
+
+Important to teach each other
+
+about skills. They use a blog to
+
+publish. Decided to publish
+
+online. Create different pages
+
+{52 59}
+
+for the sections. `Different
+
+designers and authors, they are
+
+required complicated job often.
+
+Block fast consumption content
+
+on social network, so only on
+
+the platform. The review has
+
+also formats that couldn't be
+
+published on paper. Idea of the
+
+fanzine as not possible to share
+
+content on social network.
+
+They preferred this format of
+
+pages. The question fundamen-
+
+tally is what is it to publish?
+
+Time of publishing, use hyper-
+
+text and linking for more
+
+complex content. Lack of
+
+thinking about environments
+
+and interfaces, they wanted to
+
+think a pub format. Lack of
+
+{39 66}
+
+standards. >How to put online
+
+and enable free downloading.
+
+Topics that give interest to
+
+authors.
+
+`Research on webzine with a
+
+blog structure. Display on the
+
+website is thought from the
+
+page on paper.
+
+Screenshots of Aspirina issue n°17, spring 2018
+
+53
+
+Feminism Creativity/Arts Free & Open source
+
+Inter/depend-ence: the game
+Sarrita
+
+Let’s close up the chairs to be
+
+{28 59}
+
+all together. £This game is a
+
+project I made with another
+
+artist, we’ll go through playing
+
+this game. Christine is working
+
+on mutual support, this project
+
+emerged in a residency in
+
+Auckland. It’s called "Interde-
+
+pence, the game", based on one
+
+of Christine’s earlier works,
+
+"Ways and means", leading
+
+people to talk about how they feel with eachother. We wanted to give access to this game, so we developed a travel version of the game that people can download from the website. £You can also download a PDF with the instructions and cards and randomly generate new cards. I would like to play with you at least six rounds of the
+
+55 Games
+
+game. So like all games, there are players and roles. First we’ll distribute the roles by taking a sticker and put it on your shirt. There are talking sticks, some of you are question marks, lightning bolts, and bricks. We start with the pieces on the outside, and all the pieces must go together in the end. There are 4 steps per round. Question mark reads the question and quickly answers, the brick one answers the first question with an example (personal or not personal as you wish), lightning bolt reads another card and must answer considering the previous answer, and sticks player must summarize all that was said. The questions are about art or society in general, you choose.
+Player 1|When and why don’t you participate? I don’t participate when I don’t feel I like the people I have to participate with.
+
+Player 2|I recently walked
+
+into a medical shop for a feet
+
+treatment. It looks like a nor-
+
+mal shop and in the back is the
+
+{53 65}
+
+doctor. ^He’s leaving me bare
+
+foot in the shop, doing very
+
+stupid sexist comment, so I
+
+took my shoes and left the
+
+shop.
+
+Player 3|Find a pattern. I really don’t know.
+
+Player 4|It was shared that one reason was the difference with other people, an example was given with a sexist doctor, so the decision was made not to continue the situation; it was difficult to find that pattern, we should think about situations when people refuse to participate. ^For instance if doctors are sexist, people affected by this may not look for male doctors or go through alternative medicine. A way would be to change the situation without having to leave it.
+
+56 Feminism
+
+Inter/de-pend-ence: the game
+
+Let’s move to the next round, please go to someone else with the same sign as you do. Let’s restart with someone with a question mark.
+Player 1|How would you rate the values of governments? No value... Oh, the values! They are an excuse for the existence of bureaucracy.
+Player 2|When I was younger I was in a music school. Then I left for a bigger music school. I had the highest level in my previous school, in the second one they didn’t let me attend a class to my level, they made me pass tests. They judged me exageratly because I was from a small city.
+Player 3|Make it more positive. Change the place where you have to go, organize with the others to make it different.
+
+Player 4|The question was how would you rate the values of the governments? It was said no values. The example was about a music school where level was not respected. This is sad but to make it more positive we can try to change things.
+Ok, let’s make another round, please find your symbol.
+Player 1|In what ways do you collaborate with others? Usually I collaborate with others by making practical activities together, by discussing, by organizing events, by answering specific needs.
+Player 2|When we organized /ETC here we speaked a lot and had many meetings and talks.
+Player 3|Cross a boundary. If there is a boundary, cross it.
+
+Sarrita
+
+57
+
+Player 4|The question was about collaboration with others, through activities, discussing, by participating in general assemblies, talking politics. For instance, for this /ETC the organization took a lot of collaboration. The redraw of collaboration is through crossing the language barrier.
+Ok, who didn’t have a role? Let’s make a new round.
+Player 1|How much do you think the current existing country serves the majority of residents? It doesn’t consider all the residents in the country. It feels the role of a country is difficult for me, I would replace country by state, because for me a country is not an organization, it’s a territory.
+Player 2|In Germany huge parks of organizations work with unemployed people, and at the same time work that is
+
+created doesn’t answer to the needs of the people. Looks like we have less unemployed people, but that’s not the real problem. It’s a public lie.
+Player 3|Expand the field. Expanding the concept of country makes me think that countries don’t exist, what can serve us is ignoring the countries.
+Player 4|What does the country do for the residents? It doesn’t consider all the residents the same way, the example was about Germany and employment situation, and to extend we talked about the boundaries.
+Ok, so let’s say we made six rounds and all the pieces ended up together. Does anyone has thoughts to share?
+Q|In my mind questions could have been more interes-
+
+Inter/de-pend-ence:
+
+58
+
+the game
+
+ting by not talking about the institutions.
+
+{55 65}
+
+Q|£Maybe the game could
+
+have been axed on more two
+
+rounds to bring further the
+
+discussions.
+
+Q|£Indeed your game is about changing your point of view from a topic.
+
+Q|£Are your questions decided randomly? I feel a kind of pressure in this game, because when I talk I concentrate all the attention on me, maybe we could think about how to play it in group. And cards, are they all good, or was I lucky to have the funny ones? Q||I feel I could pick more than one question. A|||If the first one doesn’t work you can pick another one.
+
+{53 60}
+
+Q|`I think the game is
+
+relevant if you are in the art
+
+field, but it might be less if you are in another field and don’t have those connections. A||I guess what is interesting is to ask questions you don’t ask in your everyday life.
+Q|||`Yes, but it separates art and general life, I don’t think things should be separated that way. Q||||`Personnally I still have troubles defining myself as an artist, so I would like to think art institutions maybe as normal institutions. A|||||But I like the fact that you can appropriate the topics, you can relate it to your own participation or as you wish. Another interesting point is the random selection of questions. Lots of questions have to do with collaboration, empowerment, autonomy. Like 20% of the whole deck is about institutions, countries...
+
+Sarrita
+
+59 Games Creativity/Arts
+
+Screenshots of a webpage about the game (playtime.pem.org)
+
+{59 73}
+
+Q|`To me this art /not art
+
+thing is strange. I think in all
+
+cards you could take off the art
+
+part, art is life so don’t separate
+
+it. And it’s strange that for art-
+
+ists it would be professional
+
+questions, and for other people
+
+it’s general questions.
+
+Q|`This thing of labelling art and not art is interesting in a way because it reflects the way we think it. Art is something everyone has a concept of, so it’s kind of universal.
+
+Q|`In a way, when you’re an artist, it’s legit that you apply your thoughts to art.
+
+60 Creativity/Arts
+
+Inter/de-pend-ence: the game
+
+F12 how to use a web inspector
+Ignifugo
+
+The /ETC website will be a
+
+good point to start. Different
+
+levels of markup, the resource
+
+{51 62}
+
+is on a server. #The server
+
+communicates with us by a
+
+protocol (HTTPS): the trans-
+
+mission of HTTP is made by
+
+encryption. There is the HTML
+
+page, the layer where is the
+
+content of the page, the CSS
+
+is the graphical part of the web
+
+page, and there is Javascript to manage interaction. We can disassemble the web page in 3 levels: content, action, graphic part. HTML is a markup language, CSS too with keys and values, Javacript is for functions and logical part. The web inspector is useful to understand if you reach the source, if the server is reached.
+
+61 Programming
+
+You can also understand better
+
+the source. You need to reload
+
+when you change something.
+
+You can analyze the web page
+
+point by point, select what you
+
+want to modify. The CSS
+
+selector to manage the cascade
+
+style: understand how the
+
+selector functions. For ins-
+
+tance sometimes the selector is
+
+too precise and you can see it
+
+with this tool. You can get the
+
+selector of a group if you want
+
+to modify it all. When you work
+
+with :hover, active links, it is
+
+very useful to see the selector
+
+and its rules. Important infor-
+
+mations are the key values of
+
+the CSS, how the rules apply
+
+on eachother if the selectors
+
+are very specific.
+
+{61 64}
+
+#The flexible view is also some-
+
+thing nice, to see your page in
+
+different sizes, you can take
+
+screenshots. This is for the
+
+responsive size of the website.
+
+You can ask for the media
+
+queries (min-width or max-
+
+width), knowing that the res-
+
+ponsive depends on the device, the design you use, so you have to play with it. There is also the console. It is useful to experiment. Normally the script is at the bottom of the HTML page or in its own folder. jQuery has modules you can call on objects on Javascript. Concatenation of functions is important. #Toggle to assign something and see an interaction (play with classes). The console helps see if a script works or not.
+Q|I know there are browsers blockers for Javascript, why so if it is so used? A||Because it can be invasive I guess. With Javascript you can get things like position of cursor or else... Q|||Maybe because we can get the sources with it? A||||I don’t think so. This must be specific about tracking.
+On right page: Chromium web inspector in use on the /ETC website
+
+62 Programming
+
+F12 how to use a web inspector
+
+React workshop
+Andrea
+
+{62 74}
+
+#A React Workshop aimed for
+
+participants with a fair under-
+
+standing of the Front End Web
+
+Technologies. The workshop
+
+will cover the following:
+
+1. Clone a repo from GitHub 2. Use terminal to install dependencies 3. ES6 syntax 4. React basics 5. Create a small Front End app
+
+64 Programming
+
+Elements for a feminist video game Godot Engine
+Natacha
+
+{59 66}
+
+£As video games steadily grow in
+
+diversity and complexity and
+
+while amazing artwork is
+
+produced, it seems that most
+
+popular games still propose
+
+competitive scenarios based on
+
+gaining strength or making
+
+ones civilization grow the
+
+biggest, where the main action
+
+is killing the boss or shooting
+
+everyone around. Independent
+
+games sometimes offer explo-
+
+ration scenarios, but only a few
+
+games will try to develop other
+
+form of interactions and clearly
+
+different game plays.
+
+{56 66}
+
+This workshop will engage us
+
+^together in a discussion on
+
+what feminist video games
+
+could be, which elements it
+
+should bring together, what
+
+kind of interaction principles
+
+65 Games Feminism
+
+{65 67}
+
+could be transformed. ^Together
+
+we will be rethinking what are
+
+the principles of a feminist
+
+video game, not only appropri-
+
+ating existing formats, but loo-
+
+king to change the structure of
+
+the game, towards different
+
+models of organisation coope-
+
+ration and contextualisation.
+
+{65 £Using Godot Engine, we will
+
+work on basic implementation
+
+and together produce a small
+
+video game, learning basic
+
+features of Godot engine.
+
+{53 74}
+
+>Preparatory material is avai-
+
+lable on this link: https: /
+
+/ps.zoethical.com /t /feminist-
+
+game-environment /1647
+
+Screenshots of video games tests made for the project with Godot Engine
+
+Feminism
+66 Games Free & Open source
+
+Elements for a feminist video game Godot Engine
+
+A Brief History of feminism and technology
+Zeyev
+
+We will look at some paralell development in both fields. I will use a framework based on western hegemony, it received some criticism, but it makes reference as there are not that many moment. It is used by searchers to talk about the moments.
+
+First period starts in the end of
+
+the XIXth century and its main
+
+issue is reaching equality with
+
+{66 68}
+
+men. It was a time where
+
+^women had no property right,
+
+and access to education, get
+
+more jobs for women (they
+
+could not access all). The right
+
+to vote was a huge point, we
+
+can find some writings about
+
+democracy and the fact that is
+
+67 Feminism
+
+is the side of men. Women
+
+suffrage is very recent, in the
+
+XXth century voting rights to
+
+women expanded. But not for
+
+every women, if you were a
+
+working class it was not ok. In
+
+the Middle East women had
+
+the right to vote but it was
+
+revoked. Switzerland gave it in
+
+1971 only.
+
+In the technological lanscape,
+
+we are in second industrial
+
+Revolution, with some tech-
+
+nology like sewing machines.
+
+{67 69}
+
+^It could bring women some
+
+money, out of their husbands
+
+and families. Infrastructures
+
+were changing with electricity
+
+and telecommunications, and
+
+the very beginning of compu-
+
+ting age. Technology opened
+
+job market to the city, gave a
+
+little form of empowerment to
+
+women. In the city you had
+
+new contact with other people.
+
+^But a strong gendered dis-
+
+course on technology arrives at
+
+the same time. The dichotomy
+
+was between men who concei-
+
+ved technology and women who only used it. The society of consumption was under way too, but not directed to women. ^Sylvia Pankhurst was a suffragette, and this movement was mostly for bourgeoisie women. So she tried to bring together socialism and feminism, to extend the movement. She struggled to include working class women, so it implied technology. Another person from this period was Hilde Krasmogonowi, she was not a feminist but an german officer. During the Cold war there was a debate on kitchens: US was promoting the idea of kitchen full of tools, very cool, and women were arguing with this. Women like Hilde wanted communal kitchen. Those kitchens are traps: you are always in there cooking. She didn’t want to go this direction but discuss how to share housework.
+
+68 Feminism
+
+A Brief History of feminism and technology
+
+Second wave starts in the 60-
+
+70s’, there is a shift between
+
+focus on equality and diffe-
+
+{68 70}
+
+rence. ^What is our difference
+
+with men and how should it be
+
+expressed? Simone de Beauvoir
+
+was president of this second
+
+wave. Women want to be
+
+independent from their male
+
+counterpart. Main criticism to
+
+previous wave is equality can
+
+not be reached by having
+
+rights, the problem is deeper,
+
+cultural and we must change
+
+the society. Ideology built in the
+
+past needs to change. Personal
+
+is political, it is about how you
+
+behave and follow feminist
+
+ideas. New practices appear
+
+too, like self-consciousness:
+
+becoming more aware of what
+
+it is to be a woman. Divorce is
+
+legal in Italy from the 1970s’,
+
+reproduction is a problem too.
+
+Abortion right is legal in 1987.
+
+Woman killing for cheating is
+
+illegal only in 1991. Until 1992,
+
+if you rape a woman and marry
+
+her after, you wouldn’t have
+
+problems. Until 1996, raping a woman was not a crime against the woman but against moral. First personal computers appear and engineering too. Plastics are more and more present, which implies a technological development of mass computers. ^Main link between feminism and technology is the debate about reproductive technology: who can access contraception, which circumstances for abortion... this is called reproductive technologies because technologies and medicine must act. There are debates about medicalisation of child birth, the woman is not considered as able to give birth by herself anymore. This period is more collective. Feminist science fiction writers use it as a way to talk about gender and society on other dimensions, planets. Rotezora was a women only guerilla group in Germany, they made sabotage acts. The first act was
+
+Zeyev
+
+69 Feminism
+
+on reproductive technologies. They learnt technology doing it so it was also a learning group.
+
+{69 71}
+
+^Third movement is in the end
+
+of the 80's, based on criticism
+
+of old conceptions of feminism,
+
+that is too much about western
+
+white women. Racist and class
+
+oppression must be discussed
+
+at the same time. Ecology is an
+
+important part, also queer
+
+fights. How can we think a
+
+cyberspace where genders and
+
+issues will be different? There
+
+are many unfinished stories in
+
+those fights, like violence on
+
+women. There is an expansion
+
+of feminist perspective: non-
+
+white, non-feminists too. The
+
+movement is more diverse,
+
+goes to civic rights.
+
+On a technological landscape, it
+
+is a boom period with personal
+
+computers, global infrastruc-
+
+tures like transports are
+
+becoming better and better. In
+
+electronic industry, small
+
+countries make the pieces rich
+
+countries designed. People in poor countries don’t have the knowledge as they only make little pieces. Global capitalism is more and more prevalent, and seems like technoloy can solve everything. ^There is a huge interest in women history as makers of technology, while they have been neglected before. Movement for applications of technology that follow the fight: agriculture, ecology. Bertha Cacheres was an activist in Honduras, she got murdered during the fight against a building being built without consultation of the population. And many other ecological activists had the same fate. Angela Davis is one of the main voices of black feminism: intersection of women and technology and how it makes racism, like with reproduction technologies where we control who gives birth for instance. ^Fica Futura was a magazine of the
+
+70 Feminism
+
+A Brief History of feminism and technology
+
+90s’, it was an italian hacking /counter-culture magazine, with feminist criticism of technology. So should we talk about feminism or feminisms? I think feminism, because there is something that links all women struggles. There are many different stories, perspectives, priorities, practices. Technology was always part of the feminist debate. It was such a vital part of western identity in the XXth century. Should technology be more explicitely part of feminism history? The question is open.
+Q|I didn’t know about the struggle for kitchen. And it started already as a collective discourse. {70 A||^This debate must be seen in the historical moment. The woman was responsible in the family for everything, and wanted to share tasks with other women, not only with men.
+
+Q|||^But the problem was: women were working the whole day in the kitchen. It is a way of getting freedom in the space? A||||^From the 80s’ there were articles about how to take your man out of the computer, bringing also women to learn from it. But the purpose was to keep your marriage.
+
+Zeyev
+
+71 Feminism
+
+Sex work online
+Tiz
+
+{51 ~Working with people who have experience /knowledge of online sex work, this workshop wants to build a network of sex workers, ex sex workers, and allies in order to create a permanent working group looking at sex work and online security. The workshop will have two main focuses: first, sharing basic tips, checking the
+
+policies of the platforms used in different countries and spreading awareness of risks and security issues. Second, a discussion on laws regulating online and advertisement of sex work.
+
+72 Security/Encryption
+
+Animata: an uncommon free software approach to mapped anti-visuals
+
+{60 `Animata is a real-time animation software, designed to create interactive background projections for concerts, theatre and dance performances. The peculiarity of the software is that the animation - the movement of the puppets, the changes of the background - is generated in real-time, making continuous interaction pos-
+
+sible. `This ability also permits that physical sensors, cameras or other environmental variables can be attached to the animation of characters, creating a cartoon reacting to its environment. You can create a virtual puppet band reacting to live audio input, or set up a scene of drawn characters controlled by the movement of
+
+73 Creativity/Arts
+
+dancers. The software can be
+
+run on multiple operation
+
+systems like Mac OS X, GNU
+
+{66 75}
+
+Linux and Windows. >Animata
+
+can be connected with wide-
+
+spread programming environ-
+
+ments (e.g. Max /MSP, Pure-
+
+Data, EyesWeb) used by
+
+multimedia developers and
+
+artists in order to make use of
+
+the possibilities of these appli-
+
+cations in the fields of image
+
+editing, sound analysis, or
+
+motion capture. Installing
+
+Animata requires FLTK (1.1.x)
+
+http: / /www.fltk.org.
+
+{64 75}
+
+#On Windows Animata is
+
+compiled from Cygwin (http: /
+
+/cygwin.org /). Cygwin pac-
+
+kages are: python, subversion,
+
+fltk-devel, libjpeg-devel,
+
+libjpg62 libpng12, libpng12-
+
+devel, gcc-core, gcc-g++.
+
+Download the Scons tarball
+
+from http: / /scons.org, and
+
+copy it to your cygwin home
+
+directory.
+
+Then type:
+
+tar -zxvf scons-1.2.0.tar.gz cd scons1.2.0 python setup.py install
+On OSX install FLTK from MacPorts (http: / /www.mac ports.org /). On OS X you can create an application bundle using scons app, or you can also open Animata.xcodeproj and compile and run the Animata Target from XCode.
+Installing on Linux. In most Linux distributions an FLTK package is available. Animata is known to compile in Fedora, and Ubuntu (8.04, 8.10). To build Animata, type: scons To run the software, type in the build directory: . /animata
+Where to get more information? There is a web page for Animata at http: / /animata .kibu.hu /
+
+74 Free & Open source Programming
+
+Animata: an uncommon free software approach to mapped anti-visuals
+
+Git explained with toys
+Ignifugo + Obaz
+
+Let’s make on intro for Git.
+
+There is a video online of
+
+someone doing something like
+
+{74 76}
+
+that on a Linux tutorial. #So Git
+
+is a versioning system, it allows
+
+to keep track in all version of
+
+files in a directory (a reposi-
+
+tory). It is normally used for
+
+developing software, but it is
+
+also used for developing web-
+
+sites (like Systerserver does).
+
+You can use it if you want to
+
+keep track of what happens in
+
+{74 76}
+
+a folder. This is for collabora-
+
+tion, >so decentralized. Copies
+
+can be in other computers, and
+
+other people can see your
+
+changes. Systerserver uses
+
+Gitlab, the folder is where the
+
+website is developed. You don’t
+
+need a central server to update,
+
+just keep Git in the folder to
+
+75 Programming Free & Open source
+
+{75 keep track. >You can use Gitlab
+
+or Github, or a repository on
+
+your machine. Inside the direc-
+
+tory, you tell it to become a
+
+repository and Git will start
+
+tracking. I can tell it where its
+
+central server is. It can be
+
+public or private to restrict the
+
+access on it. When you create a
+
+repository, you have a setup
+
+explanation, an address on a
+
+server.
+
+{75 77}
+
+#"git remote add" to tell it where
+
+the central server is. The "git
+
+init" folder contains all Git
+
+needs to run. Configuration file
+
+with the address of the remote.
+
+First thing is to fill a README,
+
+this is just the first description.
+
+#"git pull" to withdraw from the
+
+repository. If the repository
+
+orginally exists on a distant
+
+server, "git clone" to have it on
+
+your machine. So now you
+
+want to add something. You
+
+create a file, write something in
+
+it. But Git doesn’t know that.
+
+You have to show it. Git gives a
+
+number to the commit, a label:
+
+it means Git recorded the changes. Git doesn’t know your change is here, it doesn’t have a number. #So you need to tell Git it is here by adding this: "git add". Then Git adds a label to the pull, becomes a new Git object. Then you tell Git that this is a change in the project, you commit with a message. So now master branch added it. To inform the server about it, "git push". Master label advanced on the server too.
+Q|Commit is something you do on your machine? A||You do it locally yes, and then push to the server.
+Now you want to do something but not sure you want to change all the project. So you create a new branch. You have to be in this branch to modify it. You can decide to merge this branch to the master branch if you are certain. But if you are not, you push the changes to
+
+76 Free & Open source Programming
+
+Git explained with toys
+
+the new branch. When someone reviews it, they can access the two branches. To merge you can create a merge request, with explanation on what you are doing. Assign this request to the most responsible person to make sure it won’t break the whole project. {76 #From your local machine, if you want to merge, go to master and "git merge -name of the branch-". And it’s done. Instead of branching a project, you can create your own. To do this, fork a project from Gitlab or Github, you will have a new repository. If you share it on Git, other people can start working on it too. Fork a website for instance can be a good way to test it locally. If someone changed the same thing as you did and update, changes will be conflicting. You can fix this, see the conflicting lines. You can also revert your changes with the number of the commit.
+
+#Before you "git push" it is good practice to "git pull", to check if there was changes to the branch. You can pick commits by their numbers, it’s called cherry picking: "git cherrypick".
+Q|With cherry picking you basically change the history of the workflow. A||Sometimes it makes sense. You will avoid a conflict, you need to change one thing but not another. Besides adding objects, you can also remove objects. It is also possible to move files. Whenever you change something, you have to add, commit, and don’t update before you get the repo.
+
+Ignifugo + Obaz
+
+77 Programming
+
+index of terms
+
+/ETC 3, 14, 17, 35, 46, 47, 57, 58, 61
+adapter 9
+algorithm 12, 13, 31, 43
+Android 13, 22
+art 18, 22, 24, 30, 31, 32, 36, 37, 43, 44, 51, 56, 57, 59, 60, 61, 71, 76, 77
+artist 30, 55, 59, 60, 74
+Bluetooth 20
+80
+
+browser 11, 31, 62
+code 17, 18, 19, 20, 21, 23, 46, 74
+code of conduct 23
+code of conflict 23
+collective 3, 30, 34, 40, 69, 71
+communication 36, 37, 68
+community 17, 36, 37, 38, 39
+computer 9, 14, 19, 30, 31, 32, 33, 34, 38, 46, 50, 51, 69, 70, 71, 75
+
+connection 11, 12, 13, 14, 31, 37, 38, 59
+contributors 24
+control 3, 14, 29, 70, 73
+CSS 46, 61, 62
+data 12, 13, 23, 32, 35, 40, 41, 42, 43, 47, 51
+Debian 31
+decrypt 12, 13, 14
+device 9, 22, 23, 31, 50, 51, 62
+
+index of terms
+
+DIY 27
+Docker 50, 51
+documentation 17, 18
+email 13, 19, 23, 30, 33, 45
+encryption 13, 32, 61
+engineering 69
+exchange 13, 14, 17, 21, 33
+Facebook 23, 30, 35, 40, 42, 44
+Fedora 31, 74
+
+feminine 9
+feminism 67, 68, 69, 70, 71
+feminist 3, 14, 16, 22, 23, 24, 25, 40, 41, 44, 65, 66, 68, 69, 70, 71
+free software 18, 20, 21, 23, 24, 73
+freedom 71
+FTP 13
+fundings 17, 18
+gay 40, 41, 45
+
+gender 9, 24, 41, 43, 68, 69, 70
+Git 17, 47, 48, 64, 75, 76, 77
+Github 17, 76, 77
+Gitlab 75, 76, 77
+Gnome 18, 33
+Google 22, 25, 35
+Grindr 40, 41, 42, 43, 44, 45
+hardware 3, 9, 32, 35
+81
+
+index of terms
+
+hash 12
+HTML 46, 47, 61, 62
+information 3, 21
+infrastructure 20, 22, 34, 37
+install 13, 38, 46, 47, 48, 51, 64, 74
+interface 9, 24, 38, 53
+Internet 11, 13, 14, 31, 36, 38, 42
+IP 12, 13, 14, 32
+82
+
+IPSec 12, 13
+Javascript 46, 61, 62
+link 17, 32, 47, 53, 62, 66, 69, 71
+Linux 19, 20, 21, 22, 23, 32, 50, 51, 74, 75
+MAC address 32
+Mac OS 74
+machine 9, 31, 32, 34, 35, 46, 47, 50, 68, 76, 77
+male 9, 23, 24, 52, 56, 69
+
+man 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 28, 29, 31, 32, 34, 35, 39, 41, 47, 51, 57, 58, 61, 62, 67, 68, 69, 70, 71, 72, 73
+masculine 41
+media 17, 29, 43, 45, 62, 74
+men 3, 9, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 30, 32, 33, 37, 40, 41, 45, 48, 51, 53, 56, 57, 58, 59, 62, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74
+
+index of terms
+
+network 12, 14, 19, 31, 32, 36, 37, 53, 72
+normativity 43
+NSA 12, 13
+offline 41
+online 16, 29, 30, 41, 45, 47, 52, 53, 72, 75
+open source 16, 17, 20, 22, 37
+OpenVPN 12, 13
+PGP 13
+
+privacy 37, 40
+private key 13
+programmer 17
+programming 74
+public key 12, 13
+Python 17
+Qubes 31, 32, 33
+queer 16, 24, 44, 70
+Red Hat 22
+
+secure 11, 12, 13, 14, 50
+security 12, 13, 30, 33, 72
+server 11, 12, 13, 14, 17, 22, 34, 35, 46, 47, 48, 50, 61, 75, 76
+sexist 56
+sex work 72
+sex worker 72
+signature 13, 14
+social network 53
+83
+
+index of terms
+
+society 44, 56, 68, 69
+SSH 12, 13
+sustainability 16, 17
+sustainable 17, 18, 35
+Systerserver 14, 35, 75
+technologies 3, 20, 69, 70
+technology 9, 24, 25, 34, 67, 68, 69, 70, 71
+Thunderbird 32
+84
+
+tunnel 11, 13
+Ubuntu 18, 22, 74
+Unix 20, 21, 31
+user 11, 12, 14, 18, 40, 44, 45
+VPN 11, 12, 13, 14
+web 17, 35, 46, 47, 48, 50, 53, 55, 61, 62, 74, 75, 77
+web inspector 61
+web page 61, 62, 74
+
+Windows 31, 50, 74
+wireless 12, 36, 38
+woman 24, 69, 71
+women 9, 20, 23, 24, 25, 67, 68, 69, 70, 71
+
+index of names
+
+de Beauvoir, Simone 69
+Cacheres, Bertha 70
+Davis, Angela 70
+Hamilton, Margaret 20
+Hopper, Grace 20
+
+Krasmogonowi, Hilde 68
+Lamarr, Hedy 20
+Lovelace, Ada 20
+Pankhurst, Sylvia 68
+Snelting, Femke 23
+
+Snowden, Edward 13
+Stallman, Richard 19, 20, 21
+Torvald, Linus 19, 20, 21, 22, 23
+
+85
+
+colophon
+
+This book was laidout in Python (Flat) by Amélie Dumont
+Typefaces: Redaction 35, Cirrus Cumulus and Lab Mono
+
+Credits of the images
+Cover: artwork designed for /ETC 2018 in Bologna
+Pages 8 and 10: pictures shot during the workshop 'Hardware Crash Course'
+Page 14: image by David Göthberg, commons.wikimedia.org
+Page 18: screenshots of Upstage website (upstage.org.nz)
+Page 25: picture shot during the workshop 'A Brief History of Linux'
+Page 33: Qubes OS screenshot by Brunogabuzomeu, commons. wikimedia.org. Tails OS screenshot by Les Pounder, commons.wikimedia.org
+Page 39: screenshot of Ninux website (map.ninux.org)
+Page 49: screenshot of the /ETC website (eclectictechcarnival.org)
+
+colophon
+Page 51: image by Maklaan, commons.wikimedia.org
+Page 53: screenshots of review Aspirina on the website (erbaccelarivista.org)
+Page 54: picture shot during the workshop 'Inter/de-pend-ence: the game'
+Page 60: screenshots of an article about the game Inter/de-pend-ence on playtime.pem.org
+Page 63: screenshot of the /ETC website inspected in Chromium
+Page 66: screenshots of video game tests for Jeu-videa project
+Pages 78 and 79: picture shot in XM24 during the event
+

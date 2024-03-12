@@ -1,0 +1,430 @@
+2015
+
+ACTA UNIVERSITATIS CAROLINAE PHILOSOPHICA ET HISTORICA 1 / MISCELLANEA LOGICA X
+BIRKHOFF’S AESTHETIC MEASURE
+VERONIKA DOUCHOVÁ*
+Dept. of Logic, Faculty of Arts, Charles University in Prague * E-mail: veronika.douchova@centrum.cz
+
+PAG. 39–53
+
+ABSTRACT
+
+In this paper, we review and critically evaluate George D. Birkhoff ’s work concern-
+
+ing formalisation of aesthetics, as it appeared in his book Aaesthetic Measure from
+
+1933, and discuss its influence on further research in the field. In the book, Birkhoff
+
+defines an aesthetic measure M of an art object as the ratio between its order and
+
+complexity,
+
+or
+
+more generally
+
+a
+
+function
+
+f
+
+of
+
+this
+
+ratio:
+
+M
+
+=
+
+f
+
+(
+
+O C
+
+),
+
+where
+
+O
+
+stands
+
+for order and C for complexity. The specific definitions of O and C depend on the
+
+type of the analysed object. Birkhoff applied the formula to multiple classes of ob-
+
+jects (e.g. vases, music, or English poetry) and calculated the aesthetic measure for
+
+many art objects from these classes.
+
+We give an example of Birkhoff ’s analysis using polygons, and we further discuss to
+
+what extent the ordering of the polygons (or other objects) according to the result-
+
+ing measures can be used, or interpreted, as an ordering according to a degree of
+
+aesthetic preference.
+
+We also include an extensive bibliography, supplemented by a critical discussion of
+
+the influence of Birkhoff ’s work on further research.
+
+Keywords: aesthetic measure, information complexity, theory of information, ratio-
+
+nal aesthetics, information aesthetics
+
+1. Introduction
+In his book Aesthetic measure [Bir33], Birkhoff defines an aesthetic measure and applies it to several types of objects with different modes of perception – visual, including 3D objects, and auditory (music, poetry). The measure is defined in relation to the effort which the object demands of the perceiver (complexity), and the pleasing or displeasing features which can be recognised in the object (order).
+George David Birkhoff (1884–1944) was a distinguished mathematician, who worked predominantly in the fields of algebra, dynamic systems and number theory. He is best known for his proof of the general form of the Poincare-Birkhoff theorem (1913), for his book Dynamic Systems (1927), or for his proof of characterisation of monoids (1935).
+Aesthetic Measure was published in 1933, but some of the results were presented earlier on conferences and in papers (starting from 1928). In the introduction to [Bir33], Birkhoff states that he started to be interested in the structural aspects of aesthetic perception while listening to music (mostly classical), almost 30 years previously. He realised that the order, or pattern, of the tones plays an important role in aesthetic perception of music. He later
+39
+
+refined these ideas into a theory and applied it to other forms of aesthetic objects (vases, tiles or polygons – visual art, or poetry – auditory art).
+Some sources state that Birkhoff based his theory on the work of a Canadian-American artist Jay Hambidge, as he formulated it in his book Dynamic Symmetry (1926, Harvard). This information is given for instance in H. J. McWhinnie’s A Review of Research on Aesthetic Measure [McW68]. Birkhoff himself does not name Hambidge as an inspiration; however, he mentions his name twice in the fourth chapter of the book: Chapter IV: Vases. On page 67, he quotes Hambidge’s work Dynamic Symmetry of the Greek Vases, New Haven and New York, 1920, in connection to Greek vases, and then at the end of chapter The Appreciable Elements of Order, where he discusses properties of vases which have impact on the order of the aesthetic measure (and at this place, he disagrees with Hambidge [Bir33, p. 72]).
+In our paper, we introduce Birkhoff ’s aesthetic measure using polygons. The reason is that the majority of contemporary papers focuses on vases, according to Birkhoff ’s Chapter 4, [Bir33, pp. 67–86]. A modern presentation of the aesthetic measure regarding polygons has been mostly missing from the literature.
+2. The aesthetic measure
+According to Birkhoff, the first impulse for his study of the aesthetic quality of objects in the context of a semi-mathematical theory was the act of listening to music with reflections on the melody pattern. These reflections were the beginning of work which was
+“… to bring the basic formal side of art within the purview of the simple mathematical formula defining aesthetic measure” [Bir33, p. viii]
+According to Birkhoff, aesthetic experience consists of three primary consecutive stages:
+“… (1) a preliminary effort of attention, which is necessary for the act of perception, and which increases in proportion to what we shall call the complexity (C) of the object; (2) the feeling of value or aesthetic measure (M) which rewards this effort; and finally (3) a realisation that the object is characterised by a certain harmony, symmetry, or order (O), more or less concealed, which seems necessary to aesthetic effect.” [Bir33, pp. 3–4]
+Thus the aesthetic quality is in relation to the attention which is required to perceive the object in its entirety, and is counterbalanced by the notion of order in the object. The load of attention grows in proportion to the complexity of the object, and therefore Birkhoff denotes this property by complexity, C, of the object. Order, O, of the object is a counterbalancing quantity, often found in the forms of harmony or symmetry. Birkhoff postulates that the aesthetic measure M is the ratio of these two quantities: to preserve a fixed value of the measure, higher complexity of an object must be counterbalanced by
+40
+
+an increased order, and conversely, simpler objects require a smaller value of order for the same effect. More generally, Birkhoff defines the aesthetic measure as a function f of this ratio:
+
+M
+
+=
+
+f
+
+(
+
+O C
+
+)
+
+.
+
+Birkhoff did not elaborate on the specific form of f , and in his work he essentially identifies f with the identical function.1 As we discuss later, the range of M consists of rational numbers, with the usual ordering on rational numbers being implicitly used to order the values of M.2
+Birkhoff applies his formula in a general setting, irrespective of the mode of perception (visual, auditory) or of the type of object. In his understanding, the formula is universal and transferable between art forms. In his book, he gives examples of objects perceived visually (always plane objects, or objects mapped to a plane), musical objects and melodies, and poetry (which he finds similar to music in his study). In every area, he delimits a class of objects, usually a very narrow class, and formulates for them concrete definitions of order and complexity in order to calculate M. The exact definitions of order and complexity must be chosen carefully to ensure that the resulting M reflects the aesthetic quality of the object; this choice is considered by Birkhoff as the basic problem in aesthetics [sic!].
+The first part of aesthetic experience is the initial exertion which is required to perceive an object. As we stated earlier, this exertion is in proportion to the complexity C of the object. Birkhoff maintains that the act of perception leading to an aesthetic feeling necessarily requires a conscious exertion of attention. The amount of this attention corresponds to C. More exactly, the value of C is the sum of all types of exertions multiplied by the number of their occurrences. This leads Birkhoff to defining complexity as the number of units in the object which require a conscious act of attention (e.g. number of tones in a melody or number of edges of a tile). Complexity has an impact on the resulting measure M, which is viewed as a reward for the exertion of attention. This relationship between C and M is counterbalanced by the quantity of order in the object, which can compensate for a higher complexity.
+The order O in the object is considered to be a conscious part of the aesthetic process. O is characterised by the pleasant feelings associated with the exertion of attention (corresponding to C). In order to determine the value of order in the object, it is necessary to distinguish two types of associations: formal and connotative.
+Formal associations are defined as those associations which are implied by basic properties of objects, such as symmetry, repetition, similarity, contrast, identity, balance, repetitive parts, i.e. properties which invoke pleasant feeling in the act of attention, but also by properties which invoke negative feelings (lack of reward in attention), such as lack of clarity, unpleasant repetition, inessential imperfection, or dissonance in music. The value of O is thus the sum of all formal associations multiplied by the number of occurrences; formal associations occur in this sum either with the positive sign (pleasant
+
+1 2
+
+Therefore,
+
+in
+
+this
+
+paper,
+
+we
+
+use
+
+a
+
+simplified
+
+formula
+
+M
+
+=
+
+O C
+
+.
+
+Birkhoff does not specifically discuss this issue, but only mentions some related questions. See the end of
+
+Section 2.2 below.
+
+41
+
+associations) or with the negative sign (unpleasant associations). Indifferent associations have the zero value. Birkhoff specifies concrete associations, and their effect on O, for various types of objects.
+Connotative associations do not take part in determining the aesthetic measure. They are defined as such associations that are not formal, i.e. which are not implied by a basic property of the object. Among connotative associations, we can include the usefulness of polygons mentioned by Birkhoff on page 29, where he states that
+“… usefulness corresponds to a connotative factor entirely outside of the scope of the theory.” [Bir33, p. 29]
+Birkhoff does state that every association becomes an element of the order, disregarding whether it is a formal or a connotative association, but in his definition of the order O for the purposes of M he only allows formal associations.
+The notions of order and complexity need to be applied in concreteness to a narrow class of objects to yield a reasonable notion of comparison between these objects. Birkhoff chooses in the book classes of objects such as polygons, ornaments, tiles, or vases. For vases, Birkhoff defines the notions of order and complexity for planar cuts intersecting the axis of a vase, i.e. for planar curves which by rotation draw the contour of the vase (handles and spouts are not considered). In music, based on specific definitions of C and O, Birkhoff calculates M for diatonic scales and chords, harmonies and melodies. From music, Birkhoff finally turns to poetry.
+In the next section, we give for illustration of Birkhoff ’s methods more details for one specific class of objects – polygons.
+
+2.1 Polygons
+
+Birkhoff describes the aesthetic measure of polygons in Chapter II, [Bir33, pp. 16–48]. Polygons are the first class of objects for which he gives details regarding the calculation of M. At the beginning of the chapter, he states that while polygons are often considered merely as geometrical objects, they do have an aesthetic quality which can be used to compare polygons among themselves. As we said earlier, classes of objects for which we calculate M should be defined as narrowly as possible; for this reason Birkhoff limits his attention to plane shapes which can be used as tiles. Moreover, he requires that all polygons should have a similar size, and he disregards colours and materials. These limitations should remove as many connotative associations as possible. Birkhoff also eliminates the role of an observer in order to disregard the role of cultural background or education. This method allows him to evaluate plane shapes more objectively (but he also disregards symmetries which may be recognisable only to an educated or experienced observer).
+The formula for calculation of M for polygons is defined as follows:
+
+M
+
+=
+
+O C
+
+=
+
+V
+
++
+
+E
+
++
+
+R + HV C
+
+−F,
+
+where C is the complexity of the polygon, O is the order defined by the vertical symmetry V, balance E called equilibrium by Birkhoff, rotational symmetry R, horizontal-vertical
+
+42
+
+network or grid HV and non-pleasing or unsatisfactory form F. Parallel edges and the horizontal symmetry are classified as neutral, i.e. they are not included in the computation of M. The properties participating in the order are concerned mostly with movements on the plane and less with properties which we can call numerical. The numerical properties are not completely ignored, though. Sometimes they are captured by other properties: for instance for an equilateral triangle, Birkhoff does not consider the equality of the sides, but they do have a role in the calculation of possible rotations and symmetries.
+The complexity C is defined as the number of lines on which there lie all edges of the polygon. Note that this is not the same as the number of edges of the polygon (consider for instance a six-pointed star or the Greek cross).
+The vertical symmetry V is considered as a positive property, and therefore is calculated with the positive sign. An object has the vertical symmetry 1 if it is symmetrical along the vertical axis. Otherwise the symmetry has value 0.
+An overall balance of the object is denoted E and relates to the visual sense of balance, not necessarily physical balance, and takes values −1, 0, 1. The visual balance is evaluated according to the position of the equilibrium. The highest value E = 1 is assigned when the equilibrium of the object lies between the vertical lines crossing the extremal points of the polygon, and the distance to these lines is at least 1/6 of the horizontal width of the object. In particular, if V = 1, then E = 1. If the equilibrium lies between the lines, but in a smaller distance, the value of E is set to be 0. Otherwise the value is −1.
+
+Figure 1: Aesthetic measure from left to right: M = 0.75, M = 0.5 and M = 0.4.3
+
+The quantity R captures the rotational symmetries of the polygon. If there exists a
+
+rotational symmetry, then q denotes the number of possible rotations before the poly-
+
+gon returns to its original position, i.e.
+
+360° q
+
+is the least possible angle of rotation.
+
+R is
+
+calculated from q as follows:
+
+R=
+
+⎧{ ⎨{⎩
+
+q 2
+3 1 0
+
+if (1) there is a rotational symmetry, (2) q ≤ 6, and (*) if (1) there is a rotational symmetry, (2) q > 6, and (*), for other cases if a rotational symmetry exists and q is even, otherwise.
+
+3 This and following figures were created based on the illustrations in [Bir33].
+43
+
+where (*) means that the polygon itself has a vertical symmetry or the convex hull of the given polygon has a vertical symmetry and the concave parts of the given polygon do not adjoin to the vertices of the convex hull.
+HV (Horizontal-Vertical grid) is related to the movements of polygons on the plane. HV is considered as positive if the polygon can be moved vertically and/or horizontally to a new position while preserving its relative position in the same horizontal-vertical grid. The value can be 2, 1, 0. Birkhoff defines that HV takes the value 2 if all edges of the polygon lie in parallel to the vertical-horizontal grid (grid consisting of horizontal and vertical lines). Typical examples are rectangles, Greek cross or a polygon in the form of the letter H. If instead of the vertical-horizontal grid, we consider a grid composed of parallel lines with the same angle with respect to the vertical lines and all edges of the polygon lie on this grid, we set HV = 1 (a typical example is a diamond, i.e. an equilateral parallelogram positioned on its vertex). In addition, HV equals 1 if the polygon is situated in a vertical-horizontal grid or in a grid consisting of parallels with the vertical line, but one direction of the edges is diagonal to the gird (or two directions are diagonal to the grid), or finally if some of the edges are not exactly parallel with the lines in the grid. Otherwise, we set HV = 0.
+Figure 2: The diamond with the aesthetic measure M = 1.
+The last quantity participating in O is the non-pleasing (unsatisfactory) form F. Birkhoff refers to it as the omnium gatherum of all negative elements of the order. F takes the negative sign, and values 2, 1, 0. To achieve F = 0, the polygon must satisfy the following conditions:
+44
+
+(1) There are no distances between vertices, edges and between a vertex and an edge which are too small. A distance is too small if it is less than 1/10 of the maximal distance between the vertices of the polygon.
+(2) The angles between the edges are not too small (set as less than 20°). (3) There are no irregularities. This is defined that no movement of a vertex by a
+small amount (less than 1/10 of the distance to the nearest vertex) may impact the values of V, R or HV. (4) There are no projecting edges. (5) There is at most one type of a concave angle. (6) If we view the vertical and horizontal directions as one direction, then the polygon cannot have more than two types of direction. (7) There is a symmetry which prevents both V and R from taking the value 0. The reader may notice vague quantifications “too small” or “small amount” occurring in three conditions above. It seems that the exact value of “too small” is not very important for the method – Birkhoff uses the phrase “… for definiteness we shall demand …”, [Bir33, p. 41]. If the polygon violates one condition, we set F = 1. If more than one condition fails, we set F = 2.
+Figure 3: A regular six-pointed star positioned on a vertex, with the grid. M = 1.
+We illustrate the computation of M with the example of a six-pointed star positioned on a vertex. Complexity C equals to the number of lines on which the edges lie, i.e. C = 6. The star is symmetric along the vertical line, therefore V = 1 and also E = 1. The star can be rotated by 60°, i.e. q = 6 and R = 3. The star satisfies the condition that the polygon is
+45
+
+situated in a vertical-horizontal grid or in a grid consisting of parallels with the vertical line, but two directions of the edges are diagonal to the grid, therefore HV = 1. The form is satisfactory, with F = 0. The aesthetic measure of a six-pointed star positioned on a vertex is therefore:
+
+M
+
+=
+
+1+
+
+1
+
++
+
+3+ 6
+
+1
+
+−
+
+0
+
+=
+
+1.
+
+2.2 Comparing objects according to their measure
+
+We will use the specific example of polygons to determine which polygon has the greatest value of the aesthetic measure on the rational line. Birkhoff discusses related questions in the chapter 30. The Mathematical Treatment of Aesthetic Questions on pages 46–47. A similar discussion, with minor inaccuracies, can be found in [Bar03].
+The complexity C can have many values for polygons, but it is always at least 3. C = 3 if the edges of the polygon lie on three lines, i.e. if the polygon is a triangle. According to [Bir33], the aesthetic measure of a triangle is an element of the following set: {7/6, 2/3, 0, −1/3, −2/3, −1}, i.e.
+
+M(triangle)
+
+≤
+
+7, 6
+
+where the greatest value is assigned to the equilateral triangle, with M = 7/6. In general, we have the following values for polygons: V ≤ 1, E ≤ 1, R ≤ 3, HV ≤ 2,
+and F ∈ {0, 1, 2}, and therefore O ≤ 7 and
+
+M(polygon)
+
+≤
+
+7. C
+
+For the square, we have C = 4, V = 1, and so E = 1, R = 4/2 = 2, HV = 2, and F = 0, hence
+
+M(square) = 1.5
+
+We know that M(triangle) ≤ 7/6, and M(square) = 1.5, and therefore no triangle (i.e. a polygon with C = 3) can have its measure greater than the square. If C ≥ 5, we get M ≤ 7/5 = 1.4. The polygon with the greatest measure must therefore be found among four-edged polygons whose edges lie on 4 lines, with two and two lines being parallel to each other. This holds only for the square (M = 1.5), a general rectangle (M = 1.25), and diamond (M = 1). In all other cases, HV = 0 and either V or R are equal to 0, hence O ≤ 2, and M ≤ 0.5. It follows:
+
+M(polygon) ≤ 1.5, where M = 1.5 only if the polygon is a square in the upright position.
+46
+
+Figure 4: Aesthetic measure from left to right: M = 1.5, M = 1.25, M = 7/6, M = 1, M = 1, M = 1.
+We have calculated that the square in the upright position is the polygon with the greatest value of the aesthetic measure. A natural question is whether Birkhoff interprets this result as saying that the square is the most beautiful polygon.
+Since the measure is a function from objects to the rational numbers, the values of the measure are ordered as rational numbers. Birkhoff does not explicitly say that the underlying order on the rational numbers should be interpreted as the ordering of the values of the measure. However, in some parts of the book he does refer to the ordering of the rational numbers and relates it to the ordering of the measure (we choose a quotation concerning polygons):
+“… the square in horizontal position has the highest rating of all polygonal forms …” [Bir33, p. 25]
+However, he also cautions the reader that
+“It follows then as a ’theorem’ that the square with horizontal sides with M = 1.50 is the best of all possible polygonal forms. Obviously such mathematical treatment upon the basis of the theory becomes a mere game if carried too far.” [Bir33, p. 47]
+3. The impact of Birkhoff’s work
+In the time of publication of Birkhoff ’s book, mathematical community had already been familiar with Birkhoff ’s search for a simple mathematical formula for the aesthetic measure, see for instance [Bir29], [Bir31]. Birkhoff was also invited to give lectures on this topic, for instance on the International Congress of Mathematicians in Bologna, 1928. Additionally, he was invited to introduce his theory in a four-volume compendium The
+47
+
+World of Mathematics, edited by J. Newman (1933, with further editions in 1956 and 2003). The text was published with editor’s preface in section XXI, A Mathematical Theory of Art, with the title Mathematics of Aesthetics [Bir56]. Today, we can find almost 850 citations of Birkhoff ’s Aesthetic Measure, not least because of the interdisciplinary character of various researchers interested in his work. In this paper, we only give references to main sources which refer to Birkhoff ’s work.
+Initially (1930s and 1940s), we mostly find reactions by psychologists. In their papers they published results of empirical studies and compared them with Birkhoff ’s theory. After an application of the measure, they usually look for a correlation between the empirical results and theoretical predictions; the empirical results were primarily obtained using volunteers who were asked to give their aesthetical preference for the presented objects. Objects used in the studies were of various forms, including polygons. The results were usually negative in the sense that the theory of the aesthetic measure was not corroborated empirically. For more information, see for instance [Dav36], [Eys41], [Wil39], [BCP37] or [Gra55].
+A survey of results in psychology aimed at either verifying or refuting Birkhoff ’s theory can be found in A Review of Research on Aesthetic Measure by Harold J. McWhinnie from 1968 [McW68]. McWhinnie states that psychological studies were not interested in the aesthetic judgement concerning an object, but rather in the aesthetic preference of the observer. This seems to be at odds with Birkhoff ’s prerogative to use only properties of the object itself (formal associations), and disregard subjective preference (connotative associations). Studies based on aesthetic preference run counter to Birkhoff ’s ideas, and it seems that the negative results of such studies must be re-evaluated carefully. Psychological studies into the ways of quantifying beauty or aesthetics inspired by Birkhoff ’s aesthetic measure continue into the present, see for instance [BL85] and [PSS13].
+Moving away from psychology to theory of information, Birkhoff ’s work has had an impact in this field as applied in the context of the theory of aesthetics. There are two influential works in this field from 1960s: a book by Abraham Moles Information Theory and Esthetic Perception, first published in 1958 and most cited in the English translation from 1966 [Mol66], and Max Bense’s work summarised in a four-volume work Aesthetica published between 1954 and 1960, and in the book Aesthetica. Einführung in die neue Aesthetik from 1965.
+Abraham Moles (1920–1992) was a French information theorist who studied the relationship between theory of information and aesthetics, with the focus on the relationship between theory of perception and psychology. Inspired by Shannon’s mathematical theory of communication, he developed Birkhoff ’s ideas into a theory of information and aesthetic perception. He redefined Birkhoff ’s aesthetic measure from the ratio of order O and complexity C to their multiplication O × C. The original notion of order O in Birkhoff ’s measure takes in Moles’ work the form of low entropy, perceived as redundancy and predictability. High entropy is equated with complexity C, perceived as unpredictability and non-compressibility.
+Max Bense (1910–1990) was a German philosopher who is best known today for his work in philosophy of science, aesthetics and semiotics. Building on work of Birkhoff and Shannon, he focused on physical concepts, with the aim of creating rational aesthetics stripped of its subjective component. In addition to the emphasis on strictly scientific
+48
+
+methods, Birkhoff and Bense share the definition of the aesthetic measure as the ratio of order and complexity.
+Works by Bense and Moles, inspired by Birkhoff, led to the research in the field of Information Aesthetics (sometimes also Informational Aesthetics). Information Aesthetics looks for theoretical foundations of aesthetics, viewed from the point of information and its amount and quality contained in an object. As in Birkhoff ’s work, the goal is to judge an object by itself, without a subjective component. Research in Information Aesthetics is still in progress, see for instance [Gre05], [McC05], [RFS08], [Gal12].
+In general, the quantitative study of aesthetic perceptions (see for instance [AC98]) is often based not only on Shannon’s theory of information, but also on Kolmogorov complexity, see for instance [RFS07]. In contrast to the psychological works from 1930s and 1940s, Birkhoff ’s work is now treated with more flexibility and with less stress on the exact wording of the original text. The emphasis is on the main idea that the aesthetic quality of an object is connected to the notions of order and complexity. The research into the computational methods in aesthetics continues, with many papers referring to Birkhoff ’s work giving various functions and methods for computation of the aesthetic measure of an object, see for instance [HE10], [Pen98]. Nowadays, an important application of Birkhoff ’s work lies in the computer-aided design, as in [Cle11].
+The field of theoretical aesthetics has had some Czech researchers as well: let us mention T. Staudek [Sta99], [Sta02], R. Kozubík [Koz09], J. Nešetřil [Neš94], [Neš05], [AN01], [BN07] or previous works of the author [DN09], [DN10].
+
+4. A critical discussion of Birkhoff’s work
+
+Birkhoff ’s work in aesthetics has received approximately 850 citations and continues
+
+to influence various fields of research. Researchers inspired by Birkhoff often develop cer-
+
+tain ideas of his, but seldom provide comprehensive critical analysis of his work. How-
+
+ever, on a closer reading one can identify several types of objections appearing in the
+
+literature; we summarise these below.
+
+As we stated above, after the publication of Birkhoff ’s book, psychologists often set up
+
+experiments designed to corroborate or refute Birkhoff ’s thesis. They were mostly inter-
+
+ested in the aesthetic preference of volunteers (for instance [Dav36], [BCP37], [Wil39],
+
+[Eys41], [Gra55], [McW68], [BL85], and [PSS13]). None of the results verified relevance
+
+of the aesthetic measure, and the results did not correlate. Other critical studies, not
+
+specifically designed to test Birkhoff ’s measure, raised the more general objection of the
+
+aesthetic preference of volunteers not educated in arts being substantially different from
+
+the preference of experts or artists.
+
+Still other papers discussed the appropriateness of the mathematical formula itself (for
+
+a summary, see for instance [Gal10]); papers with this focus have appeared more recently,
+
+originating from information aesthetics or computational aesthetics. They often raised
+
+the
+
+objection
+
+that
+
+the
+
+formula
+
+M
+
+=
+
+f
+
+(
+
+O C
+
+)
+
+seems
+
+to
+
+measure
+
+more
+
+an
+
+aesthetic
+
+efficiency
+
+than the level of aesthetic quality, prefers symmetry over beauty, penalises complexity,
+
+and views order and complexity as opposing notions. This type of critical analysis has
+
+been put forward for the original Birkhoff ’s measure, its modifications, and theories and
+
+49
+
+models developed by other researchers (such as A. Moles, M. Bense, D. E. Berlyn, and others).
+Additionally, researchers often raise doubts regarding the validity of the choice of parameters participating in the application of the formula on the given class of objects, in particular regarding the computation of order, with the underlying problem of distinguishing formal and connotative associations (see for instance [Yor]). The very distinction of formal and connotative associations, strongly defended by Birkhoff, has been questioned.
+We can divide critical reactions into three basic groups which address different components of Birkhoff ’s theory and its subsequent development: what quantity is measured by the aesthetic measure (the question of legitimacy), how is it measured (the question of method), and what is the relevance of the measure for aesthetics (the question of relevance).
+Let us start with the first question. Birkhoff gives the following answer to the question what is measured in formal aesthetics:
+“… the basic formal side of art within the perview of the simple mathematical formula …”[Bir33, p. viii]
+Thus Birkhoff ’s intention was to objectify aesthetics, to identify formal rules which would be universally transferable and applicable. After 80 years, Birkhoff ’s original intention is still present in attempts to model the aesthetic judgment by formal or computational methods (for instance computer-aided design). These attempts need to solve several problems, technically most challenging being the issue of obtaining valid computergenerated data (this relates to the search for suitable and empirically corroborated formulas and algorithms) and of subsequent analysis of the data, not to mention the underlying question of the possibility of real-world use of results obtained by such formal methods.
+If we accept the legitimacy of an aesthetic measure, we can move to the second question, i.e. how to define such a measure. Birkhoff refers to older philosophical works to defend his idea of defining the aesthetic measure as the ratio of order and complexity, claiming that these works relate the aesthetic quality of an object to the harmony of the object, to its unity in variety. It seems that the generalised formula M = f (O, C), treating M as a function of two variables, for the computation of the aesthetic measure is generally accepted since many researchers do see connection between the aesthetic quality of an object and the two complementary notions: first notion being usually described as order, structure, redundancy of information, repetition, symmetry, fractal pattern, or low entropy; the second notion being equated to complexity, unpredictability, high entropy, and non-compressibility. In addition to the formula, one can also analyse its application, in particular the choice of parameters which take part in the computation. However, the distinction of formal and connotative associations has always been viewed as problematic. Birkhoff, as a mathematician, solved this problem for polygons by defining as formal those associations which are determined by movements of the polygons on the plane, with the effect on the numerical values regarding vertical and rotational symmetries, or on the value of HV which captures the properties of the polygon regarding its position in a grid. One may ask whether such geometrical properties are culturally transferable and
+50
+
+whether, and to what extent, they are determined by education and cultural background. A mathematician, for instance, may find symmetry, rotation or other forms of patterns more appealing and interesting, and sees them as providing good reward for attention of perception (in Birkhoff ’s words). However, experiments show that artists, on the other hand, tend to prefer higher entropy and they are less interested in objects with too many regular features. It is therefore unclear to what extent we can define in a strictly scientific way formal associations which are supposed to belong to an object itself. The issue of distinguishing and defining formal and connotative associations has been widely discussed not only in papers in computational aesthetics, but also in psychological papers. Related questions have been studied recently in connection to the information contained in an aesthetic feeling and information processed in an aesthetic judgement.
+Finally, we address the last question of relevance of the measure to aesthetics. In the papers we have discussed, these questions appear only indirectly, but from the philosophical point of view they present a major difficulty. It is not only the question of reducing aesthetics or aesthetic feeling to formal properties of an object, but the more general problem whether an aesthetic judgement is composed from individual properties of an object. Birkhoff ’s measure postulates that an aesthetic information can decomposed into components which can be evaluated separately. Research in the field of computational aesthetics proceeds similarly. Hence, these methods discard not only the subject, but also the interaction between subject and object and all other external circumstances. It seems that the resulting aesthetic judgment or aesthetic preference may be a function of the aesthetic measure itself: A = g (M, … ), where A is the final aesthetic judgment. It remains to be seen whether A can be described in more detail and to what extent we can consider M as an input parameter of an aesthetic judgement.
+In conclusion, let us emphasise that in evaluating problematic issues in Birkhoff ’s work we should not forget his initial assumptions – we do not claim that his theory, or its generalisations, should solve the whole question of the aesthetic judgement, i.e. we do not search for TOE – theory of everything in the physical sense. The purpose of the research is to gain at least a partial understanding of aesthetics using formal methods, even at the risk of inaccuracies and non-correlation with the subjective notion of aesthetic preference. The wide influence of Birkhoff ’s work suggests that his methods do provide such an insight.
+
+Acknowledgement This research has been supported by grant MŠMT ČR ERC-CZ LL 1201.
+
+References
+
+[AC98] [AN01]
+
+Tsion Avital and Gerald C. Cupchik. Perceiving hierarchical structures in nonrepresentational paintings. Empirical Studies of the Arts, 16(1): 59–70, 1998. Jan Adamec and Jaroslav Nešetřil. Towards an aesthetic invariant for graph drawing. In Graph Drawing’01, volume 2265 of LNCS, pages 287–296. Springer-Verlag, 2001.
+
+51
+
+[Bar03] John D. Barrow. Art and sciences—Les liaisons dangereuses? In J. Casti and A. Karlgvist, editors, Art and Complexity, pages 1–20. JAI Press, 2003.
+[BCP37] John Gilbert Beebe-Center and Carroll Cornelius Pratt. A test of Birkhoff ’s aesthetic measure. The Journal of General Psychology, 17(2): 339–353, 1937.
+[Bir29] George D. Birkhoff. Quelques éléments mathématiques de l’art. Atti del Congresso Internazionale dei Matematici, Bologna, I, 1929.
+[Bir31] George D. Birkhoff. Une théorie quantitative de l’esthétique. Bulletin de la Société française de Philosophia, I, 1931.
+[Bir33] George D. Birkhoff. Aesthetic Measure. Harvard University Press, 1933. [Bir56] George D. Birkhoff. Mathematics of aesthetics. In James Newman, editor, The World of Mathematics,
+volume 4, pages 2185–2195. Simon and Schuster, New York, 1956. [BL85] Frans Boselie and Emanuel Leeuwenberg. Birkhoff revisited: Beauty as a function of effect and
+means. The American journal of psychology, pages 1–39, 1985. [BN07] Martin Bálek and Jaroslav Nešetřil. Towards mathematical aesthetics. In Michele Emmer, editor,
+Mathematics and Culture V, pages 225–236. Springer-Verlag New York, LLC, 2007. [Cle11] Paul Charles Cleveland. Colour and dynamic symmetry. In Jennifer DeFore, editor, 2011 Joint
+Conference of the 41st Annual National PCA-ACA and 32nd Annual SW/Texas PCA-ACA. SWTX PCA/ACA, 2011. [Dav36] R. C. Davis. An evaluation and test of Birkhoff ’s Aesthetic Measure formula. The Journal of General Psychology, (15:2): 231–240, 1936. [DN09] Veronika Douchová and Jaroslav Nešetřil. Fragment of aesthetic processing. In Jana Šafránková and Jiří Pavlů, editors, WDS’09 Proceedings of Contributed Papers: Part I – Mathematics and Computer Science, pages 7–10. Matfyzpress, 2009. [DN10] Veronika Douchová and Jaroslav Nešetřil. S. Zeki and neuroaesthetics – A possible framework to objectify aesthetics. Miscellanea Logica, (IX), 2010. [Eys41] H. J. Eysenck. The empirical determination of an aesthetic formula. Psychological Review, pages 83–92, 1941. [Gal10] Philip Galanter. Complexity, neuroaesthetics, and computational aesthetic evaluation. In 13th International Conference on Generative Art (GA2010), 2010. [Gal12] Philip Galanter. Computational aesthetic evaluation: Past and future. In Jon McCormack and Mark d’Inverno, editors, Computers and Creativity, pages 255–293. Springer-Verlag Berlin Heidelberg, 2012. [Gra55] G. W. Granger. Aesthetic measure applied to color harmony: An experimental test. The Journal of General Psychology, 52(2): 205–212, 1955. [Gre05] Gary Greenfield. On the origins of the term computational aesthetics. In Proceedings of the First Eurographics conference on Computational Aesthetics in Graphics, Visualization and Imaging, pages 9–12. Eurographics Association, 2005. [HE10] E. den Heijer and A. E. Eiben. Comparing aesthetic measures for evolutionary art. In Cecilia Di Chio, Anthony Brabazon, Gianni A. Di Caro, Marc Ebner, Muddassar Farooq, Andreas Fink, Jörn Grahl, Gary Greenfield, Penousal Machado, Michael O’Neill, Ernesto Tarantino, and Neil Urquhart, editors, Applications of Evolutionary Computing, volume 6025 of Lecture Notes in Computer Science, pages 311–320. Springer-Verlag, Berlin Heidelberg, 2010. EvoApplications 2010: EvoCOMNET, EvoENVIRONMENT, EvoFIN, EvoMUSART, and EvoTRANSLOG, Istanbul, Turkey, April 7–9, 2010, Proceedings, Part II. [Koz09] Roman Kozubík. Posuzování strojírenských výrobků z hlediska průmyslového designu. PhD thesis, VUT Brno, 2009. [McC05] Jon McCormack. Open problems in evolutionay music and art. In F. Rothlauf, J. Branke, S. Cagnoni, D. W. Corne, R. Drechsler, Y. Jin, P. Machado, E. Marchiori, J. Romero, G. D. Smith, and G. Squillero, editors, Applications of Evolutionary Computing, volume 3449 of Lecture Notes in Computer Science, pages 428–436, Berlin Heidelberg, 2005. Springer-Verlag. Evoworkshops: EvoBIO, EvoCOMNET, EvoHot, EvoIASP, EvoMUSART, and EvoSTOC. [McW68] Harold J. McWhinnie. A review of research on aesthetic measure. Acta Psychologica, 28: 363–375, 1968.
+52
+
+[Mol66] [Neš94] [Neš05] [Pen98]
+[PSS13] [RFS07]
+[RFS08] [Sta99] [Sta02] [Wil39] [Yor]
+
+Abraham A. Moles. Information Theory and Esthetic Perception. University of Illinois Press, Urbana and London, 1966. Jaroslav Nešetřil. An essay on art and mathematics. From the Logical Point of View, 2(2): 93, 1994. Jaroslav Nešetřil. Aesthetics for computers or How to measure a harmony. In Michele Emmer, editor, Visual Mind II, pages 35–58. MIT Press, 2005. Penousal Machado and Amílcar Cardoso. Computing aesthetics. In F. Moreira de Oliveira, editor, Advances in Artificial Intelligence, volume 1515 of Lecture Notes in Computer Science, pages 219–228, Berlin Heidelberg, 1998. Springer-Verlag. Stephen E. Palmer, Karen B. Schloss, and Jonathan Sammartino. Visual aesthetics and human preference. Annual review of psychology, 64: 77–107, 2013. Jaume Rigau, Miquel Feixas, and Mateu Sbert. Conceptualizing Birkhoff ’s aesthetic measure using Shannon entropy and Kolmogorov complexity. In Proceedings of the Third Eurographics Conference on Computational Aesthetics in Graphics, Visualization and Imaging, Computational Aesthetics ’07, pages 105–112, Aire-la-Ville, Switzerland, 2007. Eurographics Association. Jaume Rigau, Miquel Feixas, and Mateu Sbert. Informational aesthetics measures. Computer Graphics and Applications, IEEE, 28: 24–34, 2008. Tomáš Staudek. On Birkhoff ’s aesthetic measure of vases. Faculty of Information, Masaryk University Report Series (FIMU-RS-99-06), 1999. Tomáš Staudek. Exact Aesthetics: Object and Scene to Message. PhD thesis, MU Brno, 2002. D. J. Wilson. An experimental investigation of Birkhoff ’s aesthetic measure. The Journal of Abnormal and Social Psychology, 34(3): 390–394, 1939. William W. York. Cognitive science, aesthetics, and the development of taste. http://csjarchive. cogsci.rpi.edu/Proceedings/2013/papers/0303/paper0303.pdf.
+
+53
+

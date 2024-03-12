@@ -1,0 +1,208 @@
+http://dx.doi.org/10.14236/ewic/EVAC18.2
+CHECKING CREATIVITY: Machines, Media and Mathematics in Early Computer, Serial
+and Conceptual Art
+
+Michael Rottmann Academy of Art and Design Basel FHNW – Institute of Experimental Design and Media Cultures (IXDM) Freilager-Platz 1, CH-4002 Basel
+michael.rottmann@fhnw.ch
+
+Around 1960 digitalisation and computers started to spread through American society and in their wake came a reappraisal of machines: from a production method to a means of innovation. This art historical case study aims to show that mathematical machines were used in early computer, serial and conceptual art not only to explore their aesthetic potential and the media involved. Machines in art of the period also conjured the interplay of the human and machine in creative processes and thus examined creativity itself within human-machine networks. Comparison of these art forms delivers a surprising insight: although one can assume for all three art movements affinity for the idea and thinking, one encounters ambivalence and criticism concerning logical machines and their creative potential. Paradoxically put, with mathematical machines and critical algorithmic practices, some artists turned against a kind of “machine thinking”.
+
+Creativity, Machine, Mathematics, Media, Serial Art, Conceptual Art, Computer Art, Sol LeWitt, Mel Bochner, Michael Noll
+
+1. INTRODUCTION: HUMAN OR MACHINE?
+
+The question of whether computers can be artists is currently a hot issue, but its controversy has a long tradition. In 1966 an experiment was conducted in the United States in which 100 participants were shown reproductions of a painting by Piet Mondrian and an imitating computer graphic made by an IBM 7094 (Figure 1 and 2). The majority of them decided that the computer image was manmade (72%) and also the more beautiful one (59%). The formal “randomness” produced by the machine was what the participants associated with “human creativity” according to the experiment’s creator Michael Noll (Noll 1966). The aspect that he was an electrical engineer at Bell Telephone Laboratories, Inc. (Bell Labs) and almost all of the respondents were employees shall only be mentioned here off hand. Computer-generated images were seen as having more aesthetic quality than the work of acknowledged artists, so the question raised was no less than if machines themselves can be creative. Noll formulated his answer cautiously, but – not surprisingly for a representative of his profession – quite clearly.
+
+Figure 1: Reproductions of Mondrianʼs painting Composition with Lines (1917) (right) and Nollʼs computer graphic (1964) (left), from (Noll 1966: 5).
+Figure 2: IBM 7090 in the manual (1962), from (IBM 1962: 6).
+
+© Rottmann. Published by BCS Learning and Development Ltd.
+
+1
+
+Proceedings of EVA Copenhagen 2018, Denmark
+
+CHECKING CREATIVITY Michael Rottmann
+
+This issue can be situated in a predominant discourse about creativity in the United States of the 1960s, in which in the course of computerisation of society and further developments in computer science the question arose in yet a new disguise. At that time creativity resounded throughout the country as a shimmering term and was seen as a cureall. On the one hand, it encapsulated creative acts in which the new came about and was also applied to product innovation, problem solving and especially to fine arts, which can be regarded as its natural playground.1 On the other hand, creativity was understood as a personal characteristic, which had a considerable dimension in terms of social policy. The first I will call “concrete creativity”, the second one “abstract creativity”. A member of society equipped with the latter was seen, according to Claudia Mareis, as more spontaneous, liberal and open-minded as well as less dogmatic and trusting in authority. Thus, they were viewed as less susceptible to fascist-totalitarian systems, especially due to the creative individual’s ability for “self-actualization”. All in all, to be creative was to be according to Jamie Cohen-Cole a stabilizer for democratic systems. With him or her, a “foil to the ideologically blinded Russian scientist” could be sent on the academic battle field of the Cold War (Mareis 2016, Cohen-Cole 2009). On the field of economics, both innovations and productivity were promising, and brought greater international competitiveness and a brighter future. Creative centers were set up to do this, like the Center for Advanced Visual Studies (CAVS) at MIT, a cooperation between the “two cultures” and techniques of creativity (Mareis 2016, Rottmann 2016a). In a time when workers and employers – also managers – saw their identity and existence threatened in the course of computerisation, digitalisation and automation by rationalisation and subordination under the conditions of the machine – “machine thinking” as Turner (2008) put it –, creativity could provide a refuge, at least as long as it remains a property unique to humans. A prototype of human creativity was seen in abstract expressionist Jackson Pollock – also beyond the field of art. In an emotional, ecstatic, gestural act, the lone wolf uncontrolledly splatters paint on the canvas of his drippings (Figure 3); there was even talk of the “drama of creativity” (Alloway 1966). The “disorder” of his technique and aesthetics was considered a symbol – even though a clichéd one (Schapiro 1978) – of “freedom and vividness” (von Hermann 2010), which was held up in the Cold War as a proof of a liberal society (Guilbaut 1983). In accordance with the paradigmatic models of creativity in the contemporary philosophy of art, which considered the creative act to constitute all of the physical and mental activities
+1 This is not the place to reconstruct the problems of “the new” and its making as it was treated for instance by Mersch (2005).
+
+used to reach an artwork (Tomas 1958, Beardsley 1965), Pollockʼs creative activity was spontaneous and emotional. His open outcomes can be linked with the propulsive theory and confronted with the finalistic theory as a systematic, reflected and results-oriented approach (Rottmann 2016b), which is usually applied for serial, conceptual and com-puter art. Yet the erosion of creativity as a solely human domain already began with the emergence of artificial intelligence (AI) around 1950 in the context of computer science and cybernetics (McCarthy et al. 1955). Alan Turing talked about a “thinking machine” and a “learning machine” (Turing 1950). So, the view on machines changed from a mechanical device for production to one of innovation, which can execute not only physical but also specific mental tasks; this change of view can be diagnosed in the field of art at the latest by the second half of the 1960s (Hultén 1968). The idea that computers will create art became widespread (Klütsch 2007). It is understandable that artists took a close look at logical machines. Their appraisal was mostly ambivalent but quite a few felt threatened (von Hermann 2010). Especially the materiality and the massiveness of these machines could instill fear. Thus the ‘attack’ by Jean Tinguely, who worked in 1960 in New York on the concept of a genius in Tachism or Abstract Expressionism, carried out with his patented art-machine Méta-matics and a wink (MüllerAlsbach 2012), appears in retrospect to comment on the shift from human creativity to something within the capability of the machine (Figure 4). From now on the aesthetics of Jackson Pollock, which stood as already mentioned for human creativity par excellence, could be produced by Jean Tinguelyʼs art-machine.
+Figure 3: Jackson Pollock working on Number 32 (1950), from (Varnedoe 1998: Fig. 32).
+
+2
+
+CHECKING CREATIVITY Michael Rottmann
+
+The artists could realise media-, process- and selfreflections,3 which translates to an indirect investigation of creativity.4 In the first part, I examine computer art with the example of Michael Noll; in the second part, I contrast computer art with serial and conceptual art, focusing on Mel Bochner, Sol LeWitt and Frank Stella.
+
+2.1 COMPUTER ART: HUMAN AND MACHINE
+
+Figure 4: Jean Tinguely, Méta-matic No. 7 (1959) and drawings, from (Lütgens 2000: 27).
+Against the background of this context, I want to show in this art-historical case study that early computer art, serial and conceptual art in in the United States was about checking creativity through work on mathematical machines in the 1960s,2 “checking” meaning reviewing, testing: in these art forms creativity was examined, criticised and evaluated, especially its rational, finalistic model and its relationship to machines. “Mathematical machines” are understood here as ones, which can be used to calculate mathematical matters. The artists used digital computers as well as “symbolic machines” (Krämer 1988), both types will be introduced more precisely below. We will see that machines can be media and vice versa. Moreover, I want to show that the integration of a machine into the creative process was a decisive aspect for the examination of creativity. While in computer art the mathematical machine was constitutive, in the other art forms it was added intentionally. In doing so, the creative process occurred through a production network of human, machine, medium and process – in accordance with actor-network theory (ANT) – and thus is subject to analysis with the method of variation (Figure 5).
+Figure 5: Triangle of a machine extended creative act, from Michael Rottmann.
+
+In the 1960s intelligence was ascribed to computers, at least in a rudimentary sense, because they were considered equipped with extremely rapid operating speed, operating accurately and faultlessly, able to evaluate and act on the basis of certain criteria (Turing 1950, Noll 1967). Intelligence was also a shimmering concept and characterised as the “power or act of understanding” and the “ability to deal with a difficult situation” (Merriam-Webster 1957). Creativity on the other hand was still regarded basically to be “the personal and somewhat mysterious domain of man”; a computer could only do what it has been instructed to (Noll 1967). But the work with it and recent results in fine arts as well as music had raised questions and invited a revision of the relation between machines and creativity. The computer invited “experimental use”, especially with algorithms, formulas and parameters (Noll 1967). Michael Nollʼs plotter-drawn graphic Gaussian-Quadratic (1965), which was shown 1965 in the Howard Wise Gallery in New York (Computer-Generated Pictures) is our example here (Figure 6). At that time, Noll was working with an IBM 7094 (an upgraded version of the IBM 7090), a cathode ray tube and a General Dynamics SC-4020 microfilm plotter. The idea was in the air that the computer, could provide “wholly new art forms and possibly new aesthetic experiences” (Noll 1967). In order to clarify the relation between computers and creativity, the digital machine was put into the context of pre-existing artistic media. Michael Nollʼs experiment with images was an attempt to do just this. Alan Turingʼs test for identifying machine-intelligence with the help of language has been a starting point (Noll 1967). Thus Noll transformed the question of intelligence in technology into one of creativity in fine arts. His experiment was part of an extensive examination of the relation between computers and creativity, which he developed further in the following year in his paper The Digital Computer as a Creative Medium (1967). The paper deals with a theory of artistic and creative processes by comparing
+
+2 It seems that the treatment of creativity by artists is
+a tautology, because they are regarded as creatives per se. But they are only creativity researchers, when they reflect on their activities. This was done with the machine art projects presented here; although, I am aware that the reconstruction of historical processes is problematic in general.
+
+3 A mirroring of humans by the machine is a topos,
+which is also part of the term “machine art” (Broeckmann 2016). 4 Its direct investigation is anyhow problematic, for
+example, due to brain activities or internal thoughts, which are difficult of access.
+
+3
+
+CHECKING CREATIVITY Michael Rottmann
+
+painting and computer art and developed a media theory of sorts.
+Figure 6: Michael Noll, Gaussian-Quadratic (1962/63), from (Nake 2012: 68).
+He argued – like many others at that time (Nake 2012) – that the computer as a tool is not itself creative, but must be seen as a “creative medium”, especially, if one understands creativity as “the production of the unconventional or the unpredicted” (Noll 1967).5 Although Noll does not characterise his conception of a medium, it can be understood as a technical extension of man, according to his contemporary Marshall McLuhan (1964). It seems that Noll makes analogy between the computer and painting, so as to establish the former in the creative process and to elevate it. The new thus can be produced with the computer – like with painting – in an interplay between artist and medium. At the same time, Noll also explained that the “artist explores, discovers, and masters the possibilities of the medium” (1967).6 Anticipating the aspect of agency of objects in ANT, Noll emphasises the role of media in creative processes. In painting for example, color, paint, brushes and canvas inspire the artist by stimulating the senses (in a visual, acoustic or olfactory manner) through its pre-existence. Noll maintains it is the same with “visual images” of a digital computer. Because of their obstinacy, media provides “unexpected ideas”, according to Noll, “for which the artist lies in wait and for which he sets a formal ‘trap’ in his medium”. Noll supported this with an anecdote from Henri Matisse, who had advised to paint a bright red
+
+disc on a white canvas in order to perceive and react to it. Noll held that this example demystifies a creative person’s action. In his explanations, engineer Michael Noll was seemingly inspired by cybernetics and algorithmic thinking in accounting for the artistic process as a kind of “definite program of step-bystep action”, thus building an analogy between painting and programming.7 Noll’s all-important “man-machine feedback loop” was made possible by computers due to the increasingly instantaneous results they provided the artist in the “real-time interaction” during the creative process. And the computer was introduced not only simply as equal to painting but exceeding it. In contrast, the computer could automate sub-processes and thus provide additional stimuli. Moreover, the computer could calculate extremely complicated relations, so the results would seem “random” to humans. Thus, computers appear “act unpredictably and [to] produce the unexpected”, and in connection with this Noll suggested that “the computer actively takes over some of the artistʼs creative search” (Noll 1967). The aesthetics of randomness or disorder, like in the paintings of Jackson Pollock, were critical for shifting the view of a computer as a mathematical machine into a creative machine, even though pseudo-randomness was used and the processes remained deterministic and repeatable. Unlike the “relatively ‘passive’ medium” painting, Noll concluded, the computer would be an “active medium” (Noll 1967). Although Noll described the machine as an “intellectual and active creative partner” and emphasised the active role of media, he still maintained the idea of final and central control by the human, whom he called the “programmer-artist” (Noll 1966, Noll 1967). He wrote:
+The computer acquires a creative role by introducing randomness or by using mathematical algorithms to control certain aspects of the artistic creation. The overall control and direction of the creative process is very definitely the artistʼs task. […] This is an active medium with which the artist can interact on a new level, freed from many of the physical limitations of all other previous media (Noll 1967).
+It is a little unexpected that Noll relativises the physicality of media, although he exposed its specificity. This aspect was treated thoroughly in early computer art. At this point, it is instructive to take a retrospective consideration of Frieder Nake, mathematician, computer art pioneer and contemporary of Noll. While Noll argued more in the perspective of the machine and wanted “to demonstrate the potential for
+
+5 Because the computer does not work on its own,
+many early protagonists criticised the term “computer art” (Nake 2012). 6 This sounds very similar to Clement Greenbergʼs
+concept of his modernism (Greenberg 1940/1986, 1960/1986).
+
+7 The early protagonists of computer art were often engineers or mathematicians and considered only retrospectively as artists.
+
+4
+
+CHECKING CREATIVITY Michael Rottmann
+
+digital computers [in the visual arts]” (Pellegrini 2011), Nake dealt with the use of the computer in creative processes more in the human perspective, pointing out that it is accompanied by decisive changes – from drawing to programming at that time (Nake 2012). And he did it precisely with the example of Nollʼs Gaussian-Quadratic (1965) (Figure 6). The polygonal line leads a double life, Nake explains: It is simultaneously a visible graphic (“surface”) and an invisible, purely mental geometry (“subface”), described and calculated mathematically (Noll (1967) mentioned something similar). Instead of drawing a line with the body and a pencil, the artist executes a program, which he had to write in a rational manner; Nake called it “drawing by brain” instead of “drawing by hand” (Nake 2012). Of course, these models of production are poles on a continuous spectrum, which rarely appear in a pure form. With respect to this, Noll (1967) solicited the computer as a medium against the “tedium of conventional hand animation”. One can endorse Nake (2012), who diagnosed a kind of abstraction with symbols of the creative process – he described this change “from material to sign”, as a “higher level of semioticity”. With reference to Friedrich Kittler, Nake indicated that not only the acting but also the thinking undergoes a change due to the use of different media. Again, the aspect of control gains a certain uncertainty – which will be picked up soon. While Noll (1966) already referred to fine arts as a social process, Nake made more explicit that creativity must be thought of as a phenomena that happens in groups and in conversations, and that the surrounding setting (e.g. music, hiking) also has to be taken into account (Nake 2012). It is clear that in early computer art there was an intense reflection on creative processes and the role of the computer in them.
+2.2 SERIAL AND CONCEPTUAL ART: HUMAN
+VERSUS MACHINE
+At the same time artists Donald Judd, Sol LeWitt and Mel Bochner pushed ahead in the field of serial- and conceptual art: working with numbers and series. Judd talked about a “scheme” that followed rules. LeWitt talked about a “system”, “idea” or “program” (Coplans 1971, Norvell 2001, Bowman 1979). Judd and Bochner were developing three-dimensional art works this way. LeWitt derived many of his pieces through formal, combinatorial rules like his Serial Project #1 (ABCD), whose entire set of configurations are made of two nested cuboids that are either open or closed and low, middle or high (Figure 7). Referring to Minimal Art and tackling European tradition as well as Abstract Expressionism, they pursued with mathematical media an anti-compositional production and, supported by manufacturing, an avoidance of the personal gesture or rather a
+
+reduction of the role of the subject (Rottmann 2015). Like with computer art, Sol LeWitt and Mel Bochner discovered in their serial art the aesthetic and generative potential of rules – in the sense of so-called generative art. For example, the tension between the visual and the thinkable was a topic (Rottmann 2015). It has been explained in detail that LeWittʼs “systematic model of production and representation” must be seen in the context of contemporary post-Fordism information society and its conditions of production and could be understood as a response to it (Buchmann 2007b). This dovetails with LeWittʼs description of the serial artist, which sounds like the description of an algorithm: “[T]he artist would select the basis form and rules that would govern the solution of a problem […]” (LeWitt 1967). Not surprisingly rule-based procedures were considered by the artists to be machine-like at the same time that Alan Turing treated calculating machines as procedures (Turing 1948/1969). LeWittʼs machine metaphor in his Paragraphs on Conceptual Art, which are published in the same year as Michael Noll’s The Digital Computer as a Creative Medium, is well known. He wrote: “The idea becomes a machine that makes the art” (LeWitt 1967).8
+Figure 7: Sol LeWitt, Serial Project #1 (ABCD) (1966), from (Goldstein 2004: 269).
+One can also talk about mathematical machines, because the artists worked with mathematical notation and diagrams to generate variations of drawings or objects graphically. When Sol LeWitt for example used in his Drawing Series 1968 (Fours) (Figure 8) matrices, whose application is organised by a system of rules from matrix calculus, he then adopted precisely the mechanically operative moment of notations. This motivated media philosopher Sybille Krämer to talk about “symbolic machines” (Krämer 1988). Following Alan Turingʼs mathematical machine concept, although it was abstract, ideal and theoretical, one could talk about “paper machine[s]” (Turing 1948/1969) – not only because the work (with symbolic machines) happens on paper but also because the mathematical papers provided rules related to its geometry. Frank Stella, for example, used
+
+8 Also this dictum shows, art was still thought of as a product and does not remain on the level of an idea.
+
+5
+
+CHECKING CREATIVITY Michael Rottmann
+
+mathematical papers to develop his shaped canvas paintings (Figure 9). I propose calling this “rule-media”. When wilfully inserting themselves in humanmachine-production relationships, as presented in an earlier article (Rottmann 2016b), the artists were able vary and question concepts, like control, decision, rationality, authorship and self, which were all considered key terms in the contemporary discourse of creativity (Tomas 1958, Beardsley 1965). Therefore, the forms of art presented here may be seen in the perspective of the discourse on creativity. I propose a demonstration of how it can with the aspect of “control”.
+
+mechanistic enough so that I wouldn’t have to decide each time what tonality to make a thing because starting with the kinds of systems that I was using […] everything was decided ahead of time (Norvell 2001).
+This is not the place to discuss the gap between LeWittʼs conception, which had a very strong impact on the art scene, and his practice in more detail. It was Robert Smithson who cautioned that he is concerned with the paradox and that “[e]verything LeWitt thinks, writes, or has made is inconsistent and contradictory” (Smithson 1968/1996).
+
+Figure 8: Sol LeWitt, Drawing Series 1968 (Fours) in Studio International (April 1969), from (Spens 2007).
+When mathematical rule-media were migrated into the arts and their methods were transferred, it was intended less to exceed the “standardised models of behaviour” of such media (Heibach 2013), a typical artistic strategy, and more to use their capacity of control.9 Sol LeWitt explained: “There are several ways of constructing a work of art. One is by making decisions at each step, another by inventing a system to make decisions”, and he completed, “[t]he system may be structured as logical or illogical (random)” (Miller-Keller 1995). With regard to his Serial Project #1 (ABCD) he stated:
+And that way I sort of discovered a method of doing a thing with sort of absolute control, which was
+9 “Control” is here meant in the sense of ruling and not monitoring something.
+
+Figure 9: Frank Stella, Untitled (n. d.)
+However, one cannot miss a tension between freedom and control here. Unlike a computer system, such a rule system functions not as a “cybernetic machine”, which can regulate itself according to environmental circumstances (Günther 1963). It seems that humans submit to control of a rule or so to say technology, for which serial art was criticised by Jutta Held (1972/1995) in terms of political direction of impact. It was Turner (2008), who argued, that art-and-technology movements like Experiments in Art and Technology (E.A.T.) offered a model for working in an anti-hierarchic manner with technology. But – like for LeWitt – a rule also involves personal leeway. In addition, rule-media can automate only parts of the production process; they only can do so in a complex and partly reflexive interplay with the cognitive and motor skills of the artist – in the sense of a semi-automatic machine. Referring to this, Nake (1999) suggests three levels of machinic autonomy: the delegation of manual, then mental and finally both abilities. One can even diagnose a kind of “controlled loss of control” in the art of the 1960s. Because generative rules produce results, which are basically unforeseeable or at least not completely so. LeWitt made something like this apparent in his Sentences on Conceptual Art:
+28. Once the idea of the piece is established in the artist's mind and the final form is decided, the
+
+6
+
+CHECKING CREATIVITY Michael Rottmann
+
+process is carried out blindly. There are many side effects that the artist cannot imagine. These may be used as ideas for new works (LeWitt 1969).
+In just this way, Frank Stella and Donald Judd also reported about such imponderables with their paintings or three-dimensional objects in mind: Even if one plans in advance very precisely or works methodically (with a plan), the properties of the future object are not fully predictable (Glaser 1966). The artist himself cannot anticipate or imagine the results of his actions until the artwork exists. And that was exactly the argument in the discourse of creativity versus the finalistic model. Simple rules could generate (visually) complex results. This is shown in particular in the example of Sol Lewittʼs Incomplete Open Cubes (1974) (Figure 10), whose 122 parts are based on the rule: carry out all possible skeleton cubes. The comparison with his Serial Project #1 (ABCD) reveals that rules can be different concerning their generative effect (Rottmann 2014). Some generate all the objects they describe, others only describe the properties of their objects. Sol LeWitt’s notes in his Working Drawing for Incomplete Open Cubes (1974) show that he himself had to find, to arrange and to categorise the huge output on paper, first, before he could build the piece (Figure 11). Nonetheless, in a conversation with a mathematician he was made aware of an error after completion (Bowman 1979). Serial pieces derived from a rule reveal the discrepancy between rule-based production and the resulting artefact and thus the limitations such production methods. The same goes for using a computer: Although it can be considered a deterministic machine with repeatable and foreseeable processes, in many cases the output cannot be anticipated, because of errors or a misleading imagination of the programmer-artist (Nake 2012). In principle, digital images, which do not exist in any substantial manner, look different when processed by different hardware. In retrospect, one could say the concept of a “trivial machine”, whose output can be clearly expected from the input (von Foerster 1972), was the thing being questioned by the artists.
+Figure 10: Sol LeWitt, Incomplete Open Cubes (1974), photographs and diagrams, from (Kuspit 1975: 45).
+
+Figure 11: Sol LeWitt, Working Drawing for Incomplete Open Cubes (1974), from (Singer 1992: Fig. 88).
+Against this background, the rule-based or systematic work in serial and conceptual art can be understood – to say it paradoxically – as a practice of critique on rule-based techniques of creativity, as well as the rational, finalistic model and machine-based creative processes. The other way around, this can be seen as a plea for an open-ended creative process including moments of (self-)surprise. LeWitt somehow confirmed this: When asked about the role of photographer Eadweard Muybridge for his serialism and whether it opened a way “into a new territory of full unexplored, unpredictable possibilities”, he agreed and explained that with this principle interesting and exciting results could come about – despite being pre-considered and not a child of “the whim of the moment”. (Miller-Keller 1995) Rational production practice was also criticised: Referring to formalist art, LeWitt situated well-considered decisions within it. But he wanted his method to be understood as “more irrational”, because the rules were arbitrarily set and that is why he even talked about the “really pretty absurd” and the “really silly” (Norvell 2001). What is called rational should be seen as irrational. In the same vein, he postulated that conceptual artists have to be considered more as mystics than rationalists (LeWitt 1969). The potentiality of rational methods is limited, according to him, but irrational methods could lead to new experiences. Once again, a plea for the production aesthetics of surprise becomes apparent – surprise has the effect of equalizing the rational decision in every way to the sensual experience. To summarise, all of the art movements introduced here were ways of “checking creativity” and its
+
+7
+
+CHECKING CREATIVITY Michael Rottmann
+
+relation to mathematical machines. Early computer art was examining and reflecting on possibilities and comparing creative processes to other media-practices. Serial and conceptual art were criticising machine-related creative processes, revealing paradoxes and limitations and working to do so with machinic practices and rule-media, but without the use of actual machines.
+Acknowledgements This paper was written in the context of my postdocfellowship at IXDM, granted by the Swiss Confederation with a Swiss Government Excellence Scholarship. My colleague Joseph Popper and Jacob Watson helped to improve the English version.
+3. REFERENCES
+Alloway, L. (1966) Introduction. In: The Solomon R. Guggenheim Foundation. Systemic Painting, The Solomon R. Guggenheim Foundation, New York. 11-20.
+Anonymous (1957) Definition of “intelligence”. In: Merriam-Webster, Dictionary of the English Language, Vol. 1: A-M. 2nd ed., unabridged, The Riverside Press, Cambridge, MA.
+Beardsley, M. (1965), On the Creation of Art. The Journal of Aesthetics and Art Criticism, 23/3, pp. 291-304.
+Bowman, R. (1979) Interview with LeWitt, S. VHSVideo, Museum of Contemporary Art Chicago.
+Broeckmann, A. (2016) Machine Art in the Twentieth Century, The MIT Press, London, Cambridge, MA.
+Buchmann, S. (2007a) Denken gegen das Denken. Produktion, Technologie, Subjektivität bei Sol LeWitt, Yvonne Rainer und Hélio Oiticica. b_books, Berlin.
+Buchmann, S. (2007b) Serielle Zeichnungen – Zum Entwurf der Wall Drawings von Sol LeWitt. In: Busch, W., Jehle, O. & Meister, C. (eds.). Randgänge der Zeichnung, Wilhelm Fink Verlag, München. 303-321. Cohen-Cole, J. (2009) The Creative American. Cold War Salons, Science and the Cure for Modern Society. Isis, 100/2, pp. 219-262.
+Coplans, J. (1971) Don Judd. An Interview With John Coplans. Artforum, 9/10, pp. 40-50.
+Glaser, B. (1966) Questions to Stella and Judd. ArtNews, 65/5, pp. 55-61.
+Goldstein, A. (ed.) (2004). A Minimal Future? Art as Object 1958-1968. MIT Press, Cambridge/London.
+
+Greenberg, C. (1940/1986) Towards a Newer Laocoon. In: O’Brian, J. (ed.), Clement Greenberg. The Collected Essays and Criticism, Vol. 1: Perceptions and Judgements 1939-1944, The University of Chicago Press, Chicago/London. 23-38.
+Greenberg, C. (1960/1986) Modernist Painting. In: O’Brian, J. (ed.), Clement Greenberg. The Collected Essays and Criticism, Vol. 4: Modernism with a Vengeance 1957-1960, The University of Chicago Press, Chicago/London. 85-93.
+Günther, G. (1963) Die “zweite” Maschine. In: Günther, G., Das Bewußtsein der Maschinen: Eine Metaphysik der Kybernetik. Agis-Verlag, Krefeld, Baden-Baden. 179-203.
+Guilbaut, S. (1983) How New York Stole the Idea of Modern Art. Abstract Expressionism. University of Chicago Press, Chicago.
+Heibach, C. (2013) Kreativität: Thesen zu einem mythischen Begriff. In: Mareis, C. & Windgätter, C. (eds.). Long Lost Friends: Wechselbeziehungen zwischen Design-, Medien- und Wissenschaftsforschung. Diaphanes, Zürich. 183-204.
+Held, J. (1972/1995) Minimal Art – Eine amerikanische Ideologie. In: Stemmrich, G. (ed.), Minimal Art. Eine kritische Retrospektive, Verlag der Kunst, Basel, Dresden. 444-470.
+Hultén, P. (1968) The Machine as Seen at the End of the Mechanical Age. New York Graphic Society, Greenwich, CT.
+IBM (1962) Reference Manual: IBM 7090 Data Processing System. IBM, White Plains, NY.
+Klütsch, C. (2007) Computergrafik: Ästhetische Experimente zwischen zwei Kulturen. Die Anfänge der Computerkunst in den 1960er Jahren. Springer Verlag, Wien/New York.
+Krämer, S. (1988) Symbolische Maschinen. Die Idee der Formalisierung in geschichtlichem Abriß. Wissenschaftliche Buchgesellschaft, Darmstadt.
+Kuspit. D. (1975). Sol LeWitt. The Look of Thought. Art in America, LXIII/5, pp. 42-49.
+LeWitt, S. (1967), Paragraphs on Conceptual Art. Artforum, 5/10, pp. 79-83.
+LeWitt, S. (1969), Sentences on Conceptual Art. ArtLanguage. The Journal of Conceptual Art, 1/1, pp. 11–13.
+Lütgens A. (ed.) (2000) Lʼesprit de Tinguely. Hatje Cantz, Ostfildern-Ruit.
+
+8
+
+CHECKING CREATIVITY Michael Rottmann
+
+Mareis, C. (2016) Angewandte Imagination und Kreativität um 1960. Eine Einführung. In: Mareis, C. (ed.), Designing Thinking. Angewandte Imagination und Kreativität um 1960, Wilhelm Fink Verlag, Paderborn. 9-38.
+McCarthy J., Minsky, M. L., Rochester N., Shannon, C. E. (1955) A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence. https://web.archive.org/web/20080930164306/http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html (retrieved 27.05.2018).
+
+Kaltenbach, LeWitt, Morris, Oppenheim, Siegelaub, Smithson, Weiner by Patricia Norvell. University of California Press, Berkeley. 112-123.
+Pellegrini, E. (2011) Computer Art: Ten Questions to Michael Noll. http://www.predella.it/archivio/index537c.html (retrieved 13.09.2017).
+Rottmann, M. (2014) The Rise and Fall of Mathematics. How the Role of Mathematics Changed in Sol LeWitts Art Since the 1960s. The Journal of Art Theory and Practice, Special Issue: Vision and Math, Vol. 18, pp. 145-168.
+
+McLuhan, M. (1964) Understanding Media: The Extensions of Man. McGraw-Hill, New York.
+Mersch, D. (2005) Imagination, Figuralität und Kreativität. Zur Frage der Bedingungen kultureller Produktivität. Sic et Non. Zeitschrift für Philosophie und Kultur im Netz, 4/1, pp. 1–12.
+Miller-Keller, A. (1995) Excerpts from a Correspondance, 1981-1983. In: Zevi, A. (ed.), Sol LeWitt. Critical Texts. Libri di AEIUO, Rom. 102-119.
+Müller-Alsbach, A. (2012) Das Medium der Zeichnung im Werk von Jean Tinguely. In: Museum Tinguely (ed.), Museum Tinguely Basel. Die Sammlung, Kehrer Verlag, Berlin/Heidelberg. 247375.
+Nake, F. (1999) Bildgeschichten aus Zahlen und Zufall. Betrachtungen zur Computerkunst. In: Jäger, G. & Dress, A. (eds.), Visualisierung in Mathematik, Technik und Kunst: Grundlagen und Anwendungen, Vieweg, Braunschweig/Wiesbaden. 125126.
+Nake, F. (2010) Paragraphs on Computer Art, Past and Present. In: Lambert, N. (ed.) Cat 2010: Ideas Before Their Time: Connecting the Past and Present in Computer Art. Proceedings of CAT 2010. London, 3. February 2010. Swinton: BCS. 55-63.
+Nake, F. (2012) Construction and Intuition. Creativity in Early Computer Art. In: McCormack, J. & dʼInverno, M. (eds.), Computers and Creativity, Springer Verlag, Berlin. 61-94.
+Noll, M. (1966) Human or Machine: a Subjective Comparison of Piet Mondrianʼs “Composition with Lines” (1917) and a Computer-Generated Picture. The Psychological Record, Vol. 16, pp. 1-10.
+Noll, M. (1967) The Digital Computer as a Creative Medium. IEEE Spectrum, 4/10, pp. 89-95.
+Norvell, P. (2001) Interview mit Sol LeWitt. In: Alberro, A. & Norvell, P. (eds.), Recording Conceptual Art. Early Interviews With Barry, Huebler,
+
+Rottmann, M. (2015) Donald Juddʼs Arithmetics and Sol LeWittʼs Combinatorics. On the Relationship Between Visual and Mathematical in New York Art Around 1960. In: Emmer, M. (ed.), Imagine Math 3: Between Culture and Mathematics, Springer Verlag, Heidelberg, New York, London, Dordrecht. 85-98.
+Rottmann, M. (2016a) »Is your ›imaginer‹ ready?« Intention, Kritik und Rezeption der visuellen Kultur der amerikanischen New Math. In: Mareis, C. (ed.), Designing Thinking. Angewandte Imagination und Kreativität um 1960, Wilhelm Fink Verlag, Paderborn. 119-148.
+Rottmann, M. (2016b) Kalkulierte Innovationen. Zur Kritik der Systematisierung von Innovationsprozessen in Kunst und Design um 1960 im Spannungsverhältnis von Selbst, Medium und System, penned, in process.
+Schapiro, M. (1978) »Order and Randomness in Abstract Painting« In: Schapiro, M., Selected Papers, Vol. 2: Modern Art. 19th & 20th Centuries, Braziller, New York. 233 – 261.
+Singer, S. (ed.) (1992). Sol LeWitt: Drawings 19581992, Westfälisches Landesmuseum für Kunst und Kulturgeschichte, Münster.
+Smithson, R. (1968/1996) A Museum of Language in The Vicinity of Art. In: Flam, J. (ed.), Robert Smithson: the Collected Writings, University of California Press, Berkeley, Los Angeles, London. 7894.
+Spens, M. (2007) Sol LeWitt: The mystic Conceptualist. http://www.studiointernational.com/index.php/sol-lewitt-the-mystic-conceptualist (retrieved 15.7.2010).
+Tomas, V. (1958) Creativity in Art. The Philosophical Review, 67/1, pp. 1-15.
+Turing, A. (1948/1969) Intelligent Machinery. In: Meltzer, B. & Michie, D. (eds.), Machine Intelligence, Vol. 5, Edinburgh University Press, Edinburgh. 3-23.
+
+9
+
+CHECKING CREATIVITY Michael Rottmann
+
+Turing A. (1950), Computing Machinery and Intelligence. Mind, New Series, 59/236, pp. 433-460.
+Turner, F. (2008) Romantic Automatism: Art, Technology, and Collaborative Labor in Cold War America. Journal of Visual Culture, 7/1, pp. 5-26.
+Varnedoe, K. (ed.) (1998) Jackson Pollock, Museum of Modern Art, New York.
+von Foerster, H. (1972) Perception of the Future and the Future of Perception. Instructional Science, 1/1, pp. 31-43.
+von Herrmann, H. (2010) Künstliche Kunst. Abstraktion als Mimesis. In: Bothe, T. & Suter, R. (eds.), Prekäre Bilder, Wilhelm Fink Verlag, München. 225-245.
+
+Figure 10: Sol LeWitt, Incomplete Open Cubes (1974), painted aluminium, each 20.32 x 20.32 x 20.32 cm, photographs and diagrams, from (Kuspit 1975: 45). © The LeWitt Estate / 2018, ProLitteris, Zurich.
+Figure 11: Sol LeWitt, Working Drawing for Incomplete Open Cubes (1974), ink on paper, 28 x 21.6 cm, from (Singer 1992: Fig. 88). © The LeWitt Estate / 2018, ProLitteris, Zurich.
+If someone owns well-founded legal rights concerning the photographs and is not considered here, please contact the author.
+
+Images:
+
+Figure 1: Reproductions of Mondrianʼs painting Composition with Lines (1917) (right) and Nollʼs computer graphic (1964) (left), from (Noll 1966: 5).
+Figure 2: IBM 7090 in the manual (1962), from (IBM 1962: 6).
+Figure 3: Jackson Pollock working on Number 32 (1950), from (Varnedoe 1998: Fig. 32). © Pollock-Krasner Foundation / 2018, ProLitteris, Zurich.
+Figure 4: Jean Tinguely, Méta-matic No. 7 (1959) and drawings, from (Lütgens 2000: 27). © 2018, ProLitteris, Zurich.
+Figure 5: Triangle of a machine extended creative act, from Michael Rottmann.
+Figure 6: Michael Noll, Gaussian-Quadratic (1965), Plotter on paper, 28 x 21.8 cm, from (Nake 2012: 68).
+Figure 7: Sol LeWitt, Serial Project #1 (ABCD) (1966), burnt enamel on steel, 51 x 200 x 200 cm, from (Goldstein 2004: 269). © The LeWitt Estate / 2018, ProLitteris, Zurich.
+Figure 8: Sol LeWitt, Drawing Series 1968 (Fours) in Studio International (April 1969), from (Spens 2007). © The LeWitt Estate / 2018, ProLitteris, Zurich.
+Figure 9: Frank Stella, Untitled (n. d.), Felt-tip pen on graph paper, 21.5 x 27.9 cm. Gift of Lawrence Rubin. Acc. no.: 132.1981. © 2018. Digital image, The Museum of Modern Art, New York/Scala, Florence. © 2018, ProLitteris, Zurich.
+
+10
+

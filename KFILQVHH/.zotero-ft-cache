@@ -1,0 +1,193 @@
+
+C
+Constraint Systems
+
+    Index
+    Gallery
+
+Tools
+29 alternative interfaces for creating and editing images and text
+CSS Paint
+Paint using brushes defined in CSS. An ode to the power of CSS and an experiment in giving people weird building blocks.
+
+    Preview
+    Launch
+
+Nest
+An experimental webpage-builder. Add content like a text document. Blocks can be nested to organize and structure. Use custom CSS and classes for layout and style.
+
+    Preview
+    Launch
+
+Grid
+An experimental text editor. Adjust the grid size and text direction to create weird and expressive layouts.
+
+    Preview
+    Launch
+
+Cascade
+An experiment in collaborative CSS. Style is determined by the most recent 32 posts.
+
+    Preview
+    Launch
+
+csOS
+Use the Constraint Systems collection of experimental creative tools all together in one place.
+
+    Preview
+    Launch
+
+Mosaic
+Recreate one image using the tiles from another image.
+
+    Preview
+    Launch
+
+Collage
+An experimental public collage that combines images according to their complexity.
+
+    Preview
+    Launch
+
+Type
+A directed typing experiment. You choose the direction the letters should flow.
+
+    Preview
+    Launch
+
+Push
+Push and pull blocks to distort an image.
+
+    Preview
+    Launch
+
+Flow
+An experimental image editor that lets you set and direct pixel-flows.
+
+    Preview
+    Launch
+
+Fracture
+Shatter and recombine images using a grid of viewports.
+
+    Preview
+    Launch
+
+Tri
+Tri is an experimental image distorter. You can choose an image to render using a WebGL quad, adjust the texture and position coordinates to create different distortions, and save the result.
+
+    Preview
+    Launch
+
+Tile
+Layout images using a tiling tree layout. Move, split, and resize images using keyboard controls.
+
+    Preview
+    Launch
+
+Sift
+Slice an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.
+
+    Preview
+    Launch
+
+Automadraw
+Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.
+
+    Preview
+    Launch
+
+Span
+Lay out and rearrange text, line by line, using keyboard controls.
+
+    Preview
+    Launch
+
+Stamp
+Image-paint from a source image palette using keyboard controls.
+
+    Preview
+    Launch
+
+Collapse
+Collapse an image into itself using ranked superpixels.
+
+    Preview
+    Launch
+
+Res
+Selectively pixelate an image using a compression algorithm.
+
+    Preview
+    Launch
+
+Rgb
+Pixel-paint using keyboard controls.
+
+    Preview
+    Launch
+
+Face
+Edit both the text and the font it is rendered in.
+
+    Preview
+    Launch
+
+Pal
+Apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues.
+
+    Preview
+    Launch
+
+Bix
+Draw on binary to glitch text.
+
+    Preview
+    Launch
+
+Diptych
+Pixel-reflow an image to match the dimensions of your text. Save the result as a diptych.
+
+    Preview
+    Launch
+
+Slide
+Divide and slide-stretch an image using keyboard controls.
+
+    Preview
+    Launch
+
+Freeconfig
+Push around image pixels in blocks.
+
+    Preview
+    Launch
+
+Moire
+Generate angular skyscapes using Asteroids-like ship controls.
+
+    Preview
+    Launch
+
+Hex
+A keyboard-driven, grid-based drawing tool.
+
+    Preview
+    Launch
+
+Etch
+A keyboard-based pixel drawing tool.
+
+    Preview
+    Launch
+
+About
+Constraint Systems is a collection of experimental web-based creative tools. They are an ongoing attempt to explore alternative ways of interacting with pixels and text on a computer screen. I hope to someday build these ideas into something larger, but the plan for now is to keep the scopes small and the releases quick.
+See work created using the Constraint Systems tools in the Gallery .
+Questions? Interested in collaborating? Get in touch with Grant Custer
+
+    Github
+    Twitter
+    Youtube
+    RSS
+
